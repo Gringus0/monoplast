@@ -5,8 +5,8 @@
             <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (22) 239 518</p>
             <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (22) 239 518</p>
             <div>
-                <a href="https://www.facebook.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-facebook-f icon"></i></a>       
-                <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA"><i class="fa-brands fa-instagram icon marginLeftRight"></i></a> 
+                <a href="https://www.facebook.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-facebook-f icon"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA"><i class="fa-brands fa-instagram icon marginLeftRight"></i></a>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid mp0">
                 <a class="navbar-brand" href="#">
-                    <img src="" alt="Logo">
+                    <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo" id="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,4 +46,3 @@
         </nav>
         </div>
 </header>
-    
