@@ -12,6 +12,8 @@ class HomeController extends Controller
      */
     public function home()
     {
+        $users = User::get()->first();
+        dd($users);
         return view('pages.main.home');
     }
 
