@@ -1,5 +1,6 @@
 body{
-    background-color: #dad5db;
+    background-image: url("../img/images/bcg2.jpg");
+    background-repeat: repeat;
 }
 * {
     margin: 0px;
@@ -7,13 +8,13 @@ body{
 }
 
 #top-header{
-    background-color: #a5a5a5;
+    background-color: #a4a5a4;
     color: #ffffff;
 }
 
 .wrapper{
     margin: 0px auto;
-    width: 60%;
+    width: 50%;
 }
 
 #lineHeightHeader{
@@ -62,4 +63,19 @@ p{
 
 #logo {
     width: 150px;
+}
+
+hr{
+    border-top: 4px dotted #343a40;
+}
+
+#underNavigation{
+    color: #e09446;
+    text-align: center;
+    font-weight: 600;
+}
+
+.slider{
+    background-image: url("../img/images/bcg3NEW.jpg");
+    background-repeat: repeat;
 }
