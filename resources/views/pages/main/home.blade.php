@@ -6,8 +6,6 @@
         <hr/>
         <h4 id="underNavigation">Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakova</h4>
         <hr/>
-
-
     </div>
 
     <div class="slider">
