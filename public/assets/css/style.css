@@ -8,7 +8,7 @@ body{
 }
 
 #top-header{
-    background-color: #a4a5a4;
+    background-color: #464647;
     color: #ffffff;
 }
 
@@ -35,6 +35,10 @@ body{
     padding: 0px !important;
 }
 
+.pr0{
+    padding-right: 0px !important;
+}
+
 p{
     margin: 0px !important;
 }
@@ -48,21 +52,20 @@ p{
 }
 
 .textOrange{
-    color: #d8b28c;
+    color: #e09446;
 }
 
 .hoverTextOrange:hover{
-    color: #e09446;
+    color: #e09446 !important;
 }
 
 .nav-link.active {
     color: #e09446 !important;
+    font-weight: 600;
   }
 
-/*TO DO: Finish up*/
-
-#logo {
-    width: 150px;
+.logo {
+    width: 170px;
 }
 
 hr{
@@ -70,7 +73,7 @@ hr{
 }
 
 #underNavigation{
-    color: #e09446;
+    color: #0060af;
     text-align: center;
     font-weight: 600;
 }
@@ -78,4 +81,97 @@ hr{
 .slider{
     background-image: url("../img/images/bcg3NEW.jpg");
     background-repeat: repeat;
+}
+
+header{
+    background-color: #eeeeee;
+}
+
+#products{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.block{
+    background-color: #efefee;
+}
+
+#underfooter{
+    background-color: #464647;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#footerFluid{
+    background-color: #eeeeee;
+}
+
+#footerFluid .wrapper .row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.iconFooter{
+    font-size: 25px;
+    text-decoration: none;
+    color: #0060af;
+}
+
+.iconFooterContact{
+    color: #0060af;
+}
+
+.iconFooterContact:hover{
+    color: #0060af;
+}
+
+.iconFooter:hover{
+    color: #e09446;
+}
+
+.footerSubjects {
+    color: #0060af;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+h4{
+    margin: 0px;
+}
+
+#navFooterList{
+    list-style-type: square;   
+    padding-left: 20px;
+}
+
+#navFooterList a{
+    text-decoration: none;
+    color: #0060af;
+}
+
+#navFooterList a li::marker{
+    color: #0060af;
+}
+
+.spacing{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.border{
+    border-radius: 15%;
+}
+
+.borderProducts{
+    border-radius: 5%;
+}
+
+.imgFooter{
+    width: 65px;
 }
