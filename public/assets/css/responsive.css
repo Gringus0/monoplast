@@ -1,3 +1,15 @@
+@media screen and (max-width: 1440px) {
+    #lineHeightHeader{
+        font-size: 14px;
+    }
+  }
+
+@media screen and (max-width: 1280px) {
+    #lineHeightHeader{
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     #lineHeightHeader{
         flex-direction: column;
@@ -7,4 +19,44 @@
         margin: 0px !important;
     }
   }
-  
+
+@media screen and (max-width: 810px) {
+    #lineHeightHeader{
+        height: 20px;
+    }
+    #headerNav{
+        display: none !important;
+    }
+
+    .wrapper{
+        width: 70%;
+    }
+
+
+}
+
+@media screen and (max-width: 412px) {
+    .logo{
+        width: 130px;
+    }
+
+    #underNavigation{
+        font-size: 18px;
+    }
+
+    .navbar-toggler-icon{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .logo{
+        width: 120px;
+    }
+
+    #underNavigation{
+        font-size: 16px;
+    }
+
+}
+

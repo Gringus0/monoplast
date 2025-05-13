@@ -1,16 +1,18 @@
 <div id="top-header" class="container-fluid mp0">
     <div class="wrapper">
-        <div class="d-flex justify-content-between" id="lineHeightHeader">
-            <p><i class="fa-solid fa-house-chimney marginRight textOrange"></i>Pilota Zorana Latkovica 19, Nova Pazova, 22330</p>
-            <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (22) 239 518</p>
-            <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (65) 336 11 11</p>
-            <div>
-                <a href="https://www.facebook.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-facebook-f icon"></i></a>
-                <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-instagram icon marginLeftRight"></i></a>
-                <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA"><i class="fa-solid fa-envelope"></i></a>
+        <div id="lineHeightHeader">
+            <div class="d-flex justify-content-between" id="headerNav">
+                <p><i class="fa-solid fa-house-chimney marginRight textOrange"></i>Pilota Zorana Latkovica 19, Nova Pazova, 22330</p>
+                <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (22) 239 518</p>
+                <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (65) 336 11 11</p>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-instagram icon marginLeftRight"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA"><i class="fa-solid fa-envelope"></i></a>
 
-                <!-- Dodati outlook opciju za envelope -->
+                    <!-- Dodati outlook opciju za envelope -->
 
+                </div>
             </div>
         </div>
     </div>
@@ -44,11 +46,9 @@
                         <li class="nav-item">
                             <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('contact')}}">Kontakt</a>
                         </li>
-
-{{--                        Mozda ovo da dodamo?--}}
-{{--                         <li class="nav-item">--}}
-{{--                            <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('porudzbina?')}}">Porucite</a>--}}
-{{--                        </li>--}}
+                         <li class="nav-item">
+                           <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('contact')}}">Porucite</a>
+                       </li>
                     </ul>
                 </div>
             </div>

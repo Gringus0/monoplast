@@ -58,22 +58,6 @@
                             <a href="{{route('productsWithGallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="slika1"/></a>
                         </div>
                     </div>
-                    {{-- <div class="row">
-                        <div class="col-6">
-                            <a href="#"><img src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="slika1" width="40px"/></a>
-                        </div>
-                        <div class="col-6">
-                            <a href="#"><img src="{{asset('/assets/img/images/galerija8.jpg')}}" alt="slika1" width="40px"/></a>
-                        </div>
-                    </div> --}}
-                    {{-- <div>
-                        <div>
-                            <a href="#"><img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="slika1" width="90px"/></a>
-                        </div>
-                        <div>
-                            <a href="#"><img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="slika1" width="90px"/></a>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
