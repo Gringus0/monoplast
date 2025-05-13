@@ -45,10 +45,10 @@
                             <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('contact')}}">Kontakt</a>
                         </li>
 
-                        <!-- Mozda ovo da dodamo? -->
-                        {{-- <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('porudzbina?')}}">Porucite</a>
-                        </li> --}}
+{{--                        Mozda ovo da dodamo?--}}
+{{--                         <li class="nav-item">--}}
+{{--                            <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('porudzbina?')}}">Porucite</a>--}}
+{{--                        </li>--}}
                     </ul>
                 </div>
             </div>
