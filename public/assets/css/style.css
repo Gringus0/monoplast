@@ -94,6 +94,7 @@ header{
 
 .block{
     background-color: #efefee;
+    box-shadow: 2px 2px 5px #808080;
 }
 
 #underfooter{
@@ -186,12 +187,14 @@ h4{
 }
 
 .productsImages{
-    width: 90px;
-    height: 80px ;
+    width: 125px;
     border-radius: 5%;
+    display: block;
+    margin: 0px auto;
 }
 
 .contextProducts{
+    padding-top: 10px;
     font-size: 12.5px;
     color: #464647;
 }
@@ -200,13 +203,29 @@ h4{
     font-weight: 600;
 }
 
-.block{
-    height: 210px;
-}
-
 #moreGallery{
     font-size: 14px;
     font-style: italic;
     color: #464647;
     padding-bottom: 10px;
 }
+
+.circleProducts{
+    font-size: 10px;
+    color: #e09446;
+}
+
+.productsList{
+    font-size: 14px;
+    list-style-type: square;
+    padding-left: 15px;   
+}
+
+ul li::marker {
+  color: #e09446;
+}
+
+.order-image{
+    width: 100%;
+}
+

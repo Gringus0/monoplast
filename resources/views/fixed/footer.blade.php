@@ -1,13 +1,13 @@
 <footer class="container-fluid" id="footerFluid">
     <div class="wrapper">
         <div class="row">
-            <div class="col-4">
-                <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo" class="logo">
-                <p class="mb-4">Radimo na najsavremenijim masinama, koje obezbedjuju visok kvalitet finalnog priozvoda.</p>
+            <div class="col-4" id="footerLogo">
+                <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo" class="logo logotfooter">
+                <p class="mb-4">Radimo na najsavremenijim mašnama, koje obezbedjuju visok kvalitet finalnog priozvoda.</p>
                 <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook iconFooter"></i></a>
                 <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram iconFooter"></i></a>
             </div>
-            <div class="col-3">
+            <div class="col-3" id="footerContact">
                 <h4 class="footerSubjects">KONTAKT</h4>
                 <ul>
                     <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-house-chimney marginRight icon"></span></i>Pilota Zorana Latkovica 19, Nova Pazova, 22330</p></li>
@@ -23,7 +23,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-2">
+            <div class="col-2" id="footerNav">
                 <h4 class="footerSubjects">MONOPLAST</h4>
                 <ul id="navFooterList">
                     <a href="{{route('home')}}" class="hoverTextOrange"><li>Home</li></a>
@@ -33,7 +33,7 @@
                     <a href="{{route('contact')}}" class="hoverTextOrange"><li>Kontakt</li></a>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-3" id="footerGallery">
                 <h4 class="footerSubjects text-center">GALERIJA</h4>
                 <div> 
                     <div class="row p-2">

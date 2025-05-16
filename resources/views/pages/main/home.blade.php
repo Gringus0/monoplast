@@ -43,15 +43,15 @@
         </div>
     </div>
     
-    <!-- Products -->
+    <!-- Products --> 
     
     <div id="products" class="container-fluid">
       <div class="row wrapper gx-5">
-        <div class="col-12 col-lg-4 ">
-          <div class="p-3 block borderProducts">
-            <p class="productDivTitle">Novo u prodaji zipp kese</p>
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="p-3 block borderProducts h-100">
+            <p class="productDivTitle">Novo: Zip kese</p>
             <hr/>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex flex-column">
               <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="slika" class="productsImages"/>
               <div class="contextProducts">
                 <p><span class="bold"> Kese sa ZIP Zatvaračem:</span></p>
@@ -62,42 +62,33 @@
                 </ul>
               </div>
             </div>
-            <a id="moreGallery" href="">Galerija proizvoda</a>
+            <i class="fa-solid fa-circle circleProducts"></i> <a id="moreGallery" href="">Galerija proizvoda...</a>
           </div>
         </div>
-        <div class="col-12 col-lg-4 ">
-          <div class="p-3 block borderProducts">
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="p-3 block borderProducts h-100">
             <p class="productDivTitle">Proizvodi</p>
             <hr/>
               <div class="contextProducts">
-                <p><span class="bold"> Proizvodi u ponudi</span></p>
                 <ul class="productsList LineHeight">
                   <li>Reklamne kese</li>
                   <li>Trake za označavanje</li>
                   <li>Džakovi</li>
+                  <li>Streč folija</li>
                   <li>ZIP kese</li>
-                  <li>Vazdušasta - Air Bubble folija ...</li>
+                  <li>Tregerice</li>
+                  <li>OPS ambalaža</li>
+                  <li>Vazdušasta - Air Bubble folija...</li>
                 </ul>
               </div>
-            <a id="moreGallery" href="">Saznaj više</a>
+            <i class="fa-solid fa-circle circleProducts"></i> <a id="moreGallery" href="">Saznaj više...</a>
           </div>
         </div>
         <div class="col-12 col-lg-4 ">
-          <div class="p-3 block borderProducts">
-            <p class="productDivTitle">Novo u prodaji zipp kese</p>
-            <hr/>
-            <div class="d-flex justify-content-between">
-              <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="slika" class="productsImages"/>
-              <div class="contextProducts">
-                <p><span class="bold"> Kese sa ZIP Zatvaračem:</span></p>
-                <ul class="productsList">
-                  <li>Jedan Zip zatvarač</li>
-                  <li>Dupli Zip zatvarač</li>
-                  <li>Zip zatvarač sa Klizačem...</li>
-                </ul>
-              </div>
-            </div>
-            <a id="moreGallery" href="">Galerija proizvoda</a>
+          <div class="p-3 block borderProducts h-100 d-flex flex-column justify-content-between">
+            <a href=""><img src="{{asset('/assets/img/images/porucite3.png')}}" alt="slika" class="order-image"/></a>
+            <a href=""><img src="{{asset('/assets/img/images/cenovnik3.png')}}" alt="slika" class="order-image"/></a>
+            <a href=""><img src="{{asset('/assets/img/images/reciklabilni.png')}}" alt="slika" class="order-image"/></a>
           </div>
         </div>
       </div>

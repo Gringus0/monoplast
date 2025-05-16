@@ -2,11 +2,79 @@
     #lineHeightHeader{
         font-size: 14px;
     }
+    .productDivTitle{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .productsList{
+        font-size: 14px;
+    }
+    .productsImages{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .logotfooter{
+        width: 150px;
+        padding-top: 3px;
+    }
+    #footerLogo p{
+        font-size: 14px;
+    }
+    #footerLogo a i{
+        font-size: 24px;
+    }
+    .footerSubjects{
+        font-size: 20px;
+    }
+    #footerContact ul{
+        font-size: 14px;
+    }
+    #footerNav ul{
+        font-size: 14px;
+    }
+    .imgFooter{
+        width: 50px;
+    }
+    #underNavigation{
+        font-size: 22px;
+    }
+
+
   }
 
 @media screen and (max-width: 1280px) {
     #lineHeightHeader{
         font-size: 12px;
+    }
+    #underNavigation{
+        font-size: 19px;
+    }
+        .logotfooter{
+        width: 140px;
+        padding-top: 3px;
+    }
+    #footerLogo p{
+        font-size: 13px;
+    }
+    #footerLogo a i{
+        font-size: 22px;
+    }
+    .footerSubjects{
+        font-size: 18px;
+    }
+    #footerContact ul{
+        font-size: 13px;
+    }
+    #footerNav ul{
+        font-size: 14px;
+    }
+    .imgFooter{
+        width: 45px;
+    }
+    #underNavigation{
+        font-size: 20px;
     }
 }
 
@@ -31,6 +99,7 @@
     .wrapper{
         width: 70%;
     }
+
 
 
 }
