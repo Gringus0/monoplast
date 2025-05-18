@@ -1,18 +1,18 @@
 <footer class="container-fluid" id="footerFluid">
     <div class="wrapper">
         <div class="row">
-            <div class="col-4" id="footerLogo">
-                <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo" class="logo logotfooter">
+            <div class="col-12 col-xl-4 col-md-6" id="footerLogo">
+                <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Monoplast Logo" class="logo logotfooter"/>
                 <p class="mb-4">Radimo na najsavremenijim mašnama, koje obezbedjuju visok kvalitet finalnog priozvoda.</p>
                 <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook iconFooter"></i></a>
                 <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram iconFooter"></i></a>
             </div>
-            <div class="col-3" id="footerContact">
+            <div class="col-12 col-xl-3 col-md-6" id="footerContact">
                 <h4 class="footerSubjects">KONTAKT</h4>
                 <ul>
                     <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-house-chimney marginRight icon"></span></i>Pilota Zorana Latkovica 19, Nova Pazova, 22330</p></li>
                     <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-envelope marginRight icon"></span></i> contact@gmail.com</p></li>
-                    <li class="d-flex justify-content-start">
+                    <li class="d-flex justify-content-start phoneIcon">
                         <p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-phone marginRight icon"></i></span>
                             <ul class="ulNone">
                                 <li>+381 (22) 329 518</li>
@@ -23,7 +23,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-2" id="footerNav">
+            <div class="col-12 col-xl-2 col-md-6" id="footerNav">
                 <h4 class="footerSubjects">MONOPLAST</h4>
                 <ul id="navFooterList">
                     <a href="{{route('home')}}" class="hoverTextOrange"><li>Home</li></a>
@@ -33,7 +33,7 @@
                     <a href="{{route('contact')}}" class="hoverTextOrange"><li>Kontakt</li></a>
                 </ul>
             </div>
-            <div class="col-3" id="footerGallery">
+            <div class="col-12 col-xl-3 col-md-6" id="footerGallery">
                 <h4 class="footerSubjects text-center">GALERIJA</h4>
                 <div> 
                     <div class="row p-2">

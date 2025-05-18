@@ -2,13 +2,21 @@
 @section('content')
 
 <main>
+
+    <div id="imagesPhone" class="d-md-none">
+      <img src="{{asset('/assets/img/images/flash/01_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - ekološka ambalaža"/>
+      <img src="{{asset('/assets/img/images/flash/02_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu"/>
+      <img src="{{asset('/assets/img/images/flash/03_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - Galerija i slike"/>
+      <img src="{{asset('/assets/img/images/flash/04_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Poručivanje reklamnih kesa sa štampom brendova - izbor dimenzije, boje i tipa"/>
+    </div>
+
     <div class="wrapper">
         <hr/>
         <h4 id="underNavigation">Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakova</h4>
         <hr/>
     </div>
 
-    <div class="slider">
+    <div class="slider d-md-block">
         <div class="wrapper">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
@@ -19,16 +27,16 @@
               </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - ekološka ambalaža"/>
                   </div>
                   <div class="carousel-item">
-                    <img src="{{asset('/assets/img/images/flash/monoplast-slide2.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('/assets/img/images/flash/monoplast-slide2.jpg')}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu"/>
                   </div>
                   <div class="carousel-item">
-                    <img src="{{asset('/assets/img/images/flash/slide-3NEW.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('/assets/img/images/flash/slide-3NEW.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - Galerija i slike"/>
                   </div>
                   <div class="carousel-item">
-                    <img src="{{asset('/assets/img/images/flash/slide-4NEW.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('/assets/img/images/flash/slide-4NEW.jpg')}}" class="d-block w-100" alt="Poručivanje reklamnih kesa sa štampom brendova - izbor dimenzije, boje i tipa"/>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -52,7 +60,7 @@
             <p class="productDivTitle">Novo: Zip kese</p>
             <hr/>
             <div class="d-flex flex-column">
-              <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="slika" class="productsImages"/>
+              <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="slika" class="productsImages" alt="ZipKesa"/>
               <div class="contextProducts">
                 <p><span class="bold"> Kese sa ZIP Zatvaračem:</span></p>
                 <ul class="productsList">
@@ -84,11 +92,11 @@
             <i class="fa-solid fa-circle circleProducts"></i> <a id="moreGallery" href="">Saznaj više...</a>
           </div>
         </div>
-        <div class="col-12 col-lg-4 ">
+        <div class="col-12 col-lg-4 mb-4">
           <div class="p-3 block borderProducts h-100 d-flex flex-column justify-content-between">
-            <a href=""><img src="{{asset('/assets/img/images/porucite3.png')}}" alt="slika" class="order-image"/></a>
-            <a href=""><img src="{{asset('/assets/img/images/cenovnik3.png')}}" alt="slika" class="order-image"/></a>
-            <a href=""><img src="{{asset('/assets/img/images/reciklabilni.png')}}" alt="slika" class="order-image"/></a>
+            <a href=""><img src="{{asset('/assets/img/images/porucite3.png')}}" alt="PoruciteKese" class="order-image"/></a>
+            <a href=""><img src="{{asset('/assets/img/images/cenovnik3.png')}}" alt="Cenovnik" class="order-image"/></a>
+            <img src="{{asset('/assets/img/images/reciklabilni.png')}}" alt="Reciklirano" class="order-image"/>
           </div>
         </div>
       </div>

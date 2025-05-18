@@ -21,7 +21,7 @@
 
 <header>
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid mp0">
                 <a class="navbar-brand" href="#">
                     <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo" class="logo">
