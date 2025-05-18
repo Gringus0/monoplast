@@ -78,13 +78,13 @@ hr{
     font-weight: 600;
 }
 
-.slider{
+.underImageBackGround{
     background-image: url("../img/images/bcg3NEW.jpg");
     background-repeat: repeat;
 }
 
 header{
-    background-color: #eeeeee;
+    background-color: #fefefe;
 }
 
 #products{
@@ -105,7 +105,7 @@ header{
 }
 
 #footerFluid{
-    background-color: #eeeeee;
+    background-color: #fefefe;
 }
 
 #footerFluid .wrapper .row{
@@ -229,3 +229,85 @@ ul li::marker {
     width: 100%;
 }
 
+.aboutImages {
+    margin: 15px;
+    border: 10px solid #fff;        
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    width: 130px;
+    /* outline: 1px solid #000;         
+    outline-offset: -10px;             */
+}
+
+.blockPolygon {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden; 
+}
+
+.blockPolygon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: orange;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+#aboutText{
+    font-size: 13px;
+    padding: 20px;
+    line-height: 22px;
+}
+
+#aboutText {
+  padding: 20px; 
+}
+
+#aboutText{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+#middleBlockAbout{
+    margin-top: 10px;
+}
+
+.marginBottom{
+    margin-bottom: 10px !important;
+}
+
+#aboutMainImage{
+    margin-bottom: 20px;
+}
+
+#rightBlockText p{
+    font-size: 18px;
+    font-style: italic;
+    color: #343a40;
+    line-height: 30px;
+    text-align: center;
+}
+
+#rightBlockText{
+    margin-top: 40px;
+    border-top: 10px solid #b6b9c0;
+    border-bottom: 10px solid #b6b9c0;
+    padding: 15px 0px;    
+}
+
+#leftBlockAbout{
+    padding-left: 0px;
+}
+
+.aboutImagesRightBlock{
+    margin-top: 10px;
+    border: 7px solid #fff;        
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    width: 90px;
+    height: 90px;
+}
