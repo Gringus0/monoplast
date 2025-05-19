@@ -3,26 +3,37 @@
 
 <main>
 
-    <div class="wrapper">
-        <hr/>
-        <h4 id="underNavigation">Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakovaf</h4>
-        <hr/>
-    </div>
+    <div class="row flex-column d-flex d-md-block marginZero">
+        <div class="col-12 d-md-none order-1" id="imagesPhone">
+            <img src="{{asset('/assets/img/images/flash/01_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Mobilna slika" />
+        </div>
 
-    <div class="underImageBackGround">
-        <div class="wrapper" id="aboutMainImage">
-            <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - ekološka ambalaža"/>
+    <div class="col-12 order-2" id="textUnderNav">
+        <div class="wrapper">
+            <hr/>
+                <h4 id="underNavigation">
+                    Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakova
+                </h4>
+            <hr/>
         </div>
     </div>
 
-    <div class="wrapper row">
-        <div class="col-2 d-flex flex-column" id="leftBlockAbout">
-            <img src="{{asset('/assets/img/images/onama-malaslika1.jpg')}}" class="d-block aboutImages" alt="..."/>
-            <img src="{{asset('/assets/img/images/onama-malaslika2.jpg')}}" class="d-block aboutImages" alt="..."/>
-            <img src="{{asset('/assets/img/images/onama-malaslika3.jpg')}}" class="d-block aboutImages" alt="..."/>
-            <img src="{{asset('/assets/img/images/onama-malaslika4.jpg')}}" class="d-block aboutImages" alt="..."/>
+        <div class="col-12 d-none d-md-block order-3 underImageBackGround">
+            <div class="wrapper" id="aboutMainImage">
+                <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+            </div>
         </div>
-        <div class="col-6" id="middleBlockAbout">
+    </div>
+
+
+    <div id="aboutContentWrapper" class="wrapper row">
+        <div class="col-12 col-xl-2 d-flex flex-column d-none d-xxl-block" id="leftBlockAbout">
+            <img src="{{asset('/assets/img/images/onama-malaslika1.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
+            <img src="{{asset('/assets/img/images/onama-malaslika2.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
+            <img src="{{asset('/assets/img/images/onama-malaslika3.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
+            <img src="{{asset('/assets/img/images/onama-malaslika4.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
+        </div>
+        <div class="col-12 col-xl-6" id="middleBlockAbout">
             <div class="blockPolygon" id="aboutText">
                 <p class="marginBottom">
                     Preduzeće <strong>"Monoplast" d.o.o</strong> je osnovano 01.02.1994. godine, sa sedištem u Novoj Pazovi, ulica Pilota Zorana Latkovića broj 19. Prvobitna zanatska radnja <em>Grafiko</em> prerasta u Monoplast d.o.o., preduzeće specijalizovano za proizvodnju, štampu i prodaju polietilenske (P.E.) ambalaže - najlon kesa i džakova.
@@ -44,7 +55,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-4 d-flex flex-column rightBlockAbout">
+        <div class="col-12 col-xl-4 d-flex flex-column" id="rightBlockAbout">
             <div id="rightBlockText">
                 <p>
                     Zadovoljna mušterija, i visok kvalitet proizvoda, uz
