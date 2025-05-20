@@ -4,7 +4,7 @@
 <main>
 
     <div class="row flex-column d-flex d-md-block marginZero">
-        <div class="col-12 d-md-none order-1" id="imagesPhone">
+        <div class="col-12 d-md-none order-1 paddingZero" id="imagesPhone">
             <img src="{{asset('/assets/img/images/flash/01_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Mobilna slika" />
         </div>
 
@@ -47,12 +47,19 @@
                 <p class="marginBottom">
                     Pored same proizvodnje P.E. ambalaže, <strong>"Monoplast" d.o.o</strong> se bavi i proizvodnjom plastike široke potrošnje, kao i trgovinom, uvozom i izvozom.
                 </p>
-                <p class="marginBottom">
-                    Ukoliko želite da na Vašim kesama odštampate zaštitni znak firme, reklamnu poruku ili možda sliku proizvoda - to možete učiniti u jednoj, dve, tri ili više boja. Naši grafičari će, po Vašem zahtevu, uraditi pripremu za štampu koristeći vrhunsku kompjutersku opremu i lasersko štampanje.
-                </p>
-                <p class="marginBottom"> 
-                    Nudimo Vam blanko i štampane kese i džakove raznih boja i veličina. I to nije sve! Pošto se u našim kesama nose proizvodi različite težine, po Vašem zahtevu, sve kese možemo proizvesti sa ojačanim ili plastičnim ručkama. Naše kese se proizvode od najkvalitetnijih materijala, u raznim bojama, a po Vašoj želji, na kesama vršimo štampu u jednoj ili više boja.
-                </p>
+                <a class="btn btn-link p-0" id="showMore" data-bs-toggle="collapse" href="#viseTeksta" role="button" aria-expanded="false" aria-controls="viseTeksta">
+                    Prikaži više...
+                </a>
+                <div class="collapse" id="viseTeksta">
+                    <div>
+                        <p class="marginBottom">
+                            Ukoliko želite da na Vašim kesama odštampate zaštitni znak firme, reklamnu poruku ili možda sliku proizvoda - to možete učiniti u jednoj, dve, tri ili više boja. Naši grafičari će, po Vašem zahtevu, uraditi pripremu za štampu koristeći vrhunsku kompjutersku opremu i lasersko štampanje.
+                        </p>
+                        <p class="marginBottom"> 
+                            Nudimo Vam blanko i štampane kese i džakove raznih boja i veličina. I to nije sve! Pošto se u našim kesama nose proizvodi različite težine, po Vašem zahtevu, sve kese možemo proizvesti sa ojačanim ili plastičnim ručkama. Naše kese se proizvode od najkvalitetnijih materijala, u raznim bojama, a po Vašoj želji, na kesama vršimo štampu u jednoj ili više boja.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 col-xl-4 d-flex flex-column" id="rightBlockAbout">

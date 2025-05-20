@@ -316,3 +316,16 @@ ul li::marker {
 .marginZero{
     margin: 0px;
 }
+
+.paddingZero{
+    padding: 0px !important;
+}
+
+#showMore{
+    color: #e09446;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+
+}

@@ -51,6 +51,8 @@
         height: 60px;
         border: 5px solid #fff;
     }
+
+    
   }
 
 @media screen and (max-width: 1280px) {
@@ -60,7 +62,7 @@
     #underNavigation{
         font-size: 19px;
     }
-        .logotfooter{
+    .logotfooter{
         width: 140px;
         padding-top: 3px;
     }
@@ -273,3 +275,4 @@
     }
 
 }
+
