@@ -54,7 +54,7 @@ class ProductController extends Controller
             DB::rollBack();
         }
 
-        return view('pages.products.products', [
+        return view('pages.products.gallery', [
             'reklamneKese' => $reklamneKese,
             'trakeZaOznacavanje' => $trakeZaOznacavanje,
             'dzakovi' => $dzakovi,
@@ -110,5 +110,10 @@ class ProductController extends Controller
                 $kesa->boja5 = $kesa->boja5 * $vrednostBoda;
             }
         }
+    }
+    public function listProducts(){
+
+        return view('pages.products.products');
+
     }
 }

@@ -39,10 +39,6 @@ body{
     padding-right: 0px !important;
 }
 
-p{
-    margin: 0px !important;
-}
-
 #navbarNav{
     justify-content:end;
 }
@@ -203,13 +199,6 @@ h4{
     font-weight: 600;
 }
 
-#moreGallery{
-    font-size: 14px;
-    font-style: italic;
-    color: #464647;
-    padding-bottom: 10px;
-}
-
 .circleProducts{
     font-size: 10px;
     color: #e09446;
@@ -261,13 +250,6 @@ ul li::marker {
     font-size: 13px;
     padding: 20px;
     line-height: 22px;
-}
-
-#aboutText {
-  padding: 20px; 
-}
-
-#aboutText{
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: #eeeeee;
@@ -327,5 +309,60 @@ ul li::marker {
     font-size: 14px;
     font-style: italic;
     margin-bottom: 5px;
+}
 
+#rightBlockBigImage{
+    margin-bottom: 10px;
+}
+
+
+.aboutImages {
+    border: 5px solid #fff;        
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.borderBottomProducts{
+    border-bottom: 1px solid #b6b9c0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.products-product h5{
+    font-weight: 600;
+}
+
+.products-product p{
+    font-size: 12px;
+}
+
+.moreGallery{
+    font-size: 14px;
+    font-style: italic;
+    color: #464647;
+}
+
+.marginTop{
+    margin-top: 15px;
+}
+
+.productsLi{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.textColorProducts{
+    color: #5b626c;
+}
+
+.colorGalleryMoreProducts{
+    color: #456515;
+}
+
+.pricesTopImgText{
+    color: #0060af;
+    font-weight: 600;
+}
+
+p{
+    margin-bottom: 0px !important;
 }

@@ -240,6 +240,10 @@
         width: 150px;
         height: 100px;
     }
+    .productsImages{
+        width: 50% !important;
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width: 412px) {
@@ -265,6 +269,10 @@
     #rightBlockImages{
         flex-direction: column;
         align-items: center;
+    }
+    .productsImages{
+        width: 100% !important;
+        margin-bottom: 25px;
     }
 }
 

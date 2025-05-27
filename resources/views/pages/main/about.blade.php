@@ -75,9 +75,9 @@
                 <img src="{{asset('/assets/img/images/765835rt-700.jpg')}}" class="d-block aboutImagesRightBlock" alt="..."/>
             </div>
             <div class="mt-3 text-center">
-                <i class="fa-solid fa-circle circleProducts"></i> <a id="moreGallery" href="{{route('productsWithGallery')}}">pogledaj galeriju iz proizvodnje...</a>
+                <i class="fa-solid fa-circle circleProducts"></i> <a id="moreGallery" href="{{route('gallery')}}">pogledaj galeriju iz proizvodnje...</a>
             </div>
-             <img src="{{asset('/assets/img/images/onama-velika.jpg')}}" class="d-block w-100 mt-3" alt="..."/>
+             <img src="{{asset('/assets/img/images/onama-velika.jpg')}}" id="rightBlockBigImage" class="d-block w-100 mt-3" alt="..."/>
         </div>
     </div>
 

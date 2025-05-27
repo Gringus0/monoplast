@@ -32,23 +32,26 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active linkhover text-center" aria-current="page" href="{{route('home')}}">Pocetna</a>
+                            <a class="nav-link linkhover text-center {{ request()->is('/') || request()->routeIs('home') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Pocetna</a>
                         </li>
                         <li class="nav-item marginLeftRight">
-                            <a class="nav-link linkhover text-center hoverTextOrange" href="{{route('about')}}">O nama</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">O nama</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange" href="{{route('productsWithGallery')}}">Proizvodi</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('products') ? 'active' : '' }}" href="{{ route('products') }}">Proizvodi</a>
                         </li>
                         <li class="nav-item marginLeftRight">
-                            <a class="nav-link linkhover text-center hoverTextOrange" href="{{route('productPrices')}}">Cenovnik</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('productPrices') ? 'active' : '' }}" href="{{ route('productPrices') }}">Cenovnik</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('contact')}}">Kontakt</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Galerija</a>
                         </li>
-                         <li class="nav-item">
-                           <a class="nav-link linkhover text-center hoverTextOrange pr0" href="{{route('contact')}}">Porucite</a>
-                       </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('order') ? 'active' : '' }}" href="{{ route('contact') }}">Porucite</a>
+                        </li>
                     </ul>
                 </div>
             </div>

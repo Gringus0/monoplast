@@ -28,7 +28,7 @@
                 <ul id="navFooterList">
                     <a href="{{route('home')}}" class="hoverTextOrange"><li>Home</li></a>
                     <a href="{{route('about')}}" class="hoverTextOrange"><li class="spacing">O nama</li></a>
-                    <a href="{{route('productsWithGallery')}}" class="hoverTextOrange"><li>Proizvodi</li></a>
+                    <a href="{{route('gallery')}}" class="hoverTextOrange"><li>Proizvodi</li></a>
                     <a href="{{route('productPrices')}}" class="hoverTextOrange"><li class="spacing">Cenovnik</li></a>
                     <a href="{{route('contact')}}" class="hoverTextOrange"><li>Kontakt</li></a>
                 </ul>
@@ -38,24 +38,24 @@
                 <div> 
                     <div class="row p-2">
                         <div class="col-4 p-0 text-center">
-                            <a href="{{route('productsWithGallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija10.jpg')}}" alt="slika1"/></a>
+                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija10.jpg')}}" alt="slika1"/></a>
                         </div>
                         <div class="col-4 p-0 text-center">
-                            <a href="{{route('productsWithGallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija2.jpg')}}" alt="slika1"/></a>
+                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija2.jpg')}}" alt="slika1"/></a>
                         </div>
                         <div class="col-4 p-0 text-center">
-                            <a href="{{route('productsWithGallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="slika1"/></a>
+                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="slika1"/></a>
                         </div>
                     </div>
                     <div class="row p-2">
                         <div class="col-4 p-0 text-center">
-                            <a href="{{route('productsWithGallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="slika1"/></a>
+                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="slika1"/></a>
                         </div>
                         <div class="col-4 p-0 text-center">
-                            <a href="{{route('productsWithGallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija1.jpg')}}" alt="slika1"/></a>
+                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija1.jpg')}}" alt="slika1"/></a>
                         </div>
                         <div class="col-4 p-0 text-center">
-                            <a href="{{route('productsWithGallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="slika1"/></a>
+                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="slika1"/></a>
                         </div>
                     </div>
                 </div>

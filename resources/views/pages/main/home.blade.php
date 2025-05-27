@@ -71,7 +71,7 @@
               </div>
             </div>
             <i class="fa-solid fa-circle circleProducts"></i> 
-            <a id="moreGallery" href="{{route('productsWithGallery')}}">Galerija proizvoda...</a>
+            <a id="moreGallery" href="{{route('gallery')}}">Galerija proizvoda...</a>
           </div>
         </div>
         <div class="col-12 col-lg-4 mb-4">
@@ -90,7 +90,7 @@
                   <li>Vazdušasta - Air Bubble folija...</li>
                 </ul>
               </div>
-            <i class="fa-solid fa-circle circleProducts"></i> <a id="moreGallery" href="{{route('productsWithGallery')}}">Saznaj više...</a>
+            <i class="fa-solid fa-circle circleProducts"></i> <a id="moreGallery" href="{{route('gallery')}}">Saznaj više...</a>
           </div>
         </div>
         <div class="col-12 col-lg-4 mb-4">
