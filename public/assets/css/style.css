@@ -69,7 +69,7 @@ hr{
 }
 
 #underNavigation{
-    color: #0060af;
+    color: #003173;
     text-align: center;
     font-weight: 600;
 }
@@ -178,7 +178,7 @@ h4{
     justify-content: center;
     font-size: 18px;
     font-weight: 600;
-    color: #0060af;
+    color: #003173;
 
 }
 
@@ -359,10 +359,76 @@ ul li::marker {
 }
 
 .pricesTopImgText{
-    color: #0060af;
+    color: #003173;
     font-weight: 600;
 }
 
 p{
     margin-bottom: 0px !important;
+}
+
+table{
+    margin-top: 10px;
+    border: 1px solid black;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+th{
+    font-size: 13px;
+    background-color: #e48527;
+    color: #ffffff;
+    width: auto;
+    height: 56px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid #0060af;
+}
+
+td{
+    width: auto;
+    font-size: 15px;
+    height: 27px;
+    font-weight: bold;
+    color: #323b49;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.bg1 { background-color: #f1f1f1; }
+.bg2 { background-color: #e3e3e3; }
+.bg3 { background-color: #d5d5d5; }
+.bg4 { background-color: #c7c7c7; }
+
+.border-group-1 td { border-bottom: 1px solid #dedede; }
+.border-group-2 td { border-bottom: 1px solid #d3d3d3; }
+.border-group-3 td { border-bottom: 1px solid #c7c7c7; }
+.border-group-4 td { border-bottom: 1px solid #bcbcbc; }
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+thead th:last-child {
+  width: 76px !important;
+}
+
+
+.firstCol{
+    color: #003173;
+}
+
+.firstRow{
+    width: 22px !important;
+}
+
+.pricesSpanGray{
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
 }
