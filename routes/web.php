@@ -12,4 +12,8 @@ Route::get('/prices', ProductController::class . '@listProductPrices')->name('pr
 Route::get('/contact', HomeController::class . '@contact')->name('contact');
 Route::get('/products', ProductController::class . '@ListProducts')->name('products');
 
-Route::get('/register', AuthController::class . '@registerForm')->name('registerForm');
+Route::get('/order', AuthController::class . '@registerAndLoginForm')->name('registerAndLoginForm');
+
+
+Route::post('/order/register', AuthController::class . '@register')->name('auth.register');
+Route::post('/login', AuthController::class . '@login')->name('auth.login');
