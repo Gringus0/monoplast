@@ -9,13 +9,14 @@
                 <h4 id="underNavigation">
                     Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakova. U cenama je sadržana i cena kese i cena štampe tako da su cene u cenovniku za gotove odštampane kese.
                 </h4>
+                <button id="scrollBtn" class="scroll-down-btn"> Do cena</button>
             <hr/>
         </div>
     </div>
-
+    
     <div class="container-fluid">
         <div class="row wrapper">
-            <div class="col-12 col-lg-8"  id="tabeleCene">
+            <div class="col-12 col-lg-8" id="tabeleCene">
                 <div class="pdf-page-break">
                     <div class="d-flex justify-content-between">
                         <h5 class="pricesTopImgText">
@@ -359,14 +360,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4" id="rightBlockPrices">
                 <div>
                     <button class="w-100 buttonPrices" id="buttonPricesPDF">Odštampaj cenovnik</button>
                     <button class="w-100 buttonPrices marginTop">Poručite kese</button>
                     <hr class="linePrices" />
                     <p class="italicBlack">Molimo vas da pažljivo pročitate napomene o poslovanju</p>
-                    <ul class="productsList">
-                        <li>Minimalna količina koju možete da naručite je 500 kesa po svkaoj dimenziji i izgledu štampe.</li>
+                    <ul class="productsList ulPrices">
+                        <li>Minimalna količina koju možete da naručite je <span class="bold">500 kesa</span> po svakoj dimenziji i izgledu štampe.</li>
                         <li>Rok isporuke: 5 - 7 dana, od dana kada je ugovorena (potvrđena) priprema za štampu.</li>
                         <li>Na veće količine (preko 5000 komada) odobravamo popust 10%.</li>
                         <li>U mogućnosti smo da uradimo kese po vašim dimenzijama, i željenoj boji, kod adekvatnih tiraža.</li>
@@ -378,43 +379,33 @@
                     </ul>
                     <hr class="linePrices" />
                     <img src="{{asset('/assets/img/images/sjajne-C.jpg')}}" class="w-100" alt="ZipKesa"/>
-                    <ul>
-                        <li>Glatke i sjajne LDPE: *dubina kesa (250 ) mm srebrna, bela, žuta, crvena</li>
-                        <li>*dubina kesa (300) mm
-srebrna, bela, žuta, crvena, crna, ljubičasta, plava</li>
-                        <li>*dubina kesa (350) mm
-srebrna, bela, žuta, crvena, crna, ljubičasta, plava, zelena, narandžasta, bebi roze, bež</li>
-                        <li>*dubina kesa (450) i (500) mm srebrna, bela, žuta, crvena, crna, ljubičasta, plava, zelena, narandžasta, bež</li>
-                        <li>*dubina kesa (500) mm sa donjom faltom srebrna, bela, žuta, crna</li>
-                        <li>*dubina kesa (600) mm sa donjom faltom srebrna, bela, žuta, crna, bež</li>
+                    <ul class="productsList ulPricess">
+                        <li>Glatke i sjajne LDPE: </li>
+                        <li>*dubina kesa (250 ) mm <br/>srebrna, bela, žuta, crvena</li>
+                        <li>*dubina kesa (300) mm<br/> srebrna, bela, žuta, crvena, crna, ljubičasta, plava</li>
+                        <li>*dubina kesa (350) mm<br/> srebrna, bela, žuta, crvena, crna, ljubičasta, plava, zelena, narandžasta, bebi roze, bež</li>
+                        <li>*dubina kesa (450) i (500) mm<br/> srebrna, bela, žuta, crvena, crna, ljubičasta, plava, zelena, narandžasta, bež</li>
+                        <li>*dubina kesa (500) mm sa donjom faltom<br/> srebrna, bela, žuta, crna</li>
+                        <li>*dubina kesa (600) mm sa donjom faltom<br/> srebrna, bela, žuta, crna, bež</li>
                     </ul>
                     <img src="{{asset('/assets/img/images/suskave-C.jpg')}}" class="w-100" alt="ZipKesa"/>
-                    <ul>
-                        <li>Šuškave i mat HDPE:
-</li>
-                        <li>*dubina kesa (250) mm
-srebrna, bela, žuta</li>
-                        <li>*dubina kesa (300) mm
-srebrna, bela, žuta, providna (boja leda), plava</li>
-                        <li>*dubina kesa (350) mm
-srebrna, bela, žuta, plava, providna (boja leda)</li>
-                        <li>
-*dubina kesa (450) i (500) mm
-srebrna, bela, žuta, plava, providna (boja leda)</li>
-                        <li>*dubina kesa (500) mm sa donjom faltom
-srebrna, bela, žuta, providna (boja leda)</li>
-                        <li>*dubina kesa (600) mm sa donjom faltom
-srebrna, bela, žuta, providna (boja leda)</li>
+                    <ul class="productsList ulPricess">
+                        <li>Šuškave i mat HDPE:</li>
+                        <li>*dubina kesa (250) mm <br/>srebrna, bela, žuta</li>
+                        <li>*dubina kesa (300) mm <br/>srebrna, bela, žuta, providna (boja leda), plava</li>
+                        <li>*dubina kesa (350) mm <br/>srebrna, bela, žuta, plava, providna (boja leda)</li>
+                        <li>*dubina kesa (450) i (500) mm <br/>srebrna, bela, žuta, plava, providna (boja leda)</li>
+                        <li>*dubina kesa (500) mm sa donjom faltom <br/>srebrna, bela, žuta, providna (boja leda)</li>
+                        <li>*dubina kesa (600) mm sa donjom faltom <br/>srebrna, bela, žuta, providna (boja leda)</li>
                     </ul>
                     <img src="{{asset('/assets/img/images/boje-flex-rucki.jpg')}}" class="w-100" alt="ZipKesa"/>
-                    <p>Boje fleksibilnih ručki
-crvena, crna, tamno zelena, bela, narandžasta, tamno plava, srebrna, žuta </p>
+                    <p class="ulPricess marginTop marginBottom">Boje fleksibilnih ručkicrvena, crna, tamno zelena, bela, narandžasta, tamno plava, srebrna, žuta </p>
                     <img src="{{asset('/assets/img/images/objasnjenje-dimenzija-kesa.jpg')}}" class="w-100" alt="ZipKesa"/>
                     <img src="{{asset('/assets/img/images/Folja-Crevo-i-Polucrevo.jpg')}}" class="w-100" alt="ZipKesa"/>
                 </div>
             </div>
             <div class="col-12 marginTop">
-                <h5>Za sve detalje, uputstva oko pripreme za štampu, cene, tiraža i rokova izrade kesa, molimo Vas da se obratite našoj komercijalnoj službi, koristeći jedan od navedenih telefona, E-mail, ili pošaljite Fax.</h5>
+                <h5 class="italicBlack">Za sve detalje, uputstva oko pripreme za štampu, cene, tiraža i rokova izrade kesa, molimo Vas da se obratite našoj komercijalnoj službi, koristeći jedan od navedenih telefona, E-mail, ili pošaljite Fax.</h5>
             </div>
         </div>
 
@@ -422,16 +413,4 @@ crvena, crna, tamno zelena, bela, narandžasta, tamno plava, srebrna, žuta </p>
     
 
 </main>
-
-Prices Page
-{{--    @dd($bananaBezOjacanja)--}}
-{{--    @dd($bananaOjacanaIliFleksibiln~~~a)--}}
-{{--    @dd($bananaOjacanaIliFleksibilnaIFalt)--}}
-{{--    @dd($bananaBezOjacanjaIFalt)--}}
-{{--    @dd($blankoBezOjacanja)--}}
-{{--    @dd($blankoOjacanaIFalt)--}}
-
-{{--    @foreach($bananaBezOjacanja as $kesa)--}}
-{{--        <br>{{$kesa->boja3}}--}}
-{{--    @endforeach--}}
 @endsection

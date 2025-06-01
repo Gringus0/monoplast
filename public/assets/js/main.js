@@ -14,4 +14,25 @@ window.onload = function(){
 
         html2pdf().from(element).set(opt).save();
     })
+
+
+    const scrollBtn = document.getElementById('scrollBtn');
+    const tabeleCene = document.getElementById('tabeleCene');
+
+    window.addEventListener('scroll', () => {
+    const distanceToTables = tabeleCene.getBoundingClientRect().top;
+
+        if (distanceToTables < 100) {
+        scrollBtn.style.opacity = '0';
+        scrollBtn.style.pointerEvents = 'none';
+        } else {
+        scrollBtn.style.opacity = '1';
+        scrollBtn.style.pointerEvents = 'auto';
+        }
+    });
+
+    scrollBtn.addEventListener('click', () => {
+    tabeleCene.scrollIntoView({ behavior: 'smooth' });
+  });
+
 }

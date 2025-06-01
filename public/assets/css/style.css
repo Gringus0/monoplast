@@ -435,7 +435,6 @@ table tr:last-child td {
 .buttonPrices {
   background: linear-gradient(to bottom, #bcbfc4, #d9d9d9); 
   color: #2b2b2b;
-  padding: 12px 24px;
   font-size: 16px; 
   letter-spacing: 1px; 
   border: 1px solid #a0a0a0;
@@ -466,3 +465,69 @@ table tr:last-child td {
     color: #323b49;
     font-size: 18px;
 }
+
+.ulPrices{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ulPricess{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ulPricess li:nth-child(1n){
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 18px;
+    color: #323b49;
+}
+
+.ulPricess li::marker{
+    font-size: 20px;
+}
+
+.ulPrices li::marker{
+    font-size: 20px;
+}
+
+.ulPrices li:first-child{
+    font-size: 22px;
+    color: #003173;
+}
+
+.ulPrices li:nth-child(1n){
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+  .scroll-down-btn {
+    position: fixed;
+    top: 150px;
+    right: 30px;
+    font-size: 14px;
+    background: #003173;
+    color: #ffffff;
+    border: none;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    transition: opacity 0.3s ease;
+    display: none;
+  }
+
+    @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
