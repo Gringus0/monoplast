@@ -51,7 +51,12 @@
         height: 60px;
         border: 5px solid #fff;
     }
-
+    th{
+        font-size: 12px;
+    }
+    td{
+        font-size: 14px;
+    }
     
   }
 
@@ -130,6 +135,9 @@
     }
     .aboutImages{
         margin-left: 5px;
+    }
+    th{
+        font-size: 11px;
     }
 }
 
@@ -244,9 +252,19 @@
         width: 50% !important;
         margin-bottom: 25px;
     }
+    th{
+        font-size: 13px;
+    }
+    td{
+        font-size: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 412px) {
+    .wrapper{
+        width: 80%;
+    }
     .logo{
         width: 160px;
     }
@@ -280,21 +298,33 @@
         scrollbar-width: thin; 
     }
 
-    .table-scroll-412 table {
-        min-width: 500px; 
+    .table-scroll-412 {
+        overflow-x: auto;
+        scrollbar-color: #444 #ccc; 
+        scrollbar-width: auto; 
+        position: relative;
     }
+
     .table-scroll-412::-webkit-scrollbar {
-        height: 6px;
+        height: 14px; 
     }
 
     .table-scroll-412::-webkit-scrollbar-thumb {
-        background-color: #ccc;
-        border-radius: 4px;
+        background-color: #444; 
+        border-radius: 8px;
+        border: 3px solid #ccc; 
     }
 
     .table-scroll-412::-webkit-scrollbar-track {
-        background-color: transparent;
+        background-color: #ccc; 
+        border-radius: 8px;
     }
+
+    .table-scroll-412 table {
+        min-width: 500px; 
+    }
+
+
 }
 
 @media screen and (max-width: 384px) {

@@ -414,11 +414,6 @@ table tr:last-child td {
   border-bottom: none;
 }
 
-thead th:last-child {
-  width: 76px !important;
-}
-
-
 .firstCol{
     color: #003173;
 }
@@ -431,4 +426,43 @@ thead th:last-child {
     font-size: 16px;
     font-weight: bold;
     color: #666;
+} 
+
+.pdf-page-break {
+    page-break-after: always;
+}
+
+.buttonPrices {
+  background: linear-gradient(to bottom, #bcbfc4, #d9d9d9); 
+  color: #2b2b2b;
+  padding: 12px 24px;
+  font-size: 16px; 
+  letter-spacing: 1px; 
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase; 
+  border: 2px solid #ffffff;
+  outline: 1px solid #5b626c;
+  height: 45px;
+  line-height: 15px;
+}
+
+.buttonPrices:hover {
+  background: linear-gradient(to bottom, #c80101, #8f0000);
+  color: #ffffff;
+  border-color: #5e0000;
+}
+
+.linePrices {
+  border: none;
+  height: 10px; 
+  border-bottom: 1px solid #000000;
+  background: linear-gradient(to bottom, #48484b, #686a70); 
+}
+
+.italicBlack{
+    font-style: italic;
+    color: #323b49;
+    font-size: 18px;
 }

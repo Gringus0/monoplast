@@ -15,8 +15,8 @@
 
     <div class="container-fluid">
         <div class="row wrapper">
-            <div class="col-12 col-lg-8">
-                <div>
+            <div class="col-12 col-lg-8"  id="tabeleCene">
+                <div class="pdf-page-break">
                     <div class="d-flex justify-content-between">
                         <h5 class="pricesTopImgText">
                             Butik kese sa banana ručkom 
@@ -78,7 +78,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="pdf-page-break">
                     <div class="d-flex justify-content-between marginTop">
                         <h5 class="pricesTopImgText">Butik kese<span class="textOrange"> sa ojačanom</span> banana ručkom <br/> <span class="textOrange"> ili fleksibilnom </span>ručkom:</h5>
                         <div>
@@ -138,7 +138,7 @@
                     </div>
                     
                 </div>
-                <div>
+                <div class="pdf-page-break">
                     <div class="d-flex justify-content-between marginTop">
                         <h5 class="pricesTopImgText">Butik kese<span class="textOrange"> sa ojačanom</span> banana ručkom <br/> <span class="textOrange"> ili fleksibilnom </span>ručkom <span class="textOrange">i faltom</span> na dnu kese <br/><span class="pricesSpanGray">(kese se na dnu širi):</span></h5>
                         <div>
@@ -197,7 +197,7 @@
                     </table>
                     </div>
                 </div>
-                <div>
+                <div class="pdf-page-break">
                     <div class="d-flex justify-content-between marginTop">
                         <h5 class="pricesTopImgText">Butik kese sa banana ručkom <span class="textOrange">bez ojačanja</span><br/>na ručki <span class="textOrange"> i faltom</span> na dnu kese<br/><span class="pricesSpanGray">(kese se na dnu širi):</span></h5>
                         <div>
@@ -256,13 +256,168 @@
                     </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div>
+                <div >
+                    <div class="d-flex justify-content-between marginTop">
+                        <h5 class="pricesTopImgText">Butik kese <span class="textOrange">bez ojačane </span>ručke<br/><span class="pricesSpanGray">(za cenu kese sa ojačanom ručkom dodajte + 7 RSD):</span></h5>
+                        <div>
+                            <img src="{{asset('/assets/img/images/kesa-cenovnik5.png')}}" alt="ZipKesa"/>
+                        </div>
+                    </div>
+                    <div class="table-scroll-412">
+                        <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th class="firstRow"></th>
+                                <th>Dimenzije <br/>kese</th>
+                                <th>jedna boja <br/> 1/0</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        @foreach($blankoBezOjacanja as $index => $kesa)
+                            @php
+                        
+                                if ($index < 2) {
+                                    $rowClass = 'bg1';
+                                } elseif ($index < 5) {
+                                    $rowClass = 'bg2';
+                                } elseif ($index < 11) {
+                                    $rowClass = 'bg3';
+                                } else {
+                                    $rowClass = 'bg4';
+                                }
 
+                                if ($index === 0) {
+                                    $borderClass = 'border-group-1'; 
+                                } elseif ($index >= 1 && $index <= 3) {
+                                    $borderClass = 'border-group-2'; 
+                                } elseif ($index >= 4 && $index <= 9) {
+                                    $borderClass = 'border-group-3'; 
+                                } else {
+                                    $borderClass = 'border-group-4'; 
+                                }
+                            @endphp
+
+                            <tr class="{{ $rowClass }} {{ $borderClass }}">
+                                <td></td>
+                                <td class="firstCol">{{$kesa->velicina}}</td>
+                                <td>{{$kesa->boja1}}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between marginTop">
+                        <h5 class="pricesTopImgText">Blanko kese sa ojačanom drškom <span class="textOrange">i faltom </span>na<br/>dnu kese <span class="pricesSpanGray">(kesa se na dnu širi):</span></h5>
+                        <div>
+                            <img src="{{asset('/assets/img/images/kesa-cenovnik6.png')}}" alt="ZipKesa"/>
+                        </div>
+                    </div>
+                    <div class="table-scroll-412">
+                        <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th class="firstRow"></th>
+                                <th>Dimenzije <br/>kese</th>
+                                <th>jedna boja <br/> 1/0</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        @foreach($blankoOjacanaIFalt as $index => $kesa)
+                            @php
+                        
+                                if ($index < 2) {
+                                    $rowClass = 'bg1';
+                                } elseif ($index < 5) {
+                                    $rowClass = 'bg2';
+                                } elseif ($index < 11) {
+                                    $rowClass = 'bg3';
+                                } else {
+                                    $rowClass = 'bg4';
+                                }
+
+                                if ($index === 0) {
+                                    $borderClass = 'border-group-1'; 
+                                } elseif ($index >= 1 && $index <= 3) {
+                                    $borderClass = 'border-group-2'; 
+                                } elseif ($index >= 4 && $index <= 9) {
+                                    $borderClass = 'border-group-3'; 
+                                } else {
+                                    $borderClass = 'border-group-4'; 
+                                }
+                            @endphp
+
+                            <tr class="{{ $rowClass }} {{ $borderClass }}">
+                                <td></td>
+                                <td class="firstCol">{{$kesa->velicina}}</td>
+                                <td>{{$kesa->boja1}}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                    </table>
+                    </div>
                 </div>
             </div>
+            <div class="col-12 col-lg-4">
+                <div>
+                    <button class="w-100 buttonPrices" id="buttonPricesPDF">Odštampaj cenovnik</button>
+                    <button class="w-100 buttonPrices marginTop">Poručite kese</button>
+                    <hr class="linePrices" />
+                    <p class="italicBlack">Molimo vas da pažljivo pročitate napomene o poslovanju</p>
+                    <ul class="productsList">
+                        <li>Minimalna količina koju možete da naručite je 500 kesa po svkaoj dimenziji i izgledu štampe.</li>
+                        <li>Rok isporuke: 5 - 7 dana, od dana kada je ugovorena (potvrđena) priprema za štampu.</li>
+                        <li>Na veće količine (preko 5000 komada) odobravamo popust 10%.</li>
+                        <li>U mogućnosti smo da uradimo kese po vašim dimenzijama, i željenoj boji, kod adekvatnih tiraža.</li>
+                        <li>Hitni poslovi, ukoliko remete redosled poslovanja, realizuju se uz povećanje cene po dogovoru.</li>
+                        <li>Kod specijalnih priprema, kupac snosi troškove pripreme.</li>
+                        <li>Boja štampe je po izboru kupca, u mogućnosti smo da radimo ojačanje svih kesa, folijom, a cena je 7 dinara po kesi.</li>
+                        <li>Kod većih količina cene su po dogovoru.</li>
+                        <li>+ 20 % PDV (porez na dodatu vrednost)</li>
+                    </ul>
+                    <hr class="linePrices" />
+                    <img src="{{asset('/assets/img/images/sjajne-C.jpg')}}" class="w-100" alt="ZipKesa"/>
+                    <ul>
+                        <li>Glatke i sjajne LDPE: *dubina kesa (250 ) mm srebrna, bela, žuta, crvena</li>
+                        <li>*dubina kesa (300) mm
+srebrna, bela, žuta, crvena, crna, ljubičasta, plava</li>
+                        <li>*dubina kesa (350) mm
+srebrna, bela, žuta, crvena, crna, ljubičasta, plava, zelena, narandžasta, bebi roze, bež</li>
+                        <li>*dubina kesa (450) i (500) mm srebrna, bela, žuta, crvena, crna, ljubičasta, plava, zelena, narandžasta, bež</li>
+                        <li>*dubina kesa (500) mm sa donjom faltom srebrna, bela, žuta, crna</li>
+                        <li>*dubina kesa (600) mm sa donjom faltom srebrna, bela, žuta, crna, bež</li>
+                    </ul>
+                    <img src="{{asset('/assets/img/images/suskave-C.jpg')}}" class="w-100" alt="ZipKesa"/>
+                    <ul>
+                        <li>Šuškave i mat HDPE:
+</li>
+                        <li>*dubina kesa (250) mm
+srebrna, bela, žuta</li>
+                        <li>*dubina kesa (300) mm
+srebrna, bela, žuta, providna (boja leda), plava</li>
+                        <li>*dubina kesa (350) mm
+srebrna, bela, žuta, plava, providna (boja leda)</li>
+                        <li>
+*dubina kesa (450) i (500) mm
+srebrna, bela, žuta, plava, providna (boja leda)</li>
+                        <li>*dubina kesa (500) mm sa donjom faltom
+srebrna, bela, žuta, providna (boja leda)</li>
+                        <li>*dubina kesa (600) mm sa donjom faltom
+srebrna, bela, žuta, providna (boja leda)</li>
+                    </ul>
+                    <img src="{{asset('/assets/img/images/boje-flex-rucki.jpg')}}" class="w-100" alt="ZipKesa"/>
+                    <p>Boje fleksibilnih ručki
+crvena, crna, tamno zelena, bela, narandžasta, tamno plava, srebrna, žuta </p>
+                    <img src="{{asset('/assets/img/images/objasnjenje-dimenzija-kesa.jpg')}}" class="w-100" alt="ZipKesa"/>
+                    <img src="{{asset('/assets/img/images/Folja-Crevo-i-Polucrevo.jpg')}}" class="w-100" alt="ZipKesa"/>
+                </div>
+            </div>
+            <div class="col-12 marginTop">
+                <h5>Za sve detalje, uputstva oko pripreme za štampu, cene, tiraža i rokova izrade kesa, molimo Vas da se obratite našoj komercijalnoj službi, koristeći jedan od navedenih telefona, E-mail, ili pošaljite Fax.</h5>
+            </div>
         </div>
+
     </div>
     
 
