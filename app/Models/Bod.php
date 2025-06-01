@@ -10,4 +10,6 @@ class Bod extends Model
     protected $fillable = [
         'vrednost'
     ];
+
+    public $timestamps = false;
 }

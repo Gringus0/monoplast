@@ -27,4 +27,6 @@ class Order extends Model
         'firma',
         'datum'
     ];
+
+    public $timestamps = false;
 }

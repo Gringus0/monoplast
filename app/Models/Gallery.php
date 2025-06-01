@@ -14,4 +14,6 @@ class Gallery extends Model
         'idgalerije',
         'opis'
     ];
+
+    public $timestamps = false;
 }

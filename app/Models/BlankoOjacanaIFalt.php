@@ -13,4 +13,6 @@ class BlankoOjacanaIFalt extends Model
         'velicina',
         'boja1'
     ];
+
+    public $timestamps = false;
 }

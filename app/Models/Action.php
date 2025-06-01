@@ -15,4 +15,6 @@ class Action extends Model
         'slika',
         'slika2'
     ];
+
+    public $timestamps = false;
 }

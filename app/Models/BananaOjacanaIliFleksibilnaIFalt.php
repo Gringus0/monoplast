@@ -17,4 +17,6 @@ class BananaOjacanaIliFleksibilnaIFalt extends Model
         'boja4',
         'boja5',
     ];
+
+    public $timestamps = false;
 }
