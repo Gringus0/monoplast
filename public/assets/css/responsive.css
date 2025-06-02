@@ -264,7 +264,7 @@
       display: block;
     }
     #tabeleCene {
-    order: 1 !important; /* !important da overriduje bootstrap */
+    order: 1 !important; 
     }
     #rightBlockPrices {
     order: 0 !important;

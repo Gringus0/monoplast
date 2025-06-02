@@ -50,7 +50,7 @@
                             <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Kontakt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('order') ? 'active' : '' }}" href="{{ route('contact') }}">Porucite</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('registerAndLoginForm') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">Porucite</a>
                         </li>
                     </ul>
                 </div>
