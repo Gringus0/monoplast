@@ -6,6 +6,7 @@
                 <p class="mb-4">Radimo na najsavremenijim mašnama, koje obezbedjuju visok kvalitet finalnog priozvoda.</p>
                 <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook iconFooter"></i></a>
                 <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram iconFooter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-regular fa-envelope iconFooter"></i></a>
             </div>
             <div class="col-12 col-xl-3 col-md-6" id="footerContact">
                 <h4 class="footerSubjects">KONTAKT</h4>

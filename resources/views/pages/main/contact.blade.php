@@ -24,59 +24,67 @@
     <div class="container-fluid">
         <div class="row wrapper">
             <div class="col-12 col-lg-3">
-                <div id="sendEmailContact">
-                    <p>Klikni ovde da bi proslao <span class="bold">e-mail</span></p>
+                <div class="desnoBudi ">
+                    <div id="sendEmailContact" >
+                    <a href="" class="aTag colorWhite"><p>Klikni ovde da bi poslao <span class="bold">e-mail</span></p></a>
+                    </div>
+                    <p class="contactLeftColMain">Monoplast d.o.o</p>
+                    <p class="underContactLeftColMain">Preduzeće za proizvodnju,<br/> trgovinu na veliko i malo,<br/>uvoz, izvoz i usluge</p>
                 </div>
-                <p class="contactLeftColMain">Monoplast d.o.o</p>
-                <p class="underContactLeftColMain">Preduzeće za proizvodnju,<br/> trgovinu na veliko i malo,<br/>uvoz, izvoz i usluge</p>
-                <p class="contactAdress">Adresa:</p>
-                <p class="underContactLeftColMain">Pilota Zorana Latkovića 19, Nova pazova, 22330</p>
-                <p class="contactAdress">telefon u prodizvodnji i prodaji je</p>
-                <ul class="underContactLeftColMain productsList">
-                    <li class="marginTop">+381 (22) 239 518</li>
-                    <li>+381 (65) 336 11 11</li>
-                </ul>
-                <p class="contactAdress">Prodaja plastike široke potrošnje i najlonskih vrećica za Republiku Srpsku</p>
-                <p class="underContactLeftColMain">Derventa "RS"</p>
-                <p class="underContactLeftColMain">Tešandić Slobodan</p>
-                <p class="underContactLeftColMain">+387 (65) 333-473</p>
+                <div class="levoBudi">
+                    <p class="contactAdress">Adresa:</p>
+                    <p class="underContactLeftColMain">Pilota Zorana Latkovića 19, Nova pazova, 22330</p>
+                    <p class="contactAdress">telefon u prodizvodnji i prodaji je</p>
+                    <ul class="underContactLeftColMain productsList">
+                        <li class="marginTop">+381 (22) 239 518</li>
+                        <li>+381 (65) 336 11 11</li>
+                    </ul>
+                    <p class="contactAdress">Prodaja plastike široke potrošnje <br/>i najlonskih vrećica za Republiku Srpsku</p>
+                    <p class="underContactLeftColMain">Derventa "RS"</p>
+                    <p class="underContactLeftColMain">Tešandić Slobodan</p>
+                    <p class="underContactLeftColMain">+387 (65) 333-473</p>
+                </div>
             </div>
             <div class="col-12 col-lg-5">
                 <div class="kontakt-forma">
-
                     <form action="{{route('contact.mail')}}" method="POST">
                         @csrf
-                        @if(session('success'))
-                            {{session('success')}}
-                        @endif
-                        @if(session('error'))
-                            {{session('error')}}
-                        @endif
                         <div class="mb-3">
-                        <label for="ime" class="form-label">VAŠE IME:<span class="important">*</span></label>
-                        <input type="text" class="form-control" id="ime" name="ime" required>
+                            <label for="ime" class="form-label">VAŠE IME:<span class="important">*</span></label>
+                            <input type="text" class="form-control" id="ime" name="ime" required>
                         </div>
                         <div class="mb-3">
-                        <label for="telefon" class="form-label">KONTAKT TELEFON:<span class="important">*</span></label>
-                        <input type="text" class="form-control" id="telefon" name="telefon" required>
+                            <label for="telefon" class="form-label">KONTAKT TELEFON:<span class="important">*</span></label>
+                            <input type="text" class="form-control" id="telefon" name="telefon" required>
                         </div>
                         <div class="mb-3">
-                        <label for="email" class="form-label">VAŠ E-MAIL:<span class="important">*</span></label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                            <label for="email" class="form-label">VAŠ E-MAIL:<span class="important">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
-                        <label for="poruka" class="form-label">TEKST PORUKE:<span class="important">*</span></label>
-                        <textarea class="form-control" id="poruka" rows="7" name="text" required></textarea>
+                            <label for="poruka" class="form-label">TEKST PORUKE:<span class="important">*</span></label>
+                            <textarea class="form-control" id="poruka" rows="7" name="text" required></textarea>
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                        <small class="notice">Polja sa <span class="important">*</span> su obavezna da bi ste uspešno poslali poruku</small>
-                        <button type="submit" class="btn btn-send">POŠALJI PORUKU</button>
+                            <small class="notice">Polja sa <span class="important">*</span> su obavezna da bi ste uspešno poslali poruku</small>
+                            <button type="submit" class="btn btn-send" id="buttonSend">POŠALJI PORUKU</button>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4">
+                <div>
+                @if(session('success'))
+                    {!! session('success') !!}
+                @endif
 
+                @if(session('error'))
+                    {!! session('error') !!}
+                @endif
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-lg-4">
                 <p class="bold">Važna dokumenta:</p>
                 <ul class="productsList">
                     <a class="aTag" href=""><li class="importantDocumentsContact">Obrazac za Identifikaciju</li></a>
@@ -87,7 +95,7 @@
                     <a class="aTag" href=""><li class="importantDocumentsContact">Sertifikat o razgradivosti </li></a>
                 </ul>
                 <p class="contactGoogleMapText">na google map je pogrešno obeležena ulica Vlastimira Kneževića umesto Mirka Tatalovića Ćire. Ispravan položaj ulica možete videti na mapi iznad.</p>
-                <div style="border: 4px solid #fff;" class="w-100 marginTop">
+                <div id="map" class="w-100 marginTop">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.1968006076327!2d20.211091776980734!3d44.9566093710702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a59320e944091%3A0x8cafa5f1ad3a1190!2sMonoplast%20d.o.o.!5e0!3m2!1ssr!2srs!4v1748868442549!5m2!1ssr!2srs"
                         class="w-100 d-block"

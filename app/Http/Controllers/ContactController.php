@@ -22,9 +22,9 @@ class ContactController extends Controller
                 $request->text
             ));
 
-            return back()->with('success', 'Vaša poruka je uspešno poslata!');
+            return back()->with('success', '<div class="alert alert-success marginBottom marginTop">Vaša poruka je uspešno poslata!</div>');
         } catch (\Throwable $th) {
-            return back()->with('error', 'Došlo je do greške. Molimo pokušajte kasnije ili nas kontaktirajte telefonom.');
+            return back()->with('error', '<div class="alert alert-danger marginBottom marginTop">Došlo je do greške. Molimo pokušajte kasnije ili nas kontaktirajte telefonom.</div>');
         }
 
 

@@ -9,7 +9,7 @@
                 <h4 id="underNavigation">
                     Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakova. U cenama je sadržana i cena kese i cena štampe tako da su cene u cenovniku za gotove odštampane kese.
                 </h4>
-                <button id="scrollBtn" class="scroll-down-btn"> Do cena</button>
+                <button id="scrollBtn" class="scroll-down-btn"><i class="fa-solid fa-arrow-down"></i></button>
             <hr/>
         </div>
     </div>
@@ -270,7 +270,7 @@
                             <tr>
                                 <th class="firstRow"></th>
                                 <th>Dimenzije <br/>kese</th>
-                                <th>jedna boja <br/> 1/0</th>
+                                <th></th>
                             </tr>
                         </thead>
                     <tbody>
@@ -321,7 +321,7 @@
                             <tr>
                                 <th class="firstRow"></th>
                                 <th>Dimenzije <br/>kese</th>
-                                <th>jedna boja <br/> 1/0</th>
+                                <th></th>
                             </tr>
                         </thead>
                     <tbody>
