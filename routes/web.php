@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
@@ -12,8 +13,12 @@ Route::get('/prices', ProductController::class . '@listProductPrices')->name('pr
 Route::get('/contact', HomeController::class . '@contact')->name('contact');
 Route::get('/products', ProductController::class . '@ListProducts')->name('products');
 
-Route::get('/order', AuthController::class . '@registerAndLoginForm')->name('registerAndLoginForm');
+Route::get('/login', AuthController::class . '@registerAndLoginForm')->name('registerAndLoginForm');
 
 
-Route::post('/order/register', AuthController::class . '@register')->name('auth.register');
+Route::post('/register', AuthController::class . '@register')->name('auth.register');
 Route::post('/login', AuthController::class . '@login')->name('auth.login');
+Route::post('/logout', AuthController::class . '@logout')->name('auth.logout');
+
+Route::get('/order', OrderController::class. '@index')->name('order.index');
+
