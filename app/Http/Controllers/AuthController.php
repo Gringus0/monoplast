@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
     public function registerAndLoginForm() {
+        if (Auth::check()) {
+            return redirect()->route('order.index');
+        }
         return view('pages.auth.login-register');
     }
 
@@ -30,14 +34,11 @@ class AuthController extends Controller
 
             $user->save();
             DB::commit();
-            return back()->with('success', '<UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>');
+            return back()->with('success', 'Registracija uspešna!');
         } catch (\Throwable $th) {
             DB::rollBack();
             return  back()->with('error', $th->getMessage());
         }
-
-
-
     }
 
     public function login(Request $request) {
@@ -47,7 +48,12 @@ class AuthController extends Controller
         If(!$user) {
             return back()->with('error', 'Nema registracije sa datom email adresom.');
         }
-        return back()->with('success', 'Login success!');
+        Auth::login($user);
+        return redirect()->route('order.index');
     }
 
+    public function logout() {
+        Auth::logout();
+        return redirect('/');
+    }
 }
