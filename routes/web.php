@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\AuthController;
@@ -24,4 +25,11 @@ Route::post('/logout', AuthController::class . '@logout')->name('auth.logout');
 Route::get('/order', OrderController::class. '@index')->name('order.index');
 
 Route::post('/contact', ContactController::class . '@sendMail')->name('contact.mail');
+
+
+
+Route::get('/admin/login', AdminController::class . '@loginForm')->name('admin.login');
+Route::post('/admin/login', AdminController::class . '@login')->name('admin.login');
+Route::post('/admin/logout', AdminController::class . '@logout')->name('admin.logout');
+
 
