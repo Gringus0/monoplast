@@ -35,4 +35,49 @@ window.onload = function(){
     tabeleCene.scrollIntoView({ behavior: 'smooth' });
   });
 
+
+    const dostupneBoje = {
+    "banana_bez_ojacanja": {
+        LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "siva", "krem", "ljubicasta"],
+        HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva"]
+    },
+    "bez_ojacanja_s_faltom": {
+        LDPe: ["bela", "crna", "zuta", "bez", "siva"],
+        HDPe: ["bela", "zuta", "siva", "providna boja leda"]
+    },
+    "sa_ojacanom_banana": {
+        LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "tamno plava", "siva", "bez", "roze", "ljubicasta", "narandzasta", "zelena", "krem"],
+        HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva", "providna boja leda", "krem"]
+    },
+    "sa_ojacanom_banana_s_faltom": {
+        LDPe: ["bela", "crna", "zuta", "bez", "siva"],
+        HDPe: ["bela", "zuta", "siva", "providna boja leda"]
+    },
+    "fleksibilna": {
+        LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "tamno plava", "siva", "bez", "roze", "ljubicasta", "narandzasta", "zelena", "krem"],
+        HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva", "providna boja leda", "krem"]
+    },
+    "fleksibilna_s_faltom": {
+        LDPe: ["bela", "crna", "zuta", "bez", "siva"],
+        HDPe: ["bela", "zuta", "siva", "providna boja leda"]
+    }
+    };
+
+
+document.querySelectorAll('.hover-swap').forEach(img => {
+    const originalSrc = img.src;
+    const hoverSrc = img.getAttribute('data-hover');
+
+    img.addEventListener('mouseenter', () => {
+        img.src = hoverSrc;
+    });
+
+    img.addEventListener('mouseleave', () => {
+        img.src = originalSrc;
+    });
+});
+
+
+
+
 }

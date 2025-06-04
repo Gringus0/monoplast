@@ -27,11 +27,12 @@
             <div class="col-12 col-xl-2 col-md-6" id="footerNav">
                 <h4 class="footerSubjects">MONOPLAST</h4>
                 <ul id="navFooterList">
-                    <a href="{{route('home')}}" class="hoverTextOrange"><li>Home</li></a>
-                    <a href="{{route('about')}}" class="hoverTextOrange"><li class="spacing">O nama</li></a>
-                    <a href="{{route('gallery')}}" class="hoverTextOrange"><li>Proizvodi</li></a>
-                    <a href="{{route('productPrices')}}" class="hoverTextOrange"><li class="spacing">Cenovnik</li></a>
-                    <a href="{{route('contact')}}" class="hoverTextOrange"><li>Kontakt</li></a>
+                    <a href="{{route('home')}}" class="hoverTextOrange"><li class="mb-1">Home</li></a>
+                    <a href="{{route('about')}}" class="hoverTextOrange"><li>O nama</li></a>
+                    <a href="{{route('gallery')}}" class="hoverTextOrange"><li class="mb-1 mt-1">Proizvodi</li></a>
+                    <a href="{{route('productPrices')}}" class="hoverTextOrange"><li>Cenovnik</li></a>
+                    <a href="{{route('contact')}}" class="hoverTextOrange"><li class="mb-1 mt-1">Kontakt</li></a>
+                    <a href="{{route('registerAndLoginForm')}}" class="hoverTextOrange"><li>Porucite</li></a>
                 </ul>
             </div>
             <div class="col-12 col-xl-3 col-md-6" id="footerGallery">

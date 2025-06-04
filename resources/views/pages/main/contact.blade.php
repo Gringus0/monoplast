@@ -67,7 +67,7 @@
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <small class="notice">Polja sa <span class="important">*</span> su obavezna da bi ste uspešno poslali poruku</small>
-                            <button type="submit" class="btn btn-send" id="buttonSend">POŠALJI PORUKU</button>
+                            <button type="submit" class="btn btn-send hoverButtonLoginReg" id="buttonSend">POŠALJI PORUKU</button>
                         </div>
                     </form>
                 </div>

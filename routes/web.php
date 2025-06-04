@@ -7,7 +7,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-
+Route::post('/createadmin', AdminController::class . '@createAdmin')->name('admin.createAdmin');
 Route::get('/', HomeController::class . '@home')->name('home');
 Route::get('/about', HomeController::class . '@about')->name('about');
 Route::get('/gallery', ProductController::class . '@listProductsWithGallery')->name('gallery');
@@ -63,11 +63,6 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::post('/admin/edit-bod/update', AdminController::class . '@updateBod')->name('admin.edit-bod.update');
 
 
-
-
-
-
-Route::post('/createadmin', AdminController::class . '@createAdmin')->name('admin.createAdmin');
 });
 
 

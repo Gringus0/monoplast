@@ -1,52 +1,60 @@
 @extends('layouts.layout')
 @section('content')
-    Order Page
-    <div class="row">
-        <form action="{{route('auth.register')}}" method="POST" class="col-4 m-5">
-            @csrf
-            <h3>Register</h3>
-            <div class="mb-3">
-                <label class="form-label">Ime</label>
-                <input type="text" class="form-control" name="name" value={{old('name')}}>
-                @error('name') {{$message}}
-                @enderror
+
+    <main>
+        <div class="row wrapper">
+            <div class="col-12 col-lg-6 mb-4 mt-4">
+                <form action="{{route('auth.register')}}" method="POST" class="loginRegister">
+                    @csrf
+                    <h3 class="Title">Register</h3>
+                    <p class="mb-4 mt-4 underContactLeftColMain"> Ukoliko prvi put naručujete kese registrujte se ovde</p>
+                    <div class="mb-3">
+                        <label class="form-label fs-6">Ime*</label>
+                        <input type="text" class="form-control" name="name" placeholder="Vase ime" value={{old('name')}}>
+                        @error('name') {{$message}}
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6">Email*</label>
+                        <input type="email" class="form-control" name="email" placeholder="Vas e-mail" value={{old('email')}}>
+                        @error('email') {{$message}}
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6">Telefon 1*</label>
+                        <input type="text" class="form-control" name="phone" placeholder="Kontakt telefon" value={{old('phone')}}>
+                        @error('phone') {{$message}}
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6">Telefon 2</label>
+                        <input type="text" class="form-control" name="phone2" placeholder="Kontakt telefon" value={{old('phone2')}}>
+                        @error('phone2') {{$message}}
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fs-6">Firma*</label>
+                        <input type="text" class="form-control" name="company" placeholder="Naziv firme" value={{old('company')}}>
+                        @error('company') {{$message}}
+                        @enderror
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-send w-100 hoverButtonLoginReg">Registruj se</button>
+                </form>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" value={{old('email')}}>
-                @error('email') {{$message}}
-                @enderror
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Telefon 1</label>
-                <input type="text" class="form-control" name="phone" value={{old('phone')}}>
-                @error('phone') {{$message}}
-                @enderror
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Telefon 2</label>
-                <input type="text" class="form-control" name="phone2" value={{old('phone2')}}>
-                @error('phone2') {{$message}}
-                @enderror
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Firma</label>
-                <input type="text" class="form-control" name="company" value={{old('company')}}>
-                @error('company') {{$message}}
-                @enderror
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <form action="{{route('auth.login')}}" method="POST" class="col-4 m-5">
-            @csrf
-            <h3>Login</h3>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" name="login-email" value={{old('login-email')}}>
-                @if(session('error')) {{session('error')}} @endif
-                @if(session('success')) {{session('success')}} @endif
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        <div class="col-12 col-lg-6 mb-4 mt-4">
+            <form action="{{route('auth.login')}}" method="POST" class="loginRegister">
+                @csrf
+                <h3 class="Title mb-4 Title">Login</h3>
+                <p class="mb-4 mt-4 underContactLeftColMain"> Ukoliko već imate nalog samo ukucajte vaš mail</p>
+                <div class="mb-3">
+                    <label class="form-label fs-6">Email</label>
+                    <input type="email" class="form-control" name="login-email" placeholder="Vas e-mail" value={{old('login-email')}}>
+                    @if(session('error')) {{session('error')}} @endif
+                    @if(session('success')) {{session('success')}} @endif
+                </div>
+                <button type="submit" class="btn btn-primary btn-send w-100 hoverButtonLoginReg">Uloguj se</button>
+            </form>
+        </div>
     </div>
+    </main>
 @endsection
