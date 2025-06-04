@@ -28,8 +28,47 @@ Route::post('/contact', ContactController::class . '@sendMail')->name('contact.m
 
 
 
-Route::get('/admin/login', AdminController::class . '@loginForm')->name('admin.login');
-Route::post('/admin/login', AdminController::class . '@login')->name('admin.login');
-Route::post('/admin/logout', AdminController::class . '@logout')->name('admin.logout');
+
+Route::middleware('notauth')->group(function () {
+    Route::get('/admin/login', AdminController::class . '@loginForm')->name('admin.login-form');
+    Route::post('/admin/login', AdminController::class . '@login')->name('admin.login');
+});
+
+Route::middleware(['auth', 'admin'])->group(function () {
+
+    Route::get('/admin', AdminController::class . '@index')->name('admin.index');
+
+    Route::post('/admin/logout', AdminController::class . '@logout')->name('admin.logout');
+
+    Route::get('/admin/gallery', AdminController::class . '@gallery')->name('admin.gallery');
+    Route::get('/admin/gallery/create', AdminController::class . '@create')->name('admin.gallery.create');
+    Route::post('/admin/gallery/store', AdminController::class . '@store')->name('admin.gallery.store');
+    Route::get('/admin/gallery/{id}', AdminController::class . '@show')->name('admin.gallery.show');
+    Route::delete('/admin/gallery/destroy/{id}', AdminController::class . '@destroy')->name('admin.gallery.destroy');
+
+    Route::get('/admin/prices', AdminController::class . '@listPrices')->name('admin.prices');
+    Route::post('/admin/prices/update/{id}', AdminController::class . '@changePrice')->name('admin.prices.change-price');
+
+    Route::get('/admin/actions', AdminController::class . '@listActions')->name('admin.list-actions');
+    Route::post('/admin/actions/store', AdminController::class . '@storeAction')->name('admin.actions.store');
+    Route::delete('/admin/actions/destroy/{id}', AdminController::class . '@destroyAction')->name('admin.actions.destroy');
+    Route::get('/admin/actions/edit/{id}', AdminController::class . '@editAction')->name('admin.actions.edit');
+    Route::post('/admin/actions/update/{id}', AdminController::class . '@updateAction')->name('admin.actions.update');
+
+    Route::get('/admin/buyers', AdminController::class . '@listBuyers')->name('admin.buyers');
+
+    Route::get('/admin/orders', AdminController::class . '@listOrders')->name('admin.orders');
+
+    Route::get('/admin/edit-bod',  AdminController::class . '@editBod')->name('admin.edit-bod');
+    Route::post('/admin/edit-bod/update', AdminController::class . '@updateBod')->name('admin.edit-bod.update');
+
+
+
+
+
+
+Route::post('/createadmin', AdminController::class . '@createAdmin')->name('admin.createAdmin');
+});
+
 
 
