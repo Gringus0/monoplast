@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bod;
 use App\Models\Gallery;
 use App\Models\Order;
 use App\Models\User;
@@ -168,11 +169,24 @@ class AdminController extends Controller
 
     public function editBod()
     {
-        return view('pages.admin.edit-bod');
+        $bod = Bod::first();
+        return view('pages.admin.edit-bod', ['bod' => $bod]);
     }
 
     public function updateBod(Request $request)
     {
+        try {
+            DB::beginTransaction();
+            $bod = Bod::first();
+            $bod->vrednost = $request->bod;
+            $bod->save();
+            DB::commit();
+            return back()->with('success', 'Izmena boda uspešna!');
+        } catch(\Throwable $e) {
+            DB::rollBack();
+            return back()->with('error', 'Došlo je do greške! Pokušajte ponovo ili kontaktirajte administratora.');
+        }
+
 
     }
 
