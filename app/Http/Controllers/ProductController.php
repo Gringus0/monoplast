@@ -35,8 +35,6 @@ class ProductController extends Controller
 
         $data = [];
 
-
-
         $reklamneKese = Gallery::where('idgalerije', '1');
         $trakeZaOznacavanje = Gallery::where('idgalerije', '2');
         $dzakovi = Gallery::where('idgalerije', '3');
@@ -73,24 +71,7 @@ class ProductController extends Controller
             $data[$category] = $allCategories[$category]->paginate(18);
             return view('pages.products.gallery', ['data' => $data[$category]]);
         }
-
-
-        return view('pages.products.gallery', [
-            'reklamneKese' => $reklamneKese,
-            'trakeZaOznacavanje' => $trakeZaOznacavanje,
-            'dzakovi' => $dzakovi,
-            'strecFolija' => $strecFolija,
-            'zipKese' => $zipKese,
-            'tregerice' => $tregerice,
-            'opsAmbalaza' => $opsAmbalaza,
-            'airBubbleFolija' => $airBubbleFolija,
-            'petAmbalaza' => $petAmbalaza,
-            'peFolija' => $peFolija,
-            'plastSirokePorosnje' => $plastSirokePorosnje,
-            'keseZaZamrzivac' => $keseZaZamrzivac,
-            'slikeIzProizvodnje' => $slikeIzProizvodnje,
-            'sajmovi' => $sajmovi
-        ]);
+        return redirect('/gallery?category=reklamneKese');
     }
 
     public function listProductPrices() {
