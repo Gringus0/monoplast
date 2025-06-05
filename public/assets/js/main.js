@@ -2,7 +2,7 @@ window.onload = function(){
     var path = window.location.pathname.split("/").pop();
 
     document.querySelector("#buttonPricesPDF").addEventListener("click", function(){
-        const element = document.getElementById('tabeleCene'); 
+        const element = document.getElementById('tabeleCene');
 
         var opt = {
             margin:       0.5,
