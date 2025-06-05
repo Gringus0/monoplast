@@ -41,10 +41,10 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::post('/admin/logout', AdminController::class . '@logout')->name('admin.logout');
 
     Route::get('/admin/gallery', AdminController::class . '@gallery')->name('admin.gallery');
-    Route::get('/admin/gallery/create', AdminController::class . '@create')->name('admin.gallery.create');
-    Route::post('/admin/gallery/store', AdminController::class . '@store')->name('admin.gallery.store');
-    Route::get('/admin/gallery/{id}', AdminController::class . '@show')->name('admin.gallery.show');
-    Route::delete('/admin/gallery/destroy/{id}', AdminController::class . '@destroy')->name('admin.gallery.destroy');
+    Route::get('/admin/gallery/create', AdminController::class . '@createImage')->name('admin.gallery.create');
+    Route::post('/admin/gallery/store', AdminController::class . '@storeImage')->name('admin.gallery.store');
+    Route::get('/admin/gallery/{id}', AdminController::class . '@showImage')->name('admin.gallery.show');
+    Route::delete('/admin/gallery/destroy/{id}', AdminController::class . '@destroyImage')->name('admin.gallery.destroy');
 
     Route::get('/admin/prices', AdminController::class . '@listPrices')->name('admin.prices');
     Route::post('/admin/prices/update/{id}', AdminController::class . '@changePrice')->name('admin.prices.change-price');
