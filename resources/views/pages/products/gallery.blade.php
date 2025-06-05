@@ -86,7 +86,7 @@
         </div>
     </div>
 
-{{--@dd($data)--}}
+
     @if(isset($data))
         <div>
             {{ $data->appends(request()->query())->links() }}
@@ -100,23 +100,5 @@
 </main>
 
 
-{{--'reklamneKese' => $reklamneKese,--}}
-{{--'trakeZaOznacavanje' => $trakeZaOznacavanje,--}}
-{{--'dzakovi' => $dzakovi,--}}
-{{--'strecFolija' => $strecFolija,--}}
-{{--'zipKese' => $zipKese,--}}
-{{--'tregerice' => $tregerice,--}}
-{{--'opsAmbalaza' => $opsAmbalaza,--}}
-{{--'airBubbleFolija' => $airBubbleFolija,--}}
-{{--'petAmbalaza' => $petAmbalaza,--}}
-{{--'peFolija' => $peFolija,--}}
-{{--'plastSirokePorosnje' => $plastSirokePorosnje,--}}
-{{--'keseZaZamrzivac' => $keseZaZamrzivac,--}}
-{{--'slikeIzProizvodnje' => $slikeIzProizvodnje,--}}
-{{--'sajmovi' => $sajmovi--}}
-
-{{--    @foreach($reklamneKese as $kesa)--}}
-{{--        {{$kesa->velikaslika}} <br>--}}
-{{--    @endforeach--}}
 
 @endsection
