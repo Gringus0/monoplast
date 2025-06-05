@@ -102,12 +102,12 @@ class ProductController extends Controller
     private function calculatePrices($nizKesa, $vrednostBoda)
     {
         foreach ($nizKesa as $kesa) {
-            $kesa->boja1 = $kesa->boja1 * $vrednostBoda;
+            $kesa->boja1 = number_format($kesa->boja1 * $vrednostBoda, 2);
             if ($kesa->boja2) {
-                $kesa->boja2 = $kesa->boja2 * $vrednostBoda;
-                $kesa->boja3 = $kesa->boja3 * $vrednostBoda;
-                $kesa->boja4 = $kesa->boja4 * $vrednostBoda;
-                $kesa->boja5 = $kesa->boja5 * $vrednostBoda;
+                $kesa->boja2 = number_format($kesa->boja2 * $vrednostBoda, 2);
+                $kesa->boja3 = number_format($kesa->boja3 * $vrednostBoda, 2);
+                $kesa->boja4 = number_format($kesa->boja4 * $vrednostBoda, 2);
+                $kesa->boja5 = number_format($kesa->boja5 * $vrednostBoda, 2);
             }
         }
     }
