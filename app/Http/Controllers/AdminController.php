@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\Order;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -161,7 +162,8 @@ class AdminController extends Controller
 
     public function listOrders()
     {
-        return view('pages.admin.order-list');
+        $orders = Order::paginate(15);
+        return view('pages.admin.order-list', ['orders' => $orders]);
     }
 
     public function editBod()
