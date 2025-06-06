@@ -57,7 +57,7 @@
                 <p>Kesa sa fleksibilnom ručkom i faltom na dnu kese</p>
             </div>
         </div>
-        <div class="col-12 col-lg-4" id="ChooseMat">
+        <div class="col-12 col-lg-4 orderBlocks">
             <h4 class="ordersSections"> IZBOR MATERIJALA *</h4>
             <form>
                 <label class="marginRight15 marginTop">
@@ -72,34 +72,36 @@
             </form>
             <hr class="hrBasic"/>
             <h4 class="ordersSections"> IZBOR DIMENZIJA * <span class="underContactLeftColMain">(prvo izaberite visinu) </span></h4>
-            <div class="kesa mt-3">
+            <div class="kesa mt-4">
                 <div class="rucka"></div>
             </div>
-            <div class="kesa mt-3">
-                <div class="rucka"></div>
-                <div class="koseLinijeVelike"></div>
-            </div>
-            <div class="kesa mt-3">
-                <div class="okoRucke"></div>
-                <div class="rucka"></div>
-            </div>
-            <div class="kesa mt-3">
-                <div class="okoRucke"></div>
+            <div class="kesa mt-4">
                 <div class="rucka"></div>
                 <div class="koseLinijeVelike"></div>
             </div>
-            <div class="kesa mt-3">
+            <div class="kesa mt-4">
+                <div class="okoRucke"></div>
+                <div class="rucka"></div>
+            </div>
+            <div class="kesa mt-4">
+                <div class="okoRucke"></div>
+                <div class="rucka"></div>
+                <div class="koseLinijeVelike"></div>
+            </div>
+            <div class="kesa mt-4">
                 <div class="bag-handleVelika"></div>
                 <div class="rucka"></div>
             </div>
-            <div class="kesa mt-3">
+            <div class="kesa mt-4">
                 <div class="bag-handleVelika"></div>
                 <div class="rucka"></div>
                 <div class="koseLinijeVelike"></div>
             </div>
         </div>
-        <div class="col-12 col-lg-3"></div>
-        <div class="col-12 col-lg-2"></div>
+        <div class="col-12 col-lg-3 orderBlocks">
+
+        </div>
+        <div class="col-12 col-lg-2 orderBlocks"></div>
     </div>
 </main>
 <div class="col-12 wrapper">

@@ -688,15 +688,16 @@ table tr:last-child td {
         font-weight: 600;
     }
 
-    #ChooseMat{
+    .orderBlocks{
         background-color: #eeeeed;
         padding: 20px;
+        border: 1px solid #b8b8b8;
     }
 
     .hover-swap {
     transition: opacity 0.3s ease-in-out;
     }
-
+    
     .ordersSections{
         color: #961f24;
         font-size: 12px;
@@ -840,6 +841,7 @@ table tr:last-child td {
         border: 1px solid #b8babd;
         position: relative; 
         display: none;
+        margin-top: 20px;
     }
 
     .kesa.active {
