@@ -109,13 +109,23 @@ class AdminController extends Controller
 
     public function storeImage(Request $request)
     {
-//        try {
-//            DB::beginTransaction();
-//            $image = new Gallery();
-//            $image->malaslika = "0";
-//            $image->velikaslika = $request->image;
-//
-//        }
+        try {
+            DB::beginTransaction();
+            $imageName = time() . "." . $request->image->extension();
+            $request->image->move(public_path('assets/img/images/galerija'), $imageName);
+            $image = new Gallery();
+            $image->malaslika = "0";
+            $image->velikaslika = $imageName;
+            $image->idgalerije = $request->galleryId;
+            $image->opis = $request->description;
+            $image->save();
+
+            DB::commit();
+            return back()->with('success', 'Slika je uspešno dodata.');
+        } catch (\Exception $ex) {
+            DB::rollBack();
+            return back()->with('error', 'Došlo je do greške! Pokušajte ponovo ili kontaktirajte administratora.');
+        }
     }
 
     public function showImage($id)

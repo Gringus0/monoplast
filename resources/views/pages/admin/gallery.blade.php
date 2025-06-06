@@ -2,13 +2,36 @@
 @section('content')
 Galerija
 
-<form action="{{ route('admin.gallery.store') }}" method="POST" class="col-4">
+<form action="{{ route('admin.gallery.store') }}" method="POST" class="col-4 m-5" enctype="multipart/form-data">
     @csrf
-    <div class="input-group m-5">
+    <div class="input-group">
         <input type="file" class="form-control" name="image">
-        <button class="input-group-text">Upload</button>
+        <select name="galleryId" id="galleryId">
+            <option value="1">Reklamne kese</option>
+            <option value="2">Trake za označavanje</option>
+            <option value="3">Džakovi</option>
+            <option value="4">Streč folija</option>
+            <option value="5">ZIP kese</option>
+            <option value="6">Tregerice</option>
+            <option value="7">OPS ambalaža</option>
+            <option value="8">Air Bubble folija</option>
+            <option value="9">PET ambalaža</option>
+            <option value="10">P.E. folije</option>
+            <option value="11">Plast. široke potrošnje</option>
+            <option value="12">Kese za zamrzivač</option>
+            <option value="13">Slike iz proizvodnje</option>
+            <option value="14">Sajmovi</option>
+        </select>
     </div>
+    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    <button class="input-group-text">Upload</button>
 </form>
+@if(session('success'))
+    {{ session('success') }}
+@endif
+@if(session('error'))
+    {{ session('error') }}
+@endif
 <div class="container-fluid">
     <div class="row wrapper">
         <div class="col-12">
