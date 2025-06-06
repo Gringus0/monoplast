@@ -14,13 +14,48 @@
     </div>
 
     <div class="row wrapper">
-        <div class="col-12 col-lg-4">
-            <img src="{{asset('/assets/img/images/rollover/kese1a.jpg')}}" alt="kesa bez ojacane banana drške sa faltom na dnu kese" class="kesa-slika "/>
-            <img src="{{asset('/assets/img/images/rollover/kese2a.jpg')}}" alt="kesa bez ojacane banana drške sa faltom na dnu kese" class="mb-2 mt-2 "/>
-            <img src="{{asset('/assets/img/images/rollover/kese3a.jpg')}}" alt="kesa bez ojacane banana drške sa faltom na dnu kese" class=""/>
-            <img src="{{asset('/assets/img/images/rollover/kese4a.jpg')}}" alt="kesa bez ojacane banana drške sa faltom na dnu kese" class="mb-2 mt-2 "/>
-            <img src="{{asset('/assets/img/images/rollover/kese5a.jpg')}}" alt="kesa bez ojacane banana drške sa faltom na dnu kese" class=""/>
-            <img src="{{asset('/assets/img/images/rollover/kese6a.jpg')}}" alt="kesa bez ojacane banana drške sa faltom na dnu kese" class="mt-2 "/>
+        <div class="col-12 col-lg-3">
+            <div class="LeftBlockinfo d-flex">
+                <div class="malaKesa">
+                    <div class="malaRucka"></div>
+                </div>
+                <p>Kese sa banana drškom bez bez ojačanja na dršci</p>
+            </div>
+            <div class="LeftBlockinfo d-flex mt-2">
+                <div class="malaKesa">
+                    <div class="malaRucka"></div>
+                    <div class="koseLinijeMale"></div>
+                </div>
+                <p>Kesa bez ojačane banana drške sa faltom na dnu kese</p>
+            </div>
+              <div class="LeftBlockinfo d-flex mt-2">
+                <div class="malaKesa">
+                    <div class="malaRucka"></div>
+                    <div class="koseLinijeMale"></div>
+                </div>
+                <p>Kesa sa ojačanom banana drškom</p>
+            </div>
+            <div class="LeftBlockinfo d-flex mt-2">
+                <div class="malaKesa">
+                    <div class="okoRucke"></div>
+                    <div class="malaRucka"></div>
+                    <div class="koseLinijeMale"></div>
+                </div>
+                <p>Kesa sa ojačanom banana drškom i faltom na dnu kese</p>
+            </div>
+            <div class="LeftBlockinfo d-flex mt-2">
+                <div class="malaKesa mt-2" style="height: 35px">
+                    <div class="bag-handleMale"></div>       
+                </div>
+                <p>Kesa sa felksibilnom ručkom</p>
+            </div>
+            <div class="LeftBlockinfo d-flex mt-2">
+                <div class="malaKesa mt-2" style="height: 35px">
+                    <div class="bag-handleMale"></div>  
+                    <div class="koseLinijeMale"></div>     
+                </div>
+                <p>Kesa sa fleksibilnom ručkom i faltom na dnu kese</p>
+            </div>
         </div>
         <div class="col-12 col-lg-4" id="ChooseMat">
             <h4 class="ordersSections"> IZBOR MATERIJALA *</h4>
@@ -39,15 +74,14 @@
             <h4 class="ordersSections"> IZBOR DIMENZIJA * <span class="underContactLeftColMain">(prvo izaberite visinu) </span></h4>
             <div class="kesa mt-3">
                 <div class="rucka">
-
+                    
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-2"></div>
+        <div class="col-12 col-lg-3"></div>
         <div class="col-12 col-lg-2"></div>
     </div>
 </main>
-
 <div class="col-12 wrapper">
     <form action="{{route('auth.logout')}}" method="post">
     @csrf

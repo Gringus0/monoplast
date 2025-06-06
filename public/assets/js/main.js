@@ -64,19 +64,10 @@ window.onload = function(){
     };
 
 
-document.querySelectorAll('.hover-swap').forEach(img => {
-    const originalSrc = img.src;
-    const hoverSrc = img.getAttribute('data-hover');
+    // document.querySelector(".LeftBlockinfo").addEventListener("click", function(){
+    //     if()
 
-    img.addEventListener('mouseenter', () => {
-        img.src = hoverSrc;
-    });
-
-    img.addEventListener('mouseleave', () => {
-        img.src = originalSrc;
-    });
-});
-
+    // })
 
 
 

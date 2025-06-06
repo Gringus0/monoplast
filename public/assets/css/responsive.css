@@ -80,6 +80,10 @@
         font-size: 12px !important;
     }
 
+   .LeftBlockinfo{
+    font-size: 9px;
+   } 
+
   }
 
 @media screen and (max-width: 1280px) {
@@ -178,6 +182,11 @@
     .overlay-text{
         font-size: 10px !important;
     }
+    
+   .LeftBlockinfo{
+    font-size: 10px;
+    height: auto;
+   } 
 
 }
 
@@ -321,7 +330,12 @@
         position: absolute;
         right: 150px;
     }
-
+    #ChooseMat{
+        margin-top: 20px;
+    }
+    .LeftBlockinfo{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 412px) {
