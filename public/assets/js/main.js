@@ -7,7 +7,6 @@ window.onload = function(){
     orderModal.addEventListener('show.bs.modal', function (event) {
         const button = event.relatedTarget;
 
-        // Extract data from data-* attributes
         const id = button.getAttribute('data-id');
         const ime = button.getAttribute('data-ime');
         const firma = button.getAttribute('data-firma');
@@ -24,7 +23,6 @@ window.onload = function(){
         const stampa = button.getAttribute('data-stampa');
         const kolicina = button.getAttribute('data-kolicina');
 
-        // Update modal content
         document.getElementById('modal-order-id').textContent = id;
         document.getElementById('modal-order-ime').textContent = ime;
         document.getElementById('modal-order-firma').textContent = firma;
@@ -42,6 +40,27 @@ window.onload = function(){
         document.getElementById('modal-order-kolicina').textContent = kolicina;
     });
 
+    $('#vrsta').on('change', function () {
+        var selectedType = $(this).val();
+
+        $.ajax({
+            url: window.location.origin + '/get-velicine-kese',
+            type: 'GET',
+            data: {
+                vrsta: selectedType
+            },
+            success: function (data) {
+                let options = '<option value="">-- Izaberite veličinu --</option>';
+                data.forEach(function (item) {
+                    options += `<option value="${item.velicina}">${item.naziv ?? item.velicina ?? 'Veličina bez imena'}</option>`;
+                });
+                $('#velicina').html(options);
+            },
+            error: function () {
+                alert("Greška prilikom dohvatanja veličina.");
+            }
+        });
+    });
 
     if(path == "prices"){
         document.querySelector("#buttonPricesPDF").addEventListener("click", function(){
