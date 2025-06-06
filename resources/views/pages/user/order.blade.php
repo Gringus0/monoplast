@@ -90,11 +90,9 @@
             </div>
             <div class="kesa mt-4">
                 <div class="bag-handleVelika"></div>
-                <div class="rucka"></div>
             </div>
             <div class="kesa mt-4">
                 <div class="bag-handleVelika"></div>
-                <div class="rucka"></div>
                 <div class="koseLinijeVelike"></div>
             </div>
         </div>
