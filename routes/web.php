@@ -58,6 +58,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/buyers', AdminController::class . '@listBuyers')->name('admin.buyers');
 
     Route::get('/admin/orders', AdminController::class . '@listOrders')->name('admin.orders');
+    Route::get('/admin/orders/{id}', AdminController::class . '@showOrder')->name('admin.orders.show');
 
     Route::get('/admin/edit-bod',  AdminController::class . '@editBod')->name('admin.edit-bod');
     Route::post('/admin/edit-bod/update', AdminController::class . '@updateBod')->name('admin.edit-bod.update');

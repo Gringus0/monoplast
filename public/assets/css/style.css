@@ -143,7 +143,7 @@ h4{
 }
 
 #navFooterList{
-    list-style-type: square;   
+    list-style-type: square;
     padding-left: 20px;
 }
 
@@ -206,7 +206,7 @@ h4{
 .productsList{
     font-size: 14px;
     list-style-type: square;
-    padding-left: 15px;   
+    padding-left: 15px;
 }
 
 ul li::marker {
@@ -220,10 +220,10 @@ ul li::marker {
 .aboutImages {
     margin-top: 15px;
     margin-bottom: 15px;
-    border: 10px solid #fff;        
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     width: 130px;
-    /* outline: 1px solid #000;         
+    /* outline: 1px solid #000;
     outline-offset: -10px;             */
 }
 
@@ -231,7 +231,7 @@ ul li::marker {
   position: relative;
   background: #fff;
   border: 1px solid #ccc;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .blockPolygon::after {
@@ -252,7 +252,7 @@ ul li::marker {
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: #eeeeee;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #middleBlockAbout{
@@ -279,7 +279,7 @@ ul li::marker {
     margin-top: 40px;
     border-top: 10px solid #b6b9c0;
     border-bottom: 10px solid #b6b9c0;
-    padding: 15px 0px;    
+    padding: 15px 0px;
 }
 
 #leftBlockAbout{
@@ -288,8 +288,8 @@ ul li::marker {
 
 .aboutImagesRightBlock{
     margin-top: 10px;
-    border: 7px solid #fff;        
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border: 7px solid #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     width: 90px;
     height: 90px;
 }
@@ -316,8 +316,8 @@ ul li::marker {
 
 
 .aboutImages {
-    border: 5px solid #fff;        
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .borderBottomProducts{
@@ -425,21 +425,21 @@ table tr:last-child td {
     font-size: 16px;
     font-weight: bold;
     color: #666;
-} 
+}
 
 .pdf-page-break {
     page-break-after: always;
 }
 
 .buttonPrices {
-  background: linear-gradient(to bottom, #bcbfc4, #d9d9d9); 
+  background: linear-gradient(to bottom, #bcbfc4, #d9d9d9);
   color: #2b2b2b;
-  font-size: 16px; 
-  letter-spacing: 1px; 
+  font-size: 16px;
+  letter-spacing: 1px;
   border: 1px solid #a0a0a0;
   border-radius: 4px;
   transition: all 0.3s ease;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   border: 2px solid #ffffff;
   outline: 1px solid #5b626c;
   height: 45px;
@@ -454,9 +454,9 @@ table tr:last-child td {
 
 .linePrices {
   border: none;
-  height: 10px; 
+  height: 10px;
   border-bottom: 1px solid #000000;
-  background: linear-gradient(to bottom, #48484b, #686a70); 
+  background: linear-gradient(to bottom, #48484b, #686a70);
 }
 
 .italicBlack{
@@ -554,7 +554,7 @@ table tr:last-child td {
         color: #333333;
         font-weight: 600;
   }
-  
+
     .contactAdress{
         color: #808080;
         margin-top: 10px;
@@ -581,7 +581,7 @@ table tr:last-child td {
         background-color: #e48527;
         border-radius: 0px;
         border: 2px solid #fff;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         width: 300px;
         color: #fff;
     }
@@ -600,15 +600,15 @@ table tr:last-child td {
     font-size: 14px;
     margin: 5px 0px;
     color: #003173;
-   } 
+   }
 
    .aTag{
     text-decoration: none;
    }
 
    .contactGoogleMapText{
-    font-size: 13px; 
-    color: #333333; 
+    font-size: 13px;
+    color: #333333;
     line-height: 15px;
    }
 
@@ -620,10 +620,10 @@ table tr:last-child td {
     border: 4px solid #fff;
     margin-bottom: 10px;
    }
-   
+
    .gallery-item {
         position: relative;
-        display: inline-block; 
+        display: inline-block;
         overflow: hidden;
         border: 4px solid #fff;
     }
@@ -697,7 +697,7 @@ table tr:last-child td {
     .hover-swap {
     transition: opacity 0.3s ease-in-out;
     }
-    
+
     .ordersSections{
         color: #961f24;
         font-size: 12px;
@@ -718,7 +718,7 @@ table tr:last-child td {
     .hrBasic{
         border: 1px solid #000;
     }
-    
+
 
 
     .LeftBlockinfo {
@@ -751,8 +751,8 @@ table tr:last-child td {
         background-color: #fff;
         border: 1.5px solid #b8babd;
         position: relative;
-        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.10); 
-        flex-shrink: 0; 
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.10);
+        flex-shrink: 0;
     }
 
     .malaRucka {
@@ -839,7 +839,7 @@ table tr:last-child td {
         height: 170px;
         background-color: #fff;
         border: 1px solid #b8babd;
-        position: relative; 
+        position: relative;
         display: none;
         margin-top: 20px;
     }
@@ -854,10 +854,10 @@ table tr:last-child td {
         border-radius: 20%;
         background-color: #eeeeed;
         border: 1px solid #b8babd;
-        position: absolute; 
-        top: 20px; 
+        position: absolute;
+        top: 20px;
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
     }
 
     .koseLinijeMale {
@@ -889,7 +889,7 @@ table tr:last-child td {
             transparent 12px
         );
     }
-    
+
     .okoRucke {
         width: 60%;
         height: 20%;

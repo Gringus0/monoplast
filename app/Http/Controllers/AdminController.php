@@ -185,6 +185,11 @@ class AdminController extends Controller
         return view('pages.admin.order-list', ['orders' => $orders]);
     }
 
+    public function showOrder($id)
+    {
+        dd($id);
+    }
+
     public function editBod()
     {
         $bod = Bod::first();
