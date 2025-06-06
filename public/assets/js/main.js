@@ -1,6 +1,67 @@
 window.onload = function(){
     var path = window.location.pathname.split("/").pop();
 
+
+    //     Modal js
+    const orderModal = document.getElementById('orderModal');
+    orderModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+
+        const id = button.getAttribute('data-id');
+        const ime = button.getAttribute('data-ime');
+        const firma = button.getAttribute('data-firma');
+        const telefon = button.getAttribute('data-telefon');
+        const mail = button.getAttribute('data-mail');
+        const datum = button.getAttribute('data-datum');
+        const tipKese= button.getAttribute('data-tipKese');
+        const materijal = button.getAttribute('data-materijal');
+        const sirina = button.getAttribute('data-sirina');
+        const visina = button.getAttribute('data-visina');
+        const bojaRucke = button.getAttribute('data-bojaRucke');
+        const bojaKese = button.getAttribute('data-bojaKese');
+        const priprema = button.getAttribute('data-priprema');
+        const stampa = button.getAttribute('data-stampa');
+        const kolicina = button.getAttribute('data-kolicina');
+
+        document.getElementById('modal-order-id').textContent = id;
+        document.getElementById('modal-order-ime').textContent = ime;
+        document.getElementById('modal-order-firma').textContent = firma;
+        document.getElementById('modal-order-telefon').textContent = telefon;
+        document.getElementById('modal-order-mail').textContent = mail;
+        document.getElementById('modal-order-datum').textContent = datum;
+        document.getElementById('modal-order-tipKese').textContent = tipKese;
+        document.getElementById('modal-order-materijal').textContent = materijal;
+        document.getElementById('modal-order-sirina').textContent = sirina;
+        document.getElementById('modal-order-visina').textContent = visina;
+        document.getElementById('modal-order-bojaRucke').textContent = bojaRucke;
+        document.getElementById('modal-order-bojaKese').textContent = bojaKese;
+        document.getElementById('modal-order-priprema').textContent = priprema;
+        document.getElementById('modal-order-stampa').textContent = stampa;
+        document.getElementById('modal-order-kolicina').textContent = kolicina;
+    });
+
+    $('#vrsta').on('change', function () {
+        var selectedType = $(this).val();
+
+        $.ajax({
+            url: window.location.origin + '/get-velicine-kese',
+            type: 'GET',
+            data: {
+                vrsta: selectedType
+            },
+            success: function (data) {
+                let options = '<option value="">-- Izaberite veličinu --</option>';
+                data.forEach(function (item) {
+                    options += `<option value="${item.velicina}">${item.naziv ?? item.velicina ?? 'Veličina bez imena'}</option>`;
+                });
+                $('#velicina').html(options);
+            },
+            error: function () {
+                alert("Greška prilikom dohvatanja veličina.");
+            }
+        });
+    });
+
     if(path == "prices"){
         document.querySelector("#buttonPricesPDF").addEventListener("click", function(){
         const element = document.getElementById('tabeleCene');
@@ -86,11 +147,11 @@ window.onload = function(){
 
     leftBlocks.forEach((block, index) => {
         block.addEventListener('click', () => {
-       
+
             kese.forEach(kesa => kesa.classList.remove('active'));
             leftBlocks.forEach(b => b.classList.remove('active'));
 
-        
+
             if (kese[index]) {
                 kese[index].classList.add('active');
             }
@@ -98,12 +159,8 @@ window.onload = function(){
         });
     });
 
-   
+
     leftBlocks[0].classList.add('active');
     kese[0].classList.add('active');
-
-
-
-
 
 }

@@ -45,14 +45,14 @@
             </div>
             <div class="LeftBlockinfo d-flex mt-2" data-id="4">
                 <div class="malaKesa mt-2" style="height: 35px">
-                    <div class="bag-handleMale"></div>       
+                    <div class="bag-handleMale"></div>
                 </div>
                 <p>Kesa sa felksibilnom ručkom</p>
             </div>
             <div class="LeftBlockinfo d-flex mt-2" data-id="5">
                 <div class="malaKesa mt-2" style="height: 35px">
                     <div class="bag-handleMale"></div>
-                    <div class="koseLinijeMale"></div>     
+                    <div class="koseLinijeMale"></div>
                 </div>
                 <p>Kesa sa fleksibilnom ručkom i faltom na dnu kese</p>
             </div>

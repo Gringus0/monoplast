@@ -2,6 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BananaBezOjacanja;
+use App\Models\BananaBezOjacanjaIFalt;
+use App\Models\BananaOjacanaIliFleksibilna;
+use App\Models\BananaOjacanaIliFleksibilnaIFalt;
+use App\Models\BlankoBezOjacanja;
+use App\Models\BlankoOjacanaIFalt;
 use App\Models\Bod;
 use App\Models\Gallery;
 use App\Models\Order;
@@ -138,14 +144,73 @@ class AdminController extends Controller
 
     }
 
-    public function listPrices()
+    public function listPrices(Request $request)
     {
-        return view('pages.admin.list-prices');
+        $vrstaKese = $request->vrsta;
+        $velicinaKese = $request->velicina;
+
+        switch ($vrstaKese) {
+            case 'banana_bez_ojacanja':
+                $data = BananaBezOjacanja::where('velicina', $velicinaKese)->get();
+                break;
+            case 'banana_ojacana_fleksibilna':
+                $data = BananaOjacanaIliFleksibilna::where('velicina', $velicinaKese)->get();
+                break;
+            case 'banana_ojacana_fleksibilna_falt':
+                $data = BananaOjacanaIliFleksibilnaIFalt::where('velicina', $velicinaKese)->get();
+                break;
+            case 'banana_bez_ojacanja_falt':
+                $data = BananaBezOjacanjaIFalt::where('velicina', $velicinaKese)->get();
+                break;
+            case 'blanko_bez_ojacanja':
+                $data = BlankoBezOjacanja::where('velicina', $velicinaKese)->get();
+                break;
+            case 'blanko_ojacana_falt':
+                $data = BlankoOjacanaIFalt::where('velicina', $velicinaKese)->get();
+                break;
+            default:
+                $data = collect(); // return empty collection
+                break;
+        }
+
+        return view('pages.admin.list-prices', ['data' => $data]);
     }
 
-    public function changePrice($id, Request $request)
+    public function getVelicine(Request $request)
     {
+        $vrsta = $request->vrsta;
+        $velicine = [];
 
+        switch ($vrsta) {
+            case 'banana_bez_ojacanja':
+                $velicine = BananaBezOjacanja::all();
+                break;
+            case 'banana_ojacana_fleksibilna':
+                $velicine = BananaOjacanaIliFleksibilna::all();
+                break;
+            case 'banana_ojacana_fleksibilna_falt':
+                $velicine = BananaOjacanaIliFleksibilnaIFalt::all();
+                break;
+            case 'banana_bez_ojacanja_falt':
+                $velicine = BananaBezOjacanjaIFalt::all();
+                break;
+            case 'blanko_bez_ojacanja':
+                $velicine = BlankoBezOjacanja::all();
+                break;
+            case 'blanko_ojacana_falt':
+                $velicine = BlankoOjacanaIFalt::all();
+                break;
+            default:
+                $velicine = collect(); // return empty collection
+                break;
+        }
+
+        return response()->json($velicine);
+    }
+
+    public function changePrice(Request $request)
+    {
+        dd($request->all());
     }
 
     public function listActions()
@@ -185,6 +250,11 @@ class AdminController extends Controller
         return view('pages.admin.order-list', ['orders' => $orders]);
     }
 
+    public function showOrder($id)
+    {
+        dd($id);
+    }
+
     public function editBod()
     {
         $bod = Bod::first();
@@ -204,7 +274,6 @@ class AdminController extends Controller
             DB::rollBack();
             return back()->with('error', 'Došlo je do greške! Pokušajte ponovo ili kontaktirajte administratora.');
         }
-
 
     }
 

@@ -47,7 +47,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::delete('/admin/gallery/destroy/{id}', AdminController::class . '@destroyImage')->name('admin.gallery.destroy');
 
     Route::get('/admin/prices', AdminController::class . '@listPrices')->name('admin.prices');
-    Route::post('/admin/prices/update/{id}', AdminController::class . '@changePrice')->name('admin.prices.change-price');
+    Route::get('/get-velicine-kese', AdminController::class . '@getVelicine')->name('get.velicine.kese');
+    Route::post('/admin/prices/change-price', AdminController::class . '@changePrice')->name('admin.prices.change-price');
 
     Route::get('/admin/actions', AdminController::class . '@listActions')->name('admin.list-actions');
     Route::post('/admin/actions/store', AdminController::class . '@storeAction')->name('admin.actions.store');
@@ -58,6 +59,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/buyers', AdminController::class . '@listBuyers')->name('admin.buyers');
 
     Route::get('/admin/orders', AdminController::class . '@listOrders')->name('admin.orders');
+    Route::get('/admin/orders/{id}', AdminController::class . '@showOrder')->name('admin.orders.show');
 
     Route::get('/admin/edit-bod',  AdminController::class . '@editBod')->name('admin.edit-bod');
     Route::post('/admin/edit-bod/update', AdminController::class . '@updateBod')->name('admin.edit-bod.update');
