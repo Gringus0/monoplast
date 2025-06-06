@@ -15,27 +15,27 @@
 
     <div class="row wrapper">
         <div class="col-12 col-lg-3">
-            <div class="LeftBlockinfo d-flex">
+            <div class="LeftBlockinfo d-flex active" data-id="0">
                 <div class="malaKesa">
                     <div class="malaRucka"></div>
                 </div>
                 <p>Kese sa banana drškom bez bez ojačanja na dršci</p>
             </div>
-            <div class="LeftBlockinfo d-flex mt-2">
+            <div class="LeftBlockinfo d-flex mt-2" data-id="1">
                 <div class="malaKesa">
                     <div class="malaRucka"></div>
                     <div class="koseLinijeMale"></div>
                 </div>
                 <p>Kesa bez ojačane banana drške sa faltom na dnu kese</p>
             </div>
-              <div class="LeftBlockinfo d-flex mt-2">
+            <div class="LeftBlockinfo d-flex mt-2" data-id="2">
                 <div class="malaKesa">
+                    <div class="okoRucke"></div>
                     <div class="malaRucka"></div>
-                    <div class="koseLinijeMale"></div>
                 </div>
                 <p>Kesa sa ojačanom banana drškom</p>
             </div>
-            <div class="LeftBlockinfo d-flex mt-2">
+            <div class="LeftBlockinfo d-flex mt-2" data-id="3">
                 <div class="malaKesa">
                     <div class="okoRucke"></div>
                     <div class="malaRucka"></div>
@@ -43,15 +43,15 @@
                 </div>
                 <p>Kesa sa ojačanom banana drškom i faltom na dnu kese</p>
             </div>
-            <div class="LeftBlockinfo d-flex mt-2">
+            <div class="LeftBlockinfo d-flex mt-2" data-id="4">
                 <div class="malaKesa mt-2" style="height: 35px">
                     <div class="bag-handleMale"></div>       
                 </div>
                 <p>Kesa sa felksibilnom ručkom</p>
             </div>
-            <div class="LeftBlockinfo d-flex mt-2">
+            <div class="LeftBlockinfo d-flex mt-2" data-id="5">
                 <div class="malaKesa mt-2" style="height: 35px">
-                    <div class="bag-handleMale"></div>  
+                    <div class="bag-handleMale"></div>
                     <div class="koseLinijeMale"></div>     
                 </div>
                 <p>Kesa sa fleksibilnom ručkom i faltom na dnu kese</p>
@@ -73,9 +73,29 @@
             <hr class="hrBasic"/>
             <h4 class="ordersSections"> IZBOR DIMENZIJA * <span class="underContactLeftColMain">(prvo izaberite visinu) </span></h4>
             <div class="kesa mt-3">
-                <div class="rucka">
-                    
-                </div>
+                <div class="rucka"></div>
+            </div>
+            <div class="kesa mt-3">
+                <div class="rucka"></div>
+                <div class="koseLinijeVelike"></div>
+            </div>
+            <div class="kesa mt-3">
+                <div class="okoRucke"></div>
+                <div class="rucka"></div>
+            </div>
+            <div class="kesa mt-3">
+                <div class="okoRucke"></div>
+                <div class="rucka"></div>
+                <div class="koseLinijeVelike"></div>
+            </div>
+            <div class="kesa mt-3">
+                <div class="bag-handleVelika"></div>
+                <div class="rucka"></div>
+            </div>
+            <div class="kesa mt-3">
+                <div class="bag-handleVelika"></div>
+                <div class="rucka"></div>
+                <div class="koseLinijeVelike"></div>
             </div>
         </div>
         <div class="col-12 col-lg-3"></div>

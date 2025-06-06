@@ -1,7 +1,8 @@
 window.onload = function(){
     var path = window.location.pathname.split("/").pop();
 
-    document.querySelector("#buttonPricesPDF").addEventListener("click", function(){
+    if(path == "prices"){
+        document.querySelector("#buttonPricesPDF").addEventListener("click", function(){
         const element = document.getElementById('tabeleCene');
 
         var opt = {
@@ -14,7 +15,6 @@ window.onload = function(){
 
         html2pdf().from(element).set(opt).save();
     })
-
 
     const scrollBtn = document.getElementById('scrollBtn');
     const tabeleCene = document.getElementById('tabeleCene');
@@ -35,8 +35,10 @@ window.onload = function(){
     tabeleCene.scrollIntoView({ behavior: 'smooth' });
   });
 
+    }
 
-    const dostupneBoje = {
+  if(path == "order"){
+      const dostupneBoje = {
     "banana_bez_ojacanja": {
         LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "siva", "krem", "ljubicasta"],
         HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva"]
@@ -64,10 +66,43 @@ window.onload = function(){
     };
 
 
-    // document.querySelector(".LeftBlockinfo").addEventListener("click", function(){
-    //     if()
+    document.querySelectorAll(".LeftBlockinfo").forEach((el) => {
+        el.addEventListener("click", function () {
+            console.log("Radi");
+        });
+    });
 
-    // })
+    document.querySelectorAll(".LeftBlockinfo").forEach(el => {
+        el.addEventListener("click", () => {
+            document.querySelectorAll(".LeftBlockinfo").forEach(e => e.classList.remove("active"));
+            el.classList.add("active");
+        });
+    });
+
+  }
+
+    const leftBlocks = document.querySelectorAll('.LeftBlockinfo');
+    const kese = document.querySelectorAll('.kesa');
+
+    leftBlocks.forEach((block, index) => {
+        block.addEventListener('click', () => {
+       
+            kese.forEach(kesa => kesa.classList.remove('active'));
+            leftBlocks.forEach(b => b.classList.remove('active'));
+
+        
+            if (kese[index]) {
+                kese[index].classList.add('active');
+            }
+            block.classList.add('active');
+        });
+    });
+
+   
+    leftBlocks[0].classList.add('active');
+    kese[0].classList.add('active');
+
+
 
 
 
