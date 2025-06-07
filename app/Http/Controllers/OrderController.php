@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class OrderController extends Controller
 {
@@ -13,17 +16,41 @@ class OrderController extends Controller
 
     public function store(Request $request)
     {
-//        dd($request->all());
-        $tipKese = $request->tipKese;
-        $materijal = $request->materijal;
-        $bojaKese = $request->bojaKese;
-        if ($request->bojaRucke) {
-            $bojaRucke = $request->bojaRucke;
-        }
-        $stampaTip = $request->stampaTip;
-        $kolicinaKese = $request->kolicinaKese;
-        $poruka = $request->message;
+        try {
+            DB::beginTransaction();
+            $imageName = time() . "." . $request->image->extension();
+            $request->image->move(public_path('assets/img/images/porudzbine'), $imageName);
+            $order = new Order();
+            $order->fajl1 = $imageName;
+            $order->vrsta_kese = $request->tipKese;
+            $order->materijal = $request->materijal;
+            $order->visina = $request->visina;
+            $order->sirina = $request->sirina;
+            $order->boja_rucke = '';
+            if ($request->bojaRucke) {
+                $order->boja_rucke = $request->bojaRucke;
+            }
+            $order->sesija_kupca = time();
+            $order->boja_kese = $request->bojaKese;
+            $order->vrsta_stampe = $request->stampaTip;
+            $order->kolicina = $request->kolicinaKese;
+            $order->informacije = $request->message;
+            $order->ime = Auth::user()->ime;
+            $order->mail = Auth::user()->mail;
+            $order->telefon = Auth::user()->telefon;
+            $order->firma = Auth::user()->firma;
+            $order->datum = date('Y-m-d H:i:s');
+            $order->broj_porudzbine = time();
 
+            $order->save();
+
+            DB::commit();
+            return back()->with('success', 'Porudžbina uspešna!');
+        } catch (\Exception $ex) {
+            DB::rollBack();
+            dd($ex);
+            return back()->with('error', 'Došlo je do greške! Pokušajte ponovo ili kontaktirajte administratora.');
+        }
 
     }
 }

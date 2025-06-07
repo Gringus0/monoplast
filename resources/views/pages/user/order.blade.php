@@ -10,6 +10,14 @@
                     Brzo i lako naručite vaše reklamne kese
                 </h4>
             <hr/>
+            <h4>
+                @if(session('success'))
+                    {{ session('success') }}
+                @endif
+                @if(session('error'))
+                    {{ session('error') }}
+                @endif
+            </h4>
         </div>
     </div>
 
@@ -242,7 +250,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-xl-custom-2 orderBlocks mt-2">
-            <input type="file" id="uploadFile" name="uploadFile">
+            <input type="file" id="uploadFile" name="image">
             <hr class="hrBasic"/>
             <h4 class="ordersSections mt-3"> DODATNE INFORMACIJE </h4>
             <textarea id="message" name="message" placeholder="Dodatne informacije..." rows="5" cols="40" class="mt-3 w-100 "></textarea>
