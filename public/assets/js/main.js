@@ -2,7 +2,8 @@ window.onload = function(){
     var path = window.location.pathname.split("/").pop();
 
 
-    //     Modal js
+    if(path == "orders"){
+           //     Modal js
     const orderModal = document.getElementById('orderModal');
     orderModal.addEventListener('show.bs.modal', function (event) {
         const button = event.relatedTarget;
@@ -61,6 +62,7 @@ window.onload = function(){
             }
         });
     });
+    }
 
     if(path == "prices"){
         document.querySelector("#buttonPricesPDF").addEventListener("click", function(){
@@ -100,31 +102,35 @@ window.onload = function(){
 
   if(path == "order"){
       const dostupneBoje = {
-    "banana_bez_ojacanja": {
-        LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "siva", "krem", "ljubicasta"],
-        HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva"]
-    },
-    "bez_ojacanja_s_faltom": {
-        LDPe: ["bela", "crna", "zuta", "bez", "siva"],
-        HDPe: ["bela", "zuta", "siva", "providna boja leda"]
-    },
-    "sa_ojacanom_banana": {
-        LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "tamno plava", "siva", "bez", "roze", "ljubicasta", "narandzasta", "zelena", "krem"],
-        HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva", "providna boja leda", "krem"]
-    },
-    "sa_ojacanom_banana_s_faltom": {
-        LDPe: ["bela", "crna", "zuta", "bez", "siva"],
-        HDPe: ["bela", "zuta", "siva", "providna boja leda"]
-    },
-    "fleksibilna": {
-        LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "tamno plava", "siva", "bez", "roze", "ljubicasta", "narandzasta", "zelena", "krem"],
-        HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva", "providna boja leda", "krem"]
-    },
-    "fleksibilna_s_faltom": {
-        LDPe: ["bela", "crna", "zuta", "bez", "siva"],
-        HDPe: ["bela", "zuta", "siva", "providna boja leda"]
-    }
+        "banana_bez_ojacanja": {
+            LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "siva", "krem", "ljubicasta"],
+            HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva"]
+        },
+        "bez_ojacanja_s_faltom": {
+            LDPe: ["bela", "crna", "zuta", "bez", "siva"],
+            HDPe: ["bela", "zuta", "siva", "providna boja leda"]
+        },
+        "sa_ojacanom_banana": {
+            LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "tamno plava", "siva", "bez", "roze", "ljubicasta", "narandzasta", "zelena", "krem"],
+            HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva", "providna boja leda", "krem"]
+        },
+        "sa_ojacanom_banana_s_faltom": {
+            LDPe: ["bela", "crna", "zuta", "bez", "siva"],
+            HDPe: ["bela", "zuta", "siva", "providna boja leda"]
+        },
+        "fleksibilna": {
+            LDPe: ["bela", "crna", "crvena", "zuta", "svetlo plava", "tamno plava", "siva", "bez", "roze", "ljubicasta", "narandzasta", "zelena", "krem"],
+            HDPe: ["bela", "crvena", "zuta", "tamno plava", "siva", "providna boja leda", "krem"]
+        },
+        "fleksibilna_s_faltom": {
+            LDPe: ["bela", "crna", "zuta", "bez", "siva"],
+            HDPe: ["bela", "zuta", "siva", "providna boja leda"]
+        }
     };
+
+
+
+
 
 
     document.querySelectorAll(".LeftBlockinfo").forEach((el) => {
@@ -140,6 +146,7 @@ window.onload = function(){
         });
     });
 
+    
   }
 
     const leftBlocks = document.querySelectorAll('.LeftBlockinfo');
