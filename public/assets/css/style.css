@@ -966,7 +966,7 @@ table tr:last-child td {
     .dim-line.horiz {
         left: 0;
         bottom: -35px;
-        width: 100%; 
+        width: 100%;
         height: 20px;
     }
     .dim-line.horiz .dim-bar {
@@ -995,6 +995,10 @@ table tr:last-child td {
         margin-top: 6px;
         font-weight: 600;
         letter-spacing: 2px;
+    }
+
+    .hidden-radio {
+        display: none;
     }
 
     .size-options {
@@ -1087,7 +1091,7 @@ table tr:last-child td {
         padding: 5px;
         font-weight: 600;
     }
-    
+
     .redColor{
         color: #5e0000;
         font-size: 20px;
@@ -1109,4 +1113,67 @@ table tr:last-child td {
     color: #5e0000;
     border: 1px solid #5e0000;
   }
-  
+
+.boja-bela {
+    background-color: white;
+}
+
+.boja-crna {
+    background-color: black;
+}
+
+.boja-crvena {
+    background-color: red;
+}
+
+.boja-zuta {
+    background-color: yellow;
+}
+
+.boja-svetlo-plava {
+    background-color: lightblue;
+}
+
+.boja-tamno-plava {
+    background-color: darkblue;
+}
+
+.boja-siva {
+    background-color: gray;
+}
+
+.boja-krem {
+    background-color: #f5f5dc;
+}
+
+.boja-ljubicasta {
+    background-color: purple;
+}
+
+.boja-bez {
+    background-color: #f5f5dc;
+}
+
+.boja-roze {
+    background-color: pink;
+}
+
+.boja-narandzasta {
+    background-color: orange;
+}
+
+.boja-zelena {
+    background-color: green;
+}
+
+.boja-providna-boja-leda {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block !important;
+}

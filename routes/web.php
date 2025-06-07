@@ -23,6 +23,7 @@ Route::post('/login', AuthController::class . '@login')->name('auth.login');
 Route::post('/logout', AuthController::class . '@logout')->name('auth.logout');
 
 Route::get('/order', OrderController::class. '@index')->name('order.index');
+Route::post('/order', OrderController::class. '@store')->name('order.store');
 
 Route::post('/contact', ContactController::class . '@sendMail')->name('contact.mail');
 
