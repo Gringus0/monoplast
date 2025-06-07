@@ -128,10 +128,42 @@ window.onload = function(){
         }
     };
 
+      const banana_bez_ojacanja = {
+          25 : [20],
+          30 : [20],
+          35 : [25, 30, 35],
+          45 : [25, 30, 35, 40, 45, 50],
+          50 : [30, 35, 40, 45, 50, 55, 60, 65]
+      };
 
+      const bez_ojacanja_s_faltom = {
+          50 : [30, 35, 40, 45, 50, 55, 60, 65, 70],
+          60 : [30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85]
+      }
 
+      const sa_ojacanom_banana = {
+          35 : [25, 30, 35],
+          45 : [25, 30, 35, 40, 45, 50],
+          50 : [30, 35, 40, 45, 50, 55, 60, 65]
+      }
 
+      const sa_ojacanom_banana_s_faltom = {
+          50 : [30, 35, 40, 45, 50, 55, 60, 65, 70],
+          60 : [30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85]
+      }
 
+      const fleksibilna = {
+          35 : [25, 30, 35],
+          45 : [25, 30, 35, 40, 45, 50],
+          50 : [30, 35, 40, 45, 50, 55, 60, 65]
+      }
+
+      const fleksibilna_s_faltom = {
+          50 : [30, 35, 40, 45, 50, 55, 60, 65, 70],
+          60 : [30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85]
+      }
+
+      // console.log(Object.keys(banana_bez_ojacanja));
 
     document.querySelectorAll(".LeftBlockinfo").forEach((el) => {
         el.addEventListener("click", function () {
@@ -146,7 +178,7 @@ window.onload = function(){
         });
     });
 
-    
+
   }
 
     const leftBlocks = document.querySelectorAll('.LeftBlockinfo');
