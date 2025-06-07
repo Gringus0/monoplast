@@ -210,7 +210,61 @@ class AdminController extends Controller
 
     public function changePrice(Request $request)
     {
-        dd($request->all());
+        $vrsta = $request->vrsta;
+        $velicina = $request->velicina;
+
+        try {
+            DB::beginTransaction();
+            $prices = $this->changePriceDBcommit($vrsta, $velicina);
+            $prices->boja1 = $request->boja1;
+            if ($prices->boja2) {
+                $prices->boja2 = $request->boja2;
+                $prices->boja3 = $request->boja3;
+                $prices->boja4 = $request->boja4;
+                $prices->boja5 = $request->boja5;
+            }
+            $prices->save();
+            DB::commit();
+            return back()->with('success', 'Cene za kese uspešno izmenjene.');
+        } catch (\Exception $ex) {
+            DB::rollBack();
+            return back()->with('error', 'Došlo je do greške. Molimo pokušajte opet ili kontaktirajte administratora.');
+        }
+    }
+
+    private function changePriceDBcommit($vrsta, $velicina)
+    {
+        switch ($vrsta) {
+            case 'banana_bez_ojacanja':
+                $prices = BananaBezOjacanja::where('velicina', $velicina)
+                    ->first();
+                break;
+            case 'banana_ojacana_fleksibilna':
+                $prices = BananaOjacanaIliFleksibilna::where('velicina', $velicina)
+                    ->first();
+                break;
+            case 'banana_ojacana_fleksibilna_falt':
+                $prices = BananaOjacanaIliFleksibilnaIFalt::where('velicina', $velicina)
+                    ->first();
+                break;
+            case 'banana_bez_ojacanja_falt':
+                $prices = BananaBezOjacanjaIFalt::where('velicina', $velicina)
+                    ->first();
+                break;
+            case 'blanko_bez_ojacanja':
+                $prices = BlankoBezOjacanja::where('velicina', $velicina)
+                    ->first();
+                break;
+            case 'blanko_ojacana_falt':
+                $prices = BlankoOjacanaIFalt::where('velicina', $velicina)
+                    ->first();
+                break;
+            default:
+                $prices = collect(); // return empty collection
+                break;
+        }
+
+        return $prices;
     }
 
     public function listActions()
