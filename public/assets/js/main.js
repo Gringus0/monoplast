@@ -100,7 +100,39 @@ window.onload = function(){
 
     }
 
+    if(path ==="gallery"){
+
+
+    }
+
     if(path === "order"){
+
+
+    document.getElementById('stampaTip').addEventListener('change', function() {
+        const descriptions = {
+            '1+0':  'štampa 1 boje na jednoj strani kese',
+            '2+0':  'štampa 2 boje na jednoj strani kese',
+            '3+0':  'štampa 3 boje na jednoj strani kese',
+            '4+0':  'štampa 4 boje na jednoj strani kese',
+            '5+0':  'štampa 5 boje na jednoj strani kese',
+            '1+1':  'štampa 1 boje na jednoj strani i 1 boje na drugoj strani kese',
+            '2+1':  'štampa 2 boje na jednoj strani i 1 boje na drugoj strani kese',
+            '3+1':  'štampa 3 boje na jednoj strani i 1 boje na drugoj strani kese',
+            '4+1':  'štampa 4 boje na jednoj strani i 1 boje na drugoj strani kese',
+            '2+2':  'štampa 2 boje na jednoj strani i 2 boje na drugoj strani kese',
+            '3+2':  'štampa 3 boje na jednoj strani i 2 boje na drugoj strani kese',
+            'višs-od-5': 'više od 5 boja u štampi'
+        };
+
+        const selectedValue = this.value;
+        const text = descriptions[selectedValue] || '';
+
+        document.querySelector('.bagTypeText').innerText = text;
+    });
+
+
+
+
         const dostupneBoje = {
             "banana_bez_ojacanja": {
                 LDPe: ["bela", "crna", "crvena", "zuta", "svetlo-plava", "siva", "krem", "ljubicasta"],
@@ -191,7 +223,7 @@ window.onload = function(){
                             e.classList.add("display-none");
                         });
                         document.querySelector(".bojeRucke").innerHTML = ``;
-                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt4 kesa-boja " + el.nextElementSibling.value;
+                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt-5 kesa-boja " + el.nextElementSibling.value;
                         break;
                     case "bez_ojacanja_s_faltom":
                         getSizes(bez_ojacanja_s_faltom);
@@ -201,7 +233,7 @@ window.onload = function(){
                             e.classList.add("display-none");
                         });
                         document.querySelector(".bojeRucke").innerHTML = ``;
-                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt4 kesa-boja " + el.nextElementSibling.value;
+                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt-5 kesa-boja " + el.nextElementSibling.value;
                         break;
                     case "sa_ojacanom_banana":
                         getSizes(sa_ojacanom_banana);
@@ -211,7 +243,7 @@ window.onload = function(){
                             e.classList.add("display-none");
                         });
                         document.querySelector(".bojeRucke").innerHTML = ``;
-                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt4 kesa-boja " + el.nextElementSibling.value;
+                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt-5 kesa-boja " + el.nextElementSibling.value;
                         break;
                     case "sa_ojacanom_banana_s_faltom":
                         getSizes(sa_ojacanom_banana_s_faltom);
@@ -221,7 +253,7 @@ window.onload = function(){
                             e.classList.add("display-none");
                         });
                         document.querySelector(".bojeRucke").innerHTML = ``;
-                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt4 kesa-boja " + el.nextElementSibling.value;
+                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt-5 kesa-boja " + el.nextElementSibling.value;
                         break;
                     case "fleksibilna":
                         getSizes(fleksibilna);
@@ -239,7 +271,7 @@ window.onload = function(){
                                 <input type="radio" id="rucka${e}" name="bojaRucke" value="${e}">
                                 <label for="rucka${e}" class="color-box boja-${e}"></label>`
                         })
-                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt4 kesa-boja " + el.nextElementSibling.value;
+                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt-5 kesa-boja " + el.nextElementSibling.value;
                         getHandleColors(el.nextElementSibling.value);
                         break;
                     case "fleksibilna_s_faltom":
@@ -258,7 +290,7 @@ window.onload = function(){
                                 <input type="radio" id="rucka${e}" name="bojaRucke" value="${e}">
                                 <label for="rucka${e}" class="color-box boja-${e}"></label>`
                         })
-                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt4 kesa-boja " + el.nextElementSibling.value;
+                        document.querySelector("." + el.nextElementSibling.value).className = "kesa mt-5 kesa-boja " + el.nextElementSibling.value;
                         getHandleColors(el.nextElementSibling.value);
                         break;
                 }
@@ -353,27 +385,46 @@ window.onload = function(){
 
 
         }
-    }
+        const leftBlocks = document.querySelectorAll('.LeftBlockinfo');
+        const kese = document.querySelectorAll('.kesa');
 
-    const leftBlocks = document.querySelectorAll('.LeftBlockinfo');
-    const kese = document.querySelectorAll('.kesa');
+        leftBlocks.forEach((block, index) => {
+            block.addEventListener('click', () => {
 
-    leftBlocks.forEach((block, index) => {
-        block.addEventListener('click', () => {
-
-            kese.forEach(kesa => kesa.classList.remove('active'));
-            leftBlocks.forEach(b => b.classList.remove('active'));
+                kese.forEach(kesa => kesa.classList.remove('active'));
+                leftBlocks.forEach(b => b.classList.remove('active'));
 
 
-            if (kese[index]) {
-                kese[index].classList.add('active');
-            }
-            block.classList.add('active');
+                if (kese[index]) {
+                    kese[index].classList.add('active');
+                }
+                block.classList.add('active');
+            });
         });
-    });
 
 
-    leftBlocks[0].classList.add('active');
-    kese[0].classList.add('active');
-
+        leftBlocks[0].classList.add('active');
+        kese[0].classList.add('active');
+        }
 }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const modalImg = document.getElementById('modalImage');
+
+            document.querySelectorAll('.galleryImages').forEach(img => {
+                img.addEventListener('click', function () {
+                    modalImg.src = this.getAttribute('data-img');
+                });
+            });
+        });
+
+        const img = document.getElementById('english');
+
+        img.addEventListener('mouseover', () => {
+            img.src = img.dataset.hover;
+        });
+
+        img.addEventListener('mouseout', () => {
+            img.src = img.dataset.original;
+        });

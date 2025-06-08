@@ -12,7 +12,7 @@
                 <h4 class="footerSubjects">KONTAKT</h4>
                 <ul>
                     <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-house-chimney marginRight icon"></span></i>Pilota Zorana Latkovica 19, Nova Pazova, 22330</p></li>
-                    <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-envelope marginRight icon"></span></i> contact@gmail.com</p></li>
+                    <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-envelope marginRight icon"></span></i> monoplast.rs@gmail.com</p></li>
                     <li class="d-flex justify-content-start phoneIcon">
                         <p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-phone marginRight icon"></i></span>
                             <ul class="ulNone">

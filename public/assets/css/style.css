@@ -1032,6 +1032,9 @@ table tr:last-child td {
 
     .size-options.horizontalRow {
         flex-direction: row;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .size-options.horizontalColumn{
@@ -1086,8 +1089,8 @@ table tr:last-child td {
     .color-box.red { background-color: #f44336; }
     .color-box.green { background-color: #4caf50; }
 
-    #ŠtampaTip{
-        background-color: #fff;
+    #stampaTip{
+        background-color: #fff !important;
         padding: 5px;
         font-weight: 600;
     }
@@ -1177,3 +1180,77 @@ table tr:last-child td {
 .display-block {
     display: block !important;
 }
+
+.mailOrders{
+    font-style: italic;
+    color: #5e0000;
+}
+
+.ordersText1{
+    font-size: 19px;
+    font-style: italic;
+    color: #666666;
+    text-align: center;
+}
+
+.ordersText2{
+    font-size: 13px;
+    font-weight: normal;
+    color: #464646;
+    text-align: center;
+}
+
+   .logOut {
+    background: linear-gradient(to bottom, #c80101, #8f0000);
+    border-color: #5e0000;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .logOut:hover {
+    background: #fff;
+    color: #5e0000;
+    border: 1px solid #5e0000;
+  }
+
+  .galleryImages {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+    .pagination {
+    padding: 10px;
+    }
+
+    .pagination li a,
+    .pagination li span {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #0060af;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 4px;
+    }
+
+    .pagination li.active span {
+    background-color: #0060af;
+    color: white;
+    font-weight: bold;
+    border-color: #5e0000;
+    }
+
+    .text-muted{
+        color: #0060af !important;
+    }
+
+    .modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 1) !important; 
+    }
+

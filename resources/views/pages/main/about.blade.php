@@ -24,8 +24,7 @@
             </div>
         </div>
     </div>
-
-
+    
     <div id="aboutContentWrapper" class="wrapper row">
         <div class="col-12 col-xl-2 d-flex flex-column d-none d-xxl-block" id="leftBlockAbout">
             <img src="{{asset('/assets/img/images/onama-malaslika1.jpg')}}" class="d-block aboutImages w-100" alt="..."/>

@@ -20,11 +20,11 @@
         <div class="col-12 d-none d-md-block order-3 underImageBackGround">
             <div class="wrapper" id="aboutMainImage">
                 <img src="{{asset('/assets/img/images/flash/monoplast-slide2.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+
             </div>
         </div>
     </div>
 
-    
 
     <div class="wrapper">
         <div class="container-fluid">

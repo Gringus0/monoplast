@@ -13,6 +13,18 @@
                     <!-- Dodati outlook opciju za envelope -->
 
                 </div>
+
+
+                <div>
+                    <img
+                        id="english"
+                        src="{{asset('/assets/img/images/eng2.jpg')}}"
+                        alt="English"
+                        data-hover="{{asset('/assets/img/images/eng.jpg')}}"
+                        data-original="{{asset('/assets/img/images/eng2.jpg')}}"
+                        class="mb-1"
+                    >
+                </div>
             </div>
         </div>
     </div>
@@ -50,7 +62,7 @@
                             <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Kontakt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('registerAndLoginForm') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">Porucite</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">Porucite</a>
                         </li>
                     </ul>
                 </div>

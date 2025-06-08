@@ -51,6 +51,9 @@
         </div>
     </div>
     
+    <div class="wrapper">
+        <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+    </div>
     <!-- Products --> 
     
     <div id="products" class="container-fluid">
