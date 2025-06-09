@@ -1254,3 +1254,124 @@ table tr:last-child td {
     background-color: rgba(0, 0, 0, 1) !important; 
     }
 
+    .topImageAdmin{
+        background-image: url("../img/images/firstHead.jpg");
+        background-repeat: repeat;
+    }
+    
+    .daDuck{
+        height: 200px;
+        padding-top: 60px;
+        margin-bottom: 0px;
+        color: #b8b8b8;
+    }
+
+    .formImageAdmin{
+        background-image: url("../img/images/secondHead.jpg");
+        background-repeat: repeat;
+        border-top: 1px solid #363636;
+    }
+
+    .login-form{
+        margin-top: 40px;
+    }
+    .form-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .form-row label {
+        color: #fff;
+        width: 110px;
+        margin-right: 16px;
+        font-size: 1rem;
+        text-align: right;
+        font-family: Arial, sans-serif;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="password"] {
+        padding: 3px 7px;
+        flex: 1;
+        border: none;
+        border-radius: 2px;
+        background: #fff;
+        color: #232323;
+        font-size: 14px;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+
+    .button-row {
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    .button-row button {
+        background: #78be20;
+        color: #fff;
+        border: none;
+        padding: 3px 10px;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background 0.2s;
+    }
+
+    .button-row button:hover {
+        background: #5ca016;
+    }
+        
+    .admin-menu li {
+        border-bottom: 1px solid #ddd;
+        background-color: #E66416;
+        margin-bottom: 5px;
+    }
+
+    .admin-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .admin-menu li a {
+        display: block;
+        padding: 6px 14px;
+        text-decoration: none;
+        color: #fff;
+        text-align: right;
+    }
+
+    .admin-menu li a:hover {
+        background-color: #67AB00;
+    }
+
+    .logoutBtn{
+        background-color: #E66416;
+        color: #fff;
+        padding: 3px 7px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        right: 0px;
+    }
+
+    .logoutBtn:hover{
+        background-color: #5ca016;
+    }
+    
+    .navigationAdmin{
+        border-right: 1px solid  #dedede;
+    }
+    
+    #bgAdmin{
+        background-image: url("../img/images/secondHead.jpg") !important;
+        background-repeat: repeat !important;
+    }
+
+    .admin-menu li.active a {
+        background-color: #5ca016;
+    }
+    .contentAdmin{
+        background-color: #f2f2f3;
+    }

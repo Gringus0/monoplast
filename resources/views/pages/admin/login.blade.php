@@ -1,22 +1,26 @@
 @extends('layouts.admin')
 @section('content')
-Login
 
-<form class="col-4 m-5" action="{{route('admin.login')}}" method="post">
-    @csrf
-    <div class="mb-3">
-        <label class="form-label">Username</label>
-        <input type="text" class="form-control" name="username">
+    <div class="topImageAdmin w-100">
+        <h1 class="daDuck d-flex justify-content-center">Admin Panel</h1>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Password</label>
-        <input type="password" class="form-control" name="password">
+    <div class="formImageAdmin vh-100">
+        <div class="wrapper d-flex justify-content-center">
+            <form class="login-form" action="{{ route('admin.login') }}" method="post">
+                @csrf
+                <div class="form-row">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" autocomplete="username" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" required>
+                </div>
+                <div class="form-row button-row">
+                    <button type="submit">Sign in</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
 
-<form action="{{route('admin.createAdmin')}}" method="post">
-    @csrf
-    <button type="submit">Create Admin</button>
-</form>
 @endsection

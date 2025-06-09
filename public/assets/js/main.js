@@ -1,6 +1,9 @@
 window.onload = function(){
     var path = window.location.pathname.split("/").pop();
 
+    var path = window.location.pathname;
+
+
 
     if(path === "orders"){
            //     Modal js
