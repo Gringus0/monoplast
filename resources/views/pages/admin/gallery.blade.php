@@ -38,61 +38,61 @@ Galerija
             <div class="blockGallery">
                 <div class="d-flex justify-content-between marginTop marginBottom">
                     <a href="{{ route('admin.gallery', ['category' => 'reklamneKese']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija1.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija1.jpg')}}" alt="Reklamne kese sa štampom logotipa" class="gallery"/>
                         <div class="overlay-text">Reklamne kese</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'trakeZaOznacavanje']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija2.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija2.jpg')}}" alt="Trake za obeležavanje prostora ili paketa" class="gallery"/>
                         <div class="overlay-text">Trake za <br/>označavanje</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'dzakovi']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija3.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija3.jpg')}}" alt="Industrijski džakovi za pakovanje i skladištenje" class="gallery"/>
                         <div class="overlay-text">Džakovi</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'strecFolija']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija4.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija4.jpg')}}" alt="Stretch folija za obmotavanje paleta" class="gallery"/>
                         <div class="overlay-text">Streč folija</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'zipKese']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija5.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija5.jpg')}}" alt="ZIP kese sa zatvaračem" class="gallery"/>
                         <div class="overlay-text">ZIP kese</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'tregerice']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="Tregerice – kese sa ručkama za nošenje" class="gallery"/>
                         <div class="overlay-text">Tregerice</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'opsAmbalaza']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="OPS ambalaža za prehrambene proizvode" class="gallery"/>
                         <div class="overlay-text">OPS ambalaža</div>
                     </a>
                 </div>
                 <div class="d-flex justify-content-between marginTop marginBottom">
                     <a href="{{ route('admin.gallery', ['category' => 'airBubbleFolija']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija8.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija8.jpg')}}" alt="Air bubble folija za zaštitu u transportu" class="gallery"/>
                         <div class="overlay-text">Air Bubble<br/> folija</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'petAmbalaza']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija9.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija9.jpg')}}" alt="PET ambalaža za piće i prehranu" class="gallery"/>
                         <div class="overlay-text">PET ambalaža</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'peFolija']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija10.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija10.jpg')}}" alt="PE folije – polietilenske folije za pakovanje" class="gallery"/>
                         <div class="overlay-text">P.E. Folije</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'plastSirokePotrosnje']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija11.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija11.jpg')}}" alt="Plastični proizvodi za široku potrošnju" class="gallery"/>
                         <div class="overlay-text">Plast. široke <br/>potrošnje</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'keseZaZamrzivac']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija12.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija12.jpg')}}" alt="Kese za zamrzivač sa mogućnošću štampe" class="gallery"/>
                         <div class="overlay-text">Kese za <br/>zamrzivač</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'slikeIzProizvodnje']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija13.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija13.jpg')}}" alt="Slike iz proizvodnje monoplast" class="gallery"/>
                         <div class="overlay-text">Slike iz <br/>proizvodnje</div>
                     </a>
                     <a href="{{ route('admin.gallery', ['category' => 'sajmovi']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija14.jpg')}}" alt="ZipKesa" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija14.jpg')}}" alt="Slike sa sajmova" class="gallery"/>
                         <div class="overlay-text">Sajmovi</div>
                     </a>
                 </div>

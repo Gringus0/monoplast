@@ -71,11 +71,11 @@
                         <div class="overlay-text">Kese za <br/>zamrzivač</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'slikeIzProizvodnje']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija13.jpg')}}" alt="Slike iz proizvodnje" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija13.jpg')}}" alt="Slike iz proizvodnje monoplast" class="gallery"/>
                         <div class="overlay-text">Slike iz <br/>proizvodnje</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'sajmovi']) }}" class="gallery-item">
-                        <img src="{{asset('/assets/img/images/galerija14.jpg')}}" alt="Sajmovi" class="gallery"/>
+                        <img src="{{asset('/assets/img/images/galerija14.jpg')}}" alt="Slike sa sajmova" class="gallery"/>
                         <div class="overlay-text">Sajmovi</div>
                     </a>
                 </div>
@@ -95,7 +95,8 @@
                                 class="galleryImages img-fluid"
                                 data-bs-toggle="modal"
                                 data-bs-target="#imageModal"
-                                data-img="{{ asset('/assets/img/images/galerija/' . $kesa->velikaslika) }}">
+                                data-img="{{ asset('/assets/img/images/galerija/' . $kesa->velikaslika) }}"
+                                alt="{{$kesa->opis}}">
                         </div>
                     @endforeach
                 </div>

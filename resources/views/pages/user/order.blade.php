@@ -276,7 +276,7 @@
         </form>
     </div>
         <div class="wrapper mb-4">
-            <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+            <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Linija" />
             <p class="ordersText2 mt-2">Nudimo Vam, blanko i štampane kese i džakove raznih boja i veličina. I to nije sve, zbog toga što se u našim kesama nose proizvodi različite težine, po Vašem zahtevu, sve kese možemo proizvesti sa ojačanim ili plastičnim ručkama. Naše kese se proizvode od najkvalitetnijih materijala, u raznim bojama a po Vašoj želji, na kesama vršimo štampu u jednoj ili više boja.</p>
             <hr class="hrBasic">
             <h5 class="ordersText1">Za sve detalje, uputstva oko pripreme za štampu, cene, tiraža i rokova izrade kesa, molimo Vas da se obratite našoj komercijalnoj službi, koristeći jedan od navedenih telefona, E-mail, ili pošaljite Fax.</h5>

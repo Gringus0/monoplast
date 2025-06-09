@@ -5,7 +5,7 @@
 
     <div class="row flex-column d-flex d-md-block marginZero">
         <div class="col-12 d-md-none order-1 paddingZero" id="imagesPhone">
-            <img src="{{asset('/assets/img/images/flash/01_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Mobilna slika" />
+            <img src="{{asset('/assets/img/images/flash/01_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - ekološka ambalaža" />
         </div>
 
     <div class="col-12 order-2" id="textUnderNav">
@@ -20,17 +20,17 @@
 
         <div class="col-12 d-none d-md-block order-3 underImageBackGround">
             <div class="wrapper" id="aboutMainImage">
-                <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+                <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - ekološka ambalaža" />
             </div>
         </div>
     </div>
     
     <div id="aboutContentWrapper" class="wrapper row">
         <div class="col-12 col-xl-2 d-flex flex-column d-none d-xxl-block" id="leftBlockAbout">
-            <img src="{{asset('/assets/img/images/onama-malaslika1.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
-            <img src="{{asset('/assets/img/images/onama-malaslika2.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
-            <img src="{{asset('/assets/img/images/onama-malaslika3.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
-            <img src="{{asset('/assets/img/images/onama-malaslika4.jpg')}}" class="d-block aboutImages w-100" alt="..."/>
+            <img src="{{asset('/assets/img/images/onama-malaslika1.jpg')}}" class="d-block aboutImages w-100" alt="Industrijska termopresa za štampu sa kontrolnim panelom"/>
+            <img src="{{asset('/assets/img/images/onama-malaslika2.jpg')}}" class="d-block aboutImages w-100" alt="Ekstruziona linija za proizvodnju plastičnih kesa"/>
+            <img src="{{asset('/assets/img/images/onama-malaslika3.jpg')}}" class="d-block aboutImages w-100" alt="Radnica koristi mašinu za štampu kese"/>
+            <img src="{{asset('/assets/img/images/onama-malaslika4.jpg')}}" class="d-block aboutImages w-100" alt="Mašina za štampu i pakovanje plastičnih kesa u rolni"/>
         </div>
         <div class="col-12 col-xl-6" id="middleBlockAbout">
             <div class="blockPolygon" id="aboutText">
@@ -69,14 +69,14 @@
                 </p>
             </div>
             <div id="rightBlockImages" class="d-flex justify-content-around">
-                <img src="{{asset('/assets/img/images/819538FB_IMG_1564083527800.jpg')}}" class="d-block aboutImagesRightBlock" alt="..."/>
-                <img src="{{asset('/assets/img/images/276478Monoplast 20190610_112315.jpg')}}" class="d-block aboutImagesRightBlock" alt="..."/>
-                <img src="{{asset('/assets/img/images/765835rt-700.jpg')}}" class="d-block aboutImagesRightBlock" alt="..."/>
+                <img src="{{asset('/assets/img/images/819538FB_IMG_1564083527800.jpg')}}" class="d-block aboutImagesRightBlock" alt="Brendirano dostavno vozilo sa reklamnom grafikom"/>
+                <img src="{{asset('/assets/img/images/276478Monoplast 20190610_112315.jpg')}}" class="d-block aboutImagesRightBlock" alt="Izgled Zip kese sa klizačem"/>
+                <img src="{{asset('/assets/img/images/765835rt-700.jpg')}}" class="d-block aboutImagesRightBlock" alt="Pogled na proizvodni pogon sa industrijskim mašinama"/>
             </div>
             <div class="mt-3 text-center">
                 <i class="fa-solid fa-circle circleProducts"></i> <a class="moreGallery" href="{{route('gallery')}}">pogledaj galeriju iz proizvodnje...</a>
             </div>
-             <img src="{{asset('/assets/img/images/onama-velika.jpg')}}" id="rightBlockBigImage" class="d-block w-100 mt-3" alt="..."/>
+             <img src="{{asset('/assets/img/images/onama-velika.jpg')}}" id="rightBlockBigImage" class="d-block w-100 mt-3" alt="Mašina za štampu i sečenje plastičnih kesa sa logotipom"/>
         </div>
     </div>
 

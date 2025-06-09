@@ -16,8 +16,8 @@
 
     <div class="col-12 d-none d-md-block order-3 underImageBackGround">
         <div class="wrapper" id="aboutMainImage">
-            <img src="{{asset('/assets/img/images/flash-slika-kontakt2.jpg')}}" class="d-block w-100" alt="Desktop slika" />
-            <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+            <img src="{{asset('/assets/img/images/flash-slika-kontakt2.jpg')}}" class="d-block w-100" alt="Lokacija monoplast firme na mapi" />
+            <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Linija" />
         </div>
     </div>
 
@@ -26,7 +26,7 @@
             <div class="col-12 col-lg-3">
                 <div class="desnoBudi ">
                     <div id="sendEmailContact" >
-                    <a href="" class="aTag colorWhite"><p>Klikni ovde da bi poslao <span class="bold">e-mail</span></p></a>
+                    <a href="mailto:monoplast.rs@gmail.com?" class="aTag colorWhite"><p>Klikni ovde da bi poslao <span class="bold">e-mail</span></p></a>
                     </div>
                     <p class="contactLeftColMain">Monoplast d.o.o</p>
                     <p class="underContactLeftColMain">Preduzeće za proizvodnju,<br/> trgovinu na veliko i malo,<br/>uvoz, izvoz i usluge</p>

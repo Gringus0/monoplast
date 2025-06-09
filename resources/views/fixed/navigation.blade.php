@@ -6,24 +6,25 @@
                 <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (22) 239 518</p>
                 <p><i class="fa-solid fa-phone marginRight marginLeft textOrange"></i>+381 (65) 336 11 11</p>
                 <div>
-                    <a href="https://www.facebook.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-facebook-f icon"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-instagram icon marginLeftRight"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" class="hoverTextOrange noDecA"><i class="fa-solid fa-envelope"></i></a>
-
-                    <!-- Dodati outlook opciju za envelope -->
-
+                    <a href="https://www.facebook.com/www.monoplast.rs/" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href="https://www.instagram.com/monoplast.rs/" target="_blank" class="hoverTextOrange noDecA marginRight"><i class="fa-brands fa-instagram icon marginLeftRight"></i></a>
+                    <a href="mailto:monoplast.rs@gmail.com?" target="_blank" class="hoverTextOrange noDecA">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
                 </div>
 
 
                 <div>
                     <img
                         id="english"
-                        src="{{asset('/assets/img/images/eng2.jpg')}}"
-                        alt="English"
-                        data-hover="{{asset('/assets/img/images/eng.jpg')}}"
-                        data-original="{{asset('/assets/img/images/eng2.jpg')}}"
+                        src="{{ asset('/assets/img/images/eng2.jpg') }}"
+                        alt="Engleska zastava – Kliknite za promenu jezika"
+                        data-hover="{{ asset('/assets/img/images/eng.jpg') }}"
+                        data-original="{{ asset('/assets/img/images/eng2.jpg') }}"
+                        data-clicked-src="{{ asset('/assets/img/images/srb1.jpg') }}"  
+                        data-clicked-alt="Srpska zastava – Kliknite za promenu jezika" 
                         class="mb-1"
-                    >
+                    />
                 </div>
             </div>
         </div>
@@ -35,8 +36,8 @@
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid mp0">
-                <a class="navbar-brand" href="#">
-                    <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo" class="logo">
+                <a class="navbar-brand {{ request()->is('/') || request()->routeIs('home') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">
+                    <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo - Monoplast" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

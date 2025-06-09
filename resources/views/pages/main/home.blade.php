@@ -52,7 +52,7 @@
     </div>
     
     <div class="wrapper">
-        <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+        <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Linija" />
     </div>
     <!-- Products --> 
     
@@ -63,7 +63,7 @@
             <p class="productDivTitle">Novo: Zip kese</p>
             <hr/>
             <div class="d-flex flex-column">
-              <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="ZipKesa" class="productsImages"/>
+              <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="Zip - Kesa" class="productsImages"/>
               <div class="contextProducts">
                 <p><span class="bold">Kese sa ZIP Zatvaračem:</span></p>
                 <ul class="productsList">
@@ -98,9 +98,9 @@
         </div>
         <div class="col-12 col-lg-4 mb-4">
           <div class="p-3 block borderProducts blockPolygon h-100 d-flex flex-column justify-content-between">
-            <a href=""><img src="{{asset('/assets/img/images/porucite3.png')}}" alt="PoruciteKese" class="order-image"/></a>
-            <a href=""><img src="{{asset('/assets/img/images/cenovnik3.png')}}" alt="Cenovnik" class="order-image"/></a>
-            <img src="{{asset('/assets/img/images/reciklabilni.png')}}" alt="Reciklirano" class="order-image"/>
+            <a class="{{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}"><img src="{{asset('/assets/img/images/porucite3.png')}}" alt="Kliknite da poručite proizvod" class="order-image"/></a>
+            <a class="{{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('productPrices') }}"><img src="{{asset('/assets/img/images/cenovnik3.png')}}" alt="Pogledajte cene proizvoda" class="order-image"/></a>
+            <img src="{{asset('/assets/img/images/reciklabilni.png')}}" alt="Proizvodi napravljeni od 100% recikliranih materijala" class="order-image"/>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
     <main>
         <div class="row flex-column d-flex d-md-block marginZero">
         <div class="col-12 d-md-none order-1 paddingZero" id="imagesPhone">
-            <img src="{{asset('/assets/img/images/flash/02_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Mobilna slika" />
+            <img src="{{asset('/assets/img/images/flash/02_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu" />
         </div>
 
     <div class="col-12 order-2" id="textUnderNav">
@@ -19,7 +19,7 @@
 
         <div class="col-12 d-none d-md-block order-3 underImageBackGround">
             <div class="wrapper" id="aboutMainImage">
-                <img src="{{asset('/assets/img/images/flash/monoplast-slide2.jpg')}}" class="d-block w-100" alt="Desktop slika" />
+                <img src="{{asset('/assets/img/images/flash/monoplast-slide2.jpg')}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu" />
 
             </div>
         </div>
@@ -32,7 +32,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/prozvodSlika1.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/prozvodSlika1.jpg')}}" alt="Reklamne kese sa štampom logotipa" class="productsImages mx-auto d-block w-100 aboutImages"/>
                     </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
                             <h5>Reklamne kese</h5>
@@ -53,7 +53,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/trake-za-kros.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/trake-za-kros.jpg')}}" alt="Trake za obeležavanje prostora ili paketa" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
                             <h5>Trake za označavanje</h5>
@@ -73,7 +73,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/dzakovi.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/dzakovi.jpg')}}" alt="Industrijski džakovi za pakovanje i skladištenje" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
                             <h5>Džakovi</h5>
@@ -95,7 +95,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/strec-folija.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/strec-folija.jpg')}}" alt="Stretch folija za obmotavanje paleta" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
                             <h5>Streč folije</h5>
@@ -121,7 +121,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/zip-kese.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/zip-kese.jpg')}}" alt="ZIP kese sa zatvaračem" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
                             <h5>Zip kese</h5>
@@ -141,7 +141,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/tregerice.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/tregerice.jpg')}}" alt="Tregerice – kese sa ručkama za nošenje" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
                             <h5>Treger kese</h5>
@@ -160,7 +160,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/ops-ambalaza.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/ops-ambalaza.jpg')}}" alt="OPS ambalaža za prehrambene proizvode" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
                             <h5>OPS ambalaža</h5>
@@ -179,7 +179,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/air-bubble.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/air-bubble.jpg')}}" alt="Air bubble folija za zaštitu u transportu" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
                             <h5>Vazdušasta - Air Bubble folija</h5>
@@ -210,7 +210,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/pp-ambalaza.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/pp-ambalaza.jpg')}}" alt="PET ambalaža za piće i prehranu" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
                             <h5>Pet ambalaža</h5>
@@ -229,7 +229,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/stiropor-ambalaza.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/stiropor-ambalaza.jpg')}}" alt="PE folije – polietilenske folije za pakovanje" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
                             <h5>Poli-etilenske Folije , Creva i Polu-Creva</h5>
@@ -246,7 +246,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/plastika-siroke-potrosnje.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/plastika-siroke-potrosnje.jpg')}}" alt="Plastični proizvodi za široku potrošnju" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
                             <h5>Plastika široke potrošnje</h5>
@@ -265,7 +265,7 @@
                 <div class="col-12 borderBottomProducts">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-4">
-                        <img src="{{asset('/assets/img/images/kese-za-zamrzivac.jpg')}}" alt="ZipKesa" class="productsImages mx-auto d-block w-100 aboutImages"/>
+                        <img src="{{asset('/assets/img/images/kese-za-zamrzivac.jpg')}}" alt="Kese za zamrzivač sa mogućnošću štampe" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
                             <h5>Kese za zamrzivač</h5>
