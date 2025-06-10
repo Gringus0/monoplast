@@ -1375,3 +1375,16 @@ table tr:last-child td {
     .contentAdmin{
         background-color: #f2f2f3;
     }
+
+    .labelAdmin{
+        margin-right: 50px;
+    }
+    
+    .inputAdmin{
+        width: 250px;
+    }
+
+    .titleAdmin{
+        letter-spacing: 5px;
+        color: #5ca016;
+    }

@@ -1,49 +1,74 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div>
-        <h2>Lista Cena</h2>
-        <form action="">
-            @csrf
-            <label class="marginRight15" for="vrsta">Vrsta kese:</label>
-            <select name="vrsta" id="vrsta">
+<div class="col-6 p-4">
+    <h2 class="d-flex justify-content-center p-4 titleAdmin">IZMENA CENA</h2>
+
+    <form method="" action="" class="mb-4">
+        @csrf
+        <div class="mb-3 d-flex justify-content-between">
+            <label for="vrsta" class="labelAdmin">Vrsta kese:</label>
+            <select name="vrsta" id="vrsta" class="bg-light rounded inputAdmin">
                 <option value="">-- Izaberite vrstu kese --</option>
-                <option value="banana_bez_ojacanja" {{ request()->query('vrsta') == 'banana_bez_ojacanja' ? 'selected' : '' }}>Banana Bez Ojačanja</option>
-                <option value="banana_ojacana_fleksibilna" {{ request()->query('vrsta') == 'banana_ojacana_fleksibilna' ? 'selected' : '' }}>Banana Ojačana ili Fleksibilna</option>
-                <option value="banana_ojacana_fleksibilna_falt" {{ request()->query('vrsta') == 'banana_ojacana_fleksibilna_falt' ? 'selected' : '' }}>Banana Ojačana ili Fleksibilna i Falt</option>
-                <option value="banana_bez_ojacanja_falt" {{ request()->query('vrsta') == 'banana_bez_ojacanja_falt' ? 'selected' : '' }}>Banana Bez Ojačanja i Falt</option>
-                <option value="blanko_bez_ojacanja" {{ request()->query('vrsta') == 'blanko_bez_ojacanja' ? 'selected' : '' }}>Blanko Bez Ojačanja</option>
-                <option value="blanko_ojacana_falt" {{ request()->query('vrsta') == 'blanko_ojacana_falt' ? 'selected' : '' }}>Blanko Ojačana i Falt</option>
+                <option value="banana_bez_ojacanja" {{ request('vrsta') == 'banana_bez_ojacanja' ? 'selected' : '' }}>Banana ručka bez ojačanja</option>
+                <option value="banana_ojacana_fleksibilna" {{ request('vrsta') == 'banana_ojacana_fleksibilna' ? 'selected' : '' }}>Banana Ojačana ili Fleksibilna</option>
+                <option value="banana_ojacana_fleksibilna_falt" {{ request('vrsta') == 'banana_ojacana_fleksibilna_falt' ? 'selected' : '' }}>Banana Ojačana ili Fleksibilna i Falt</option>
+                <option value="banana_bez_ojacanja_falt" {{ request('vrsta') == 'banana_bez_ojacanja_falt' ? 'selected' : '' }}>Banana Bez Ojačanja i Falt</option>
+                <option value="blanko_bez_ojacanja" {{ request('vrsta') == 'blanko_bez_ojacanja' ? 'selected' : '' }}>Blanko Bez Ojačanja</option>
+                <option value="blanko_ojacana_falt" {{ request('vrsta') == 'blanko_ojacana_falt' ? 'selected' : '' }}>Blanko Ojačana i Falt</option>
             </select>
+        </div>
 
+        <div class="mb-3 d-flex justify-content-between">
+            <label for="velicina" class="labelAdmin">Veličina:</label>
+            <select name="velicina" id="velicina" class="bg-light rounded inputAdmin">
+                <option value="0">-- Izaberite prvo kesu --</option>
+            </select>
+        </div>
 
-            <div id="velicina"></div>
+        <div class="d-flex justify-content-center mb-4">
+            <button type="submit" class="btn btn-dark">Potvrdi</button>
+        </div>
+    </form>
 
-            <button type="submit">Prikaži cene</button>
-        </form>
+    <form action="{{ route('admin.prices.change-price') }}" method="POST">
+        @csrf
+        <input type="hidden" name="vrsta" value="{{ request('vrsta') }}">
+        <input type="hidden" name="velicina" value="{{ request('velicina') }}">
 
+        @foreach($data as $cena)
+            <div class="mb-2 d-flex justify-content-between">
+                <label for="boja1" class="me-2 labelAdmin">1 boja:</label>
+                <input type="text" class="inputAdmin" name="boja1" value="{{ $cena->boja1 }}">
+            </div>
 
-        <form action="{{ route('admin.prices.change-price') }}" method="POST">
-            @csrf
-            <input type="hidden" name="vrsta" value="{{ request('vrsta') }}">
-            <input type="hidden" name="velicina" value="{{ request('velicina') }}">
-            @foreach($data as $cena)
-                <label class="marginRight15" for="boja1">Boja 1</label>
-                <input type="text" name="boja1" value="{{ $cena->boja1 }}"> <br>
-                @if($cena->boja2)
-                    <label class="marginRight15 p-2" for="boja2">Boja 2</label>
-                    <input type="text" name="boja2" value="{{ $cena->boja2 }}"> <br>
-                    <label class="marginRight15" for="boja3">Boja 3</label>
-                    <input type="text" name="boja3" value="{{ $cena->boja3 }}"> <br>
-                    <label class="marginRight15" for="boja4">Boja 4</label>
-                    <input type="text" name="boja4" value="{{ $cena->boja4 }}"> <br>
-                    <label class="marginRight15" for="boja5">Boja 5</label>
-                    <input type="text" name="boja5" value="{{ $cena->boja5 }}"> <br>
-                @endif
-            @endforeach
-            <button type="submit">Izmeni cene</button>
-        </form>
-    </div>
+            <div class="mb-2 d-flex justify-content-between">
+                <label for="boja2" class="me-2 labelAdmin">2 boja:</label>
+                <input type="text" class="inputAdmin" name="boja2" value="{{ $cena->boja2 }}">
+            </div>
+
+            <div class="mb-2 d-flex justify-content-between">
+                <label for="boja3" class="me-2 labelAdmin">3 boja:</label>
+                <input type="text" class="inputAdmin" name="boja3" value="{{ $cena->boja3 }}">
+            </div>
+
+            <div class="mb-2 d-flex justify-content-between">
+                <label for="boja4" class="me-2 labelAdmin">4 boja:</label>
+                <input type="text" class="inputAdmin" name="boja4" value="{{ $cena->boja4 }}">
+            </div>
+
+            <div class="mb-4 d-flex justify-content-between">
+                <label for="boja5" class="me-2 labelAdmin">5 boja:</label>
+                <input type="text" class="inputAdmin" name="boja5" value="{{ $cena->boja5 }}">
+            </div>
+        @endforeach
+
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-dark">Izmeni</button>
+        </div>
+    </form>
+</div>
+
     @if(session('success'))
         {{ session('success') }}
     @endif
