@@ -1421,3 +1421,8 @@ table tr:last-child td {
         background-color: #0d5a9b;
         font-weight: 600;
     }
+    
+    .divHeightAdmin{
+        height: 1000px !important;
+    }
+    

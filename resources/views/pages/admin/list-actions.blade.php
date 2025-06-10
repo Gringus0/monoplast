@@ -1,17 +1,22 @@
 @extends('layouts.admin')
 @section('content')
+
+<div class="p-4 col-12 text-center">
+    <h2 class="d-flex justify-content-center p-4 titleAdmin">SPISAK REGISTROVANIH KUPACA</h2>
+
     {{ $actions->links() }}
+
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>#</th>
-            <th>Naslov</th>
-            <th>Visina akcije</th>
-            <th>Tekst</th>
-            <th>Slika</th>
-            <th>Slika2</th>
-            <th>Od</th>
-            <th>Do</th>
+            <th class="firstRowAdmin colorAdmin">RB</th>
+            <th class="colorAdmin">NASLOV</th>
+            <th class="colorAdmin">VISINA AKCIJE</th>
+            <th class="colorAdmin">TEKST</th>
+            <th class="colorAdmin">SLIKA</th>
+            <th class="colorAdmin">SLIKA2</th>
+            <th class="colorAdmin">OD</th>
+            <th class="colorAdmin">DO</th>
         </tr>
         </thead>
         <tbody>
@@ -33,6 +38,7 @@
 
         </tbody>
     </table>
-
     {{ $actions->links() }}
+</div>
+
 @endsection

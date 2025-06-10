@@ -9,7 +9,7 @@
         <thead>
             <tr class="trAdmin">
                 <th class="colorAdmin firstRowAdmin">RB</th>
-                <th class="colorAdmin">NARUČIOC</th>
+                <th class="colorAdmin">IME I PREZIME</th>
                 <th class="colorAdmin">NAZIV FIRME</th>
                 <th class="colorAdmin">TELEFON</th>
                 <th class="colorAdmin">EMAIL</th>

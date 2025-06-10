@@ -15,7 +15,7 @@
                         <h3 class="text-light">Welcome, Monoplast </h3>
                     </div>
                 </div>
-                <div class="flex-fill contentAdmin vh-100">
+                <div class="flex-fill contentAdmin">
                     <div class="w-100 h-100 border rounded" style="min-height: 180px;">
                         @yield('content')
                     </div>

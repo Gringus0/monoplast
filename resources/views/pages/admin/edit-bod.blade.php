@@ -16,17 +16,17 @@
             </div>
         </form>
 
-            @if(session('success'))
-                <div class="alert alert-success m-3 text-center">
-                    {{ session('success') }}
-                </div>
-            @endif
+        @if(session('success'))
+            <div class="alert alert-success m-3 text-center">
+                {{ session('success') }}
+            </div>
+        @endif
 
-            @if(session('error'))
-                <div class="alert alert-danger m-3 text-center">
-                    {{ session('error') }}
-                </div>
-            @endif
+        @if(session('error'))
+            <div class="alert alert-danger m-3 text-center">
+                {{ session('error') }}
+            </div>
+        @endif
 
     </div>
         
