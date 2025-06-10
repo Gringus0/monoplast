@@ -21,8 +21,8 @@
                         alt="Engleska zastava – Kliknite za promenu jezika"
                         data-hover="{{ asset('/assets/img/images/eng.jpg') }}"
                         data-original="{{ asset('/assets/img/images/eng2.jpg') }}"
-                        data-clicked-src="{{ asset('/assets/img/images/srb1.jpg') }}"  
-                        data-clicked-alt="Srpska zastava – Kliknite za promenu jezika" 
+                        data-clicked-src="{{ asset('/assets/img/images/srb1.jpg') }}"
+                        data-clicked-alt="Srpska zastava – Kliknite za promenu jezika"
                         class="mb-1"
                     />
                 </div>

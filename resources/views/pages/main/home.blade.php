@@ -53,12 +53,12 @@
             </div>
         </div>
     </div>
-    
+
     <div class="wrapper">
         <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Linija" />
     </div>
-    <!-- Products --> 
-    
+    <!-- Products -->
+
     <div id="products" class="container-fluid">
       <div class="row wrapper gx-5">
         <div class="col-12 col-lg-4 mb-4">
@@ -76,7 +76,7 @@
                 </ul>
               </div>
             </div>
-            <i class="fa-solid fa-circle circleProducts"></i> 
+            <i class="fa-solid fa-circle circleProducts"></i>
             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Galerija proizvoda...</a>
           </div>
         </div>
@@ -108,7 +108,7 @@
         </div>
       </div>
     </div>
-  
+
 </main>
 
 
