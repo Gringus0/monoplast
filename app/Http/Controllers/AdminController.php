@@ -302,7 +302,7 @@ class AdminController extends Controller
 
     public function listOrders()
     {
-        $orders = Order::paginate(15);
+        $orders = Order::orderBy('id', 'DESC')->paginate(15);
         return view('pages.admin.order-list', ['orders' => $orders]);
     }
 
