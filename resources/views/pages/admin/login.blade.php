@@ -1,10 +1,10 @@
 @extends('layouts.admin')
 @section('content')
 
-    <div class="topImageAdmin w-100">
-        <h1 class="daDuck d-flex justify-content-center">Admin Panel</h1>
-    </div>
     <div class="formImageAdmin vh-100">
+        <div class="topImageAdmin w-100">
+            <h1 class="daDuck d-flex justify-content-center text-center">Admin Panel <br/>Monoplast</h1>
+        </div>
         <div class="wrapper d-flex justify-content-center">
             <form class="login-form" action="{{ route('admin.login') }}" method="post">
                 @csrf

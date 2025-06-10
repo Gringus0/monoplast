@@ -1366,7 +1366,6 @@ table tr:last-child td {
     
     #bgAdmin{
         background-image: url("../img/images/secondHead.jpg") !important;
-        background-repeat: repeat !important;
     }
 
     .admin-menu li.active a {
