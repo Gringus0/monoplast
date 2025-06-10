@@ -1377,6 +1377,8 @@ table tr:last-child td {
 
     .labelAdmin{
         margin-right: 50px;
+        color: #333333;
+        font-weight: 700;
     }
     
     .inputAdmin{
