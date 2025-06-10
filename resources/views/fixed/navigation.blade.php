@@ -60,6 +60,9 @@
                             <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Galerija</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('actions') ? 'active' : '' }}" href="{{ route('actions') }}">Akcije</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Kontakt</a>
                         </li>
                         <li class="nav-item">

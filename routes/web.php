@@ -14,6 +14,7 @@ Route::get('/gallery', ProductController::class . '@listProductsWithGallery')->n
 Route::get('/prices', ProductController::class . '@listProductPrices')->name('productPrices');
 Route::get('/contact', ContactController::class . '@index')->name('contact');
 Route::get('/products', ProductController::class . '@ListProducts')->name('products');
+Route::get('/actions', ProductController::class . '@ListActions')->name('actions');
 
 Route::get('/login', AuthController::class . '@registerAndLoginForm')->name('registerAndLoginForm');
 

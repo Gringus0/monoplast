@@ -118,4 +118,9 @@ class ProductController extends Controller
         return view('pages.products.products');
 
     }
+
+    public function listActions()
+    {
+        return view('pages.products.actions');
+    }
 }

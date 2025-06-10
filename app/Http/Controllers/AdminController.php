@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Action;
 use App\Models\BananaBezOjacanja;
 use App\Models\BananaBezOjacanjaIFalt;
 use App\Models\BananaOjacanaIliFleksibilna;
@@ -269,7 +270,8 @@ class AdminController extends Controller
 
     public function listActions()
     {
-        return view('pages.admin.list-actions');
+        $actions = Action::paginate(15);
+        return view('pages.admin.list-actions', ['actions'  => $actions]);
     }
 
     public function storeAction(Request $request)
