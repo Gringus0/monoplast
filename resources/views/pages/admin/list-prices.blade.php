@@ -8,7 +8,7 @@
         @csrf
         <div class="mb-3 d-flex justify-content-between">
             <label for="vrsta" class="labelAdmin">Vrsta kese:</label>
-            <select name="vrsta" id="vrsta" class="bg-light rounded inputAdmin">
+            <select name="vrsta" id="vrsta" class="bg-light rounded widthInput">
                 <option value="">-- Izaberite vrstu kese --</option>
                 <option value="banana_bez_ojacanja" {{ request('vrsta') == 'banana_bez_ojacanja' ? 'selected' : '' }}>Banana ručka bez ojačanja</option>
                 <option value="banana_ojacana_fleksibilna" {{ request('vrsta') == 'banana_ojacana_fleksibilna' ? 'selected' : '' }}>Banana Ojačana ili Fleksibilna</option>
@@ -21,7 +21,7 @@
 
         <div class="mb-3 d-flex justify-content-between">
             <label for="velicina" class="labelAdmin">Veličina:</label>
-            <select name="velicina" id="velicina" class="bg-light rounded inputAdmin">
+            <select name="velicina" id="velicina" class="bg-light rounded inputAdmin widthInput">
                 <option value="0">-- Izaberite prvo kesu --</option>
             </select>
         </div>

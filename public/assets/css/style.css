@@ -1421,8 +1421,28 @@ table tr:last-child td {
         background-color: #0d5a9b;
         font-weight: 600;
     }
-    
-    .divHeightAdmin{
-        height: 1000px !important;
+
+    .textArea{
+        color: #5ca016;
+        font-size: 14px;
     }
-    
+
+    .focusAdmin:focus{
+        background-color: #fff !important;
+    }
+
+    #opis{
+        width: 360px;
+    }
+
+    .widthInput{
+        width: 250px;
+    }
+
+    #vrsta{
+        margin-left: 55px;
+    }
+
+    #modalImage{
+        border: 15px solid #fff;
+    }
