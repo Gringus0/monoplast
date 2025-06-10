@@ -1388,3 +1388,36 @@ table tr:last-child td {
         letter-spacing: 5px;
         color: #5ca016;
     }
+
+    .colorAdmin{
+        background-color: #363636 !important;
+        color: #fff !important;
+        border-right: 1px solid #fff;
+        text-align: center;
+        height: 40px;
+    }
+    
+    .firstRowAdmin{
+        width: 40px;
+    }
+
+    tr.trAdmin th:nth-child(2) {
+        width: 14%;
+    }
+
+    tr.trAdmin th:nth-child(3) {
+        width: 13%;
+    }
+
+    tr.trAdmin th:nth-child(4) {
+        width: 13%;
+    }
+
+    tr.trAdmin th:nth-child(5) {
+        width: 25%;
+    }
+
+    .buttonAdmin{
+        background-color: #0d5a9b;
+        font-weight: 600;
+    }

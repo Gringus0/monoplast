@@ -1,62 +1,67 @@
 @extends('layouts.admin')
 @section('content')
-Lista Porudzbina
-{{ $orders->links() }}
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Ime</th>
-            <th>Firma</th>
-            <th>Telefon</th>
-            <th>Email</th>
-            <th>Datum</th>
-            <th>Pogledaj</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach($orders as $order)
-        <tr>
-            <td>{{ $order->id }}</td>
-            <td>{{ $order->ime }}</td>
-            <td>{{ $order->firma }}</td>
-            <td>{{ $order->telefon }}</td>
-            <td>{{ $order->mail }}</td>
-            <td>{{ $order->datum }}</td>
-            <td>
-                <button
-                    class="btn btn-primary btn-sm"
-                    data-bs-toggle="modal"
-                    data-bs-target="#orderModal"
-                    data-id="{{ $order->id }}"
-                    data-ime="{{ $order->ime }}"
-                    data-firma="{{ $order->firma }}"
-                    data-telefon="{{ $order->telefon }}"
-                    data-mail="{{ $order->mail }}"
-                    data-datum="{{ $order->datum }}"
 
-                    data-tipKese="{{ $order->vrsta_kese }}"
-                    data-materijal="{{ $order->materijal }}"
-                    data-sirina="{{ $order->sirina }}"
-                    data-visina="{{ $order->visina }}"
-                    @if($order->boja_rucke)
-                        data-bojaRucke="{{ $order->boja_rucke }}"
-                    @endif
-                    data-bojaKese="{{ $order->boja_kese }}"
-                    data-priprema="{{ $order->fajl1 }}"
-                    data-stampa="{{ $order->vrsta_stampe }}"
-                    data-kolicina="{{ $order->kolicina }}"
-                >
-                    Detalji
-                </button>
-            </td>
-        </tr>
-    @endforeach
+<div class="p-4 col-12">
+    <h2 class="d-flex justify-content-center p-4 titleAdmin">PORUDŽBINE</h2>
 
-    </tbody>
-</table>
+    {{ $orders->links() }}
+    <table class="table table-striped text-center">
+        <thead>
+            <tr class="trAdmin">
+                <th class="colorAdmin firstRowAdmin">RB</th>
+                <th class="colorAdmin">NARUČIOC</th>
+                <th class="colorAdmin">NAZIV FIRME</th>
+                <th class="colorAdmin">TELEFON</th>
+                <th class="colorAdmin">EMAIL</th>
+                <th class="colorAdmin">DATUM</th>
+                <th class="colorAdmin">POGLEDAJ</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach($orders as $order)
+            <tr>
+                <td>{{ $order->id }}</td>
+                <td>{{ $order->ime }}</td>
+                <td>{{ $order->firma }}</td>
+                <td>{{ $order->telefon }}</td>
+                <td>{{ $order->mail }}</td>
+                <td>{{ $order->datum }}</td>
+                <td>
+                    <button
+                        class="btn btn-primary btn-sm buttonAdmin"
+                        data-bs-toggle="modal"
+                        data-bs-target="#orderModal"
+                        data-id="{{ $order->id }}"
+                        data-ime="{{ $order->ime }}"
+                        data-firma="{{ $order->firma }}"
+                        data-telefon="{{ $order->telefon }}"
+                        data-mail="{{ $order->mail }}"
+                        data-datum="{{ $order->datum }}"
 
-{{ $orders->links() }}
+                        data-tipKese="{{ $order->vrsta_kese }}"
+                        data-materijal="{{ $order->materijal }}"
+                        data-sirina="{{ $order->sirina }}"
+                        data-visina="{{ $order->visina }}"
+                        @if($order->boja_rucke)
+                            data-bojaRucke="{{ $order->boja_rucke }}"
+                        @endif
+                        data-bojaKese="{{ $order->boja_kese }}"
+                        data-priprema="{{ $order->fajl1 }}"
+                        data-stampa="{{ $order->vrsta_stampe }}"
+                        data-kolicina="{{ $order->kolicina }}"
+                    >
+                        Detalji
+                    </button>
+                </td>
+            </tr>
+        @endforeach
+
+        </tbody>
+    </table>
+    {{ $orders->links() }}
+</div>
+
+
 
 <!-- Order Details Modal -->
 <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
@@ -74,7 +79,7 @@ Lista Porudzbina
                 <p><strong>Email:</strong> <span id="modal-order-mail"></span></p>
                 <p><strong>Datum:</strong> <span id="modal-order-datum"></span></p>
 
-                <hr>
+                <hr class="hrBasic">
 
                 <p><strong>Tip Kese:</strong> <span id="modal-order-tipKese"></span></p>
                 <p><strong>Materijal:</strong> <span id="modal-order-materijal"></span></p>

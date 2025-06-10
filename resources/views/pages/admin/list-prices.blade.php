@@ -36,45 +36,41 @@
         <input type="hidden" name="vrsta" value="{{ request('vrsta') }}">
         <input type="hidden" name="velicina" value="{{ request('velicina') }}">
 
-        @foreach($data as $cena)
+        @php
+            $cena = $data->first() ?? null; 
+        @endphp
+
+        @for($i = 1; $i <= 5; $i++)
             <div class="mb-2 d-flex justify-content-between">
-                <label for="boja1" class="me-2 labelAdmin">1 boja:</label>
-                <input type="text" class="inputAdmin" name="boja1" value="{{ $cena->boja1 }}">
+                <label for="boja{{ $i }}" class="me-2 labelAdmin">{{ $i }} boja:</label>
+                <input type="text" class="inputAdmin" name="boja{{ $i }}" value="{{ $cena->{'boja'.$i} ?? '' }}">
             </div>
+            @if(!isset($cena->{"boja2"}))
+                @break
+            @endif
+        @endfor
 
-            <div class="mb-2 d-flex justify-content-between">
-                <label for="boja2" class="me-2 labelAdmin">2 boja:</label>
-                <input type="text" class="inputAdmin" name="boja2" value="{{ $cena->boja2 }}">
-            </div>
-
-            <div class="mb-2 d-flex justify-content-between">
-                <label for="boja3" class="me-2 labelAdmin">3 boja:</label>
-                <input type="text" class="inputAdmin" name="boja3" value="{{ $cena->boja3 }}">
-            </div>
-
-            <div class="mb-2 d-flex justify-content-between">
-                <label for="boja4" class="me-2 labelAdmin">4 boja:</label>
-                <input type="text" class="inputAdmin" name="boja4" value="{{ $cena->boja4 }}">
-            </div>
-
-            <div class="mb-4 d-flex justify-content-between">
-                <label for="boja5" class="me-2 labelAdmin">5 boja:</label>
-                <input type="text" class="inputAdmin" name="boja5" value="{{ $cena->boja5 }}">
-            </div>
-        @endforeach
-
+        
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-dark">Izmeni</button>
         </div>
     </form>
-</div>
 
     @if(session('success'))
-        {{ session('success') }}
+        <div class="alert alert-success m-3 text-center">
+            {{ session('success') }}
+        </div>
     @endif
+
     @if(session('error'))
-        {{ session('error') }}
+        <div class="alert alert-danger m-3 text-center">
+            {{ session('error') }}
+        </div>
     @endif
+
+</div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
