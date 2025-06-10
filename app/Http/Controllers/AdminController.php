@@ -274,9 +274,34 @@ class AdminController extends Controller
         return view('pages.admin.list-actions', ['actions'  => $actions]);
     }
 
+    public function createAction()
+    {
+        return view('pages.admin.add-action');
+    }
+
     public function storeAction(Request $request)
     {
-
+        try {
+            DB::beginTransaction();
+            $action = new Action();
+            $imageName = time() . "." . $request->slika->extension();
+            $request->slika->move(public_path('assets/img/images/akcije'), $imageName);
+            $imageName2 = time() . "." . $request->slika2->extension();
+            $request->slika2->move(public_path('assets/img/images/akcije'), $imageName2);
+            $action->slika = $imageName;
+            $action->slika2 = $imageName2;
+            $action->naslov = $request->naslov;
+            $action->visina_akcije = $request->visina_akcije;
+            $action->tekst = $request->tekst;
+            $action->akcija_od = $request->datum_od;
+            $action->akcija_do = $request->datum_do;
+            $action->save();
+            DB::commit();
+            return back()->with('success', 'Akcija uspešno kreirana.');
+        } catch (\Exception $ex) {
+            DB::rollBack();
+            return back()->with('error', 'Došlo je do greške! Pokušajte ponovo ili kontaktirajte administratora.');
+        }
     }
 
     public function destroyAction($id)
