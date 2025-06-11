@@ -1,7 +1,7 @@
 window.onload = function(){
     var path = window.location.pathname.split("/").pop();
 
-    var path = window.location.pathname;
+    // var path = window.location.pathname;
 
 
 
@@ -124,7 +124,7 @@ window.onload = function(){
             '4+1':  'štampa 4 boje na jednoj strani i 1 boje na drugoj strani kese',
             '2+2':  'štampa 2 boje na jednoj strani i 2 boje na drugoj strani kese',
             '3+2':  'štampa 3 boje na jednoj strani i 2 boje na drugoj strani kese',
-            'višs-od-5': 'više od 5 boja u štampi'
+            'više-od-5': 'više od 5 boja u štampi'
         };
 
         const selectedValue = this.value;
@@ -377,7 +377,7 @@ window.onload = function(){
                     // console.log(el)
                     el.addEventListener("click", () => {
                         let kesaElement = document.querySelector("." + stringTipKese);
-                        kesaElement.className = "kesa mt4 kesa-boja " + stringTipKese;
+                        kesaElement.className = "kesa mt-5 kesa-boja " + stringTipKese;
                         if (!kesaElement.classList.contains("active")) {
                             kesaElement.classList.add("active");
                         }
