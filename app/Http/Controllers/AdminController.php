@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ActionRequest;
+use App\Http\Requests\AdminGalleryRequest;
 use App\Models\Action;
 use App\Models\BananaBezOjacanja;
 use App\Models\BananaBezOjacanjaIFalt;
@@ -115,7 +116,7 @@ class AdminController extends Controller
 
     }
 
-    public function storeImage(Request $request)
+    public function storeImage(AdminGalleryRequest $request)
     {
         try {
             DB::beginTransaction();
@@ -127,7 +128,6 @@ class AdminController extends Controller
             $image->idgalerije = $request->galleryId;
             $image->opis = $request->description;
             $image->save();
-
             DB::commit();
             return back()->with('success', 'Slika je uspešno dodata.');
         } catch (\Exception $ex) {

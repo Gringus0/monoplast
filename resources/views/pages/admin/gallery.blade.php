@@ -10,6 +10,9 @@
                 <label for="vrsta" class="labelAdmin">Izaberite sliku:</label>
                 <input type="file" id="vrsta" name="image">
             </div>
+            @error('image')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
             <div class="d-flex mt-4 mb-4">
                 <label for="galleryId" class="labelAdmin">Izaberite tip:</label>
                 <select name="galleryId" id="galleryId" class="bg-light rounded inputAdmin">
@@ -29,11 +32,16 @@
                     <option value="13">Slike iz proizvodnje</option>
                     <option value="14">Sajmovi</option>
                 </select>
+                @error('galleryId')
+                <div class="text-danger">{{ $message }}</div>
+                @enderror
             </div>
         </div>
         <label for="opis" class="form-label textArea">Opis slike</label>
-        <textarea class="form-control focusAdmin" id="opis" rows="7" name="description" required></textarea>
-
+        <textarea class="form-control focusAdmin" id="opis" rows="7" name="description"></textarea>
+        @error('description')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <div class="d-flex justify-content-end mt-3">
             <button type="submit" class="btn btn-dark">Dodaj</button>
         </div>
@@ -111,7 +119,7 @@
             </a>
         </div>
     </div>
-    
+
     <hr class="hrBasic"/>
 
     @if(isset($data))
