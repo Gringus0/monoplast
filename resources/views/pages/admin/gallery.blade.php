@@ -152,7 +152,32 @@
                     <div id="modalDesc" class="mt-3 text-muted"></div>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal">
+                        Izbriši sliku
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Potvrda brisanja</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Zatvori"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Da li ste sigurni da želite da obrišete ovu sliku?</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <form id="deleteImageForm" method="POST" action="{{ route('admin.gallery.delete') }}">
+                        @csrf
+                        @method('DELETE')
+                        <input type="hidden" name="image_path" id="imageToDelete">
+                        <button type="submit" class="btn btn-danger">Da, izbriši</button>
+                    </form>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Otkaži</button>
                 </div>
             </div>
         </div>

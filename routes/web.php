@@ -46,7 +46,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/gallery/create', AdminController::class . '@createImage')->name('admin.gallery.create');
     Route::post('/admin/gallery/store', AdminController::class . '@storeImage')->name('admin.gallery.store');
     Route::get('/admin/gallery/{id}', AdminController::class . '@showImage')->name('admin.gallery.show');
-    Route::delete('/admin/gallery/destroy/{id}', AdminController::class . '@destroyImage')->name('admin.gallery.destroy');
+    Route::delete('/admin/gallery/delete', AdminController::class . '@destroyImage')->name('admin.gallery.delete');
 
     Route::get('/admin/prices', AdminController::class . '@listPrices')->name('admin.prices');
     Route::get('/get-velicine-kese', AdminController::class . '@getVelicine')->name('get.velicine.kese');

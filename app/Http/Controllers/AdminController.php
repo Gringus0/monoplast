@@ -18,6 +18,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -141,9 +142,20 @@ class AdminController extends Controller
         return view('pages.admin.show-image');
     }
 
-    public function destroyImage($id)
+    public function destroyImage(Request $request)
     {
+        $imagePath = str_replace(asset('/'), '', $request->image_path);
+        $fullPath = public_path($imagePath);
 
+        if (File::exists($fullPath)) {
+            File::delete($fullPath);
+
+            Gallery::where('velikaslika', basename($imagePath))->delete();
+
+            return redirect()->back()->with('success', 'Slika je uspešno obrisana.');
+        }
+
+        return redirect()->back()->with('error', 'Slika nije pronađena.');
     }
 
     public function listPrices(Request $request)

@@ -422,6 +422,22 @@ window.onload = function(){
             });
         });
 
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryImages = document.querySelectorAll('.galleryImages');
+            const modalImage = document.getElementById('modalImage');
+            const modalDesc = document.getElementById('modalDesc');
+
+            galleryImages.forEach(img => {
+                img.addEventListener('click', function () {
+                    modalImage.src = this.dataset.img;
+                    modalDesc.innerText = this.alt;
+
+                    // Store image path in data attribute for deletion
+                    document.getElementById('imageToDelete').value = this.dataset.img;
+                });
+            });
+        });
+
         const img = document.getElementById('english');
 
         img.addEventListener('mouseover', () => {
