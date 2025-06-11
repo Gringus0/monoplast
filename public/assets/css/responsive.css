@@ -1,7 +1,3 @@
-@media screen and (min-width: 1440px) {
-
-}
-
 @media screen and (max-width: 1440px) {
     #lineHeightHeader{
         font-size: 14px;
@@ -88,11 +84,17 @@
         height: auto;
     } 
 
-   
+    #navbarNav{
+        font-size: 13px;
+    }
 
+    .logo{
+        width: 150px;
+    }
   }
 
 @media screen and (max-width: 1280px) {
+
     #lineHeightHeader{
         font-size: 12px;
     }
@@ -125,12 +127,9 @@
         font-size: 20px;
     }
     .nav-link{
-        font-size: 14px;
+        font-size: 12px;
     }
-    .logo{
-        width: 150px;
-    }
-    
+
     #aboutContentWrapper {
         display: flex;
         flex-direction: column !important;
@@ -188,7 +187,9 @@
     .overlay-text{
         font-size: 10px !important;
     }
-    
+    .dateAction{
+        font-size: 14px;
+    }
 
 }
 
@@ -438,6 +439,5 @@
     #underNavigation{
         font-size: 16px;
     }
-
 }
 

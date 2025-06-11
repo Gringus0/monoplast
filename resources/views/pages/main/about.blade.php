@@ -15,7 +15,7 @@
         <div class="wrapper">
             <hr/>
                 <h4 id="underNavigation">
-                    Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakova
+                    Više od proizvodnje – gradimo poverenje, iskustvo, kvalitet i održivost
                 </h4>
             <hr/>
         </div>

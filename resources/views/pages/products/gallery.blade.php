@@ -95,7 +95,7 @@
                     @foreach($data as $kesa)
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
                             <img src="{{ asset('/assets/img/images/galerija/' . $kesa->velikaslika) }}"
-                                class="galleryImages img-fluid"
+                                class="galleryImages"
                                 data-bs-toggle="modal"
                                 data-bs-target="#imageModal"
                                 data-img="{{ asset('/assets/img/images/galerija/' . $kesa->velikaslika) }}"
