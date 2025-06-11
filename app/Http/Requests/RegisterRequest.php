@@ -57,6 +57,7 @@ class RegisterRequest extends FormRequest
             'email.max' => 'E-mail ne sme biti duži od 255 znakova.',
             'phone.required' => 'Telefon je obavezno polje.',
             'phone.regex' => 'Telefon mora sadrzati samo cifre.',
+            'phone2.regex' => 'Telefon mora sadrzati samo cifre.',
             'company.required' => 'Ime firme je obavezno polje.',
             'company.string' => 'Firma mora biti sačinjeno od slova i znakova.',
             'company.max' => 'Naziv firme ne sme biti duži od 255 slova, brojeva i/ili znakova.'

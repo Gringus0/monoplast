@@ -41,8 +41,8 @@ class ActionRequest extends FormRequest
             'visina_akcije.required' => 'Visina akcije je obavezna.',
             'visina_akcije.string' => 'Visina akcije mora biti tekst.',
 
-            'slika.required' => 'Prva slika je obavezna.',
-            'slika.image' => 'Prva slika mora biti validna slika (jpeg, png, itd.).',
+            'slika.required' => 'Slika je obavezna.',
+            'slika.image' => 'Slika mora biti validna slika (jpeg, png, itd.).',
 
             'slika2.image' => 'Druga slika mora biti validna slika (jpeg, png, itd.).',
 

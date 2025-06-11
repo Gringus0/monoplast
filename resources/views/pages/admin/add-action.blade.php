@@ -27,19 +27,20 @@
         @error('slika')
         <div class="text-danger mt-2 mb-2">{{ $message }}</div>
         @enderror
-        <div class="mt-4 mb-4">
-            <label for="slika2" class="mb-3 labelAdmin">Slika2:</label>
-            <input type="file" name="slika2">
-        </div>
-        @error('slika2')
-        <div class="text-danger mt-2 mb-2">{{ $message }}</div>
-        @enderror
-        <label for="datum_od">Od: </label>
+{{--        <div class="mt-4 mb-4">--}}
+{{--            <label for="slika2" class="mb-3 labelAdmin">Slika2:</label>--}}
+{{--            <input type="file" name="slika2">--}}
+{{--        </div>--}}
+{{--        @error('slika2')--}}
+{{--        <div class="text-danger mt-2 mb-2">{{ $message }}</div>--}}
+{{--        @enderror--}}
+        <label for="datum_od" class="mt-4">Od: </label>
         <input type="date" id="datum_od" name="datum_od">
         @error('datum_od')
         <div class="text-danger mt-2 mb-2">{{ $message }}</div>
         @enderror
-        <label for="datum_do">Do: </label>
+        <br>
+        <label for="datum_do" class="mt-2">Do: </label>
         <input type="date" id="datum_do" name="datum_do">
         @error('datum_do')
         <div class="text-danger mt-2 mb-2">{{ $message }}</div>
