@@ -92,6 +92,9 @@
             </div>
             <div class="col-12 col-md-6 col-xl-custom-4 orderBlocks" id="secondDiv">
                 <h4 class="ordersSections"> IZBOR MATERIJALA *</h4>
+                @error('materijal')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <div class="materijal-container marginRight15 marginTop">
                         <label for="LDPe" class="marginRight labelFont">glatke LDPe</label>
                         <input type="radio" name="materijal" value="LDPe" class="labelFont">
@@ -100,6 +103,12 @@
                 </div>
                 <hr class="hrBasic"/>
                 <h4 class="ordersSections"> IZBOR DIMENZIJA * <span class="underContactLeftColMain">(prvo izaberite visinu) </span></h4>
+                @error('visina')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
+                @error('sirina')
+                <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <div class="d-flex justify-content-between">
                     <div>
                         <div class="kesa mt-5 kesa-boja banana_bez_ojacanja">
@@ -237,17 +246,26 @@
             <div class="col-12 col-md-6 col-xl-custom-3 orderBlocks mt-2">
                 <div>
                     <h4 class="ordersSections"> IZBOR BOJE KESE * <span class="underContactLeftColMain">(prvo izaberite materijal) </span></h4>
+                    @error('bojaKese')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                     <div class="color-options">
 
                     </div>
                     <h4 class="ordersSections mt-3 izborBojeRucke"> IZBOR BOJE RUČKE *</h4>
+                    @error('bojaRucke')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                     <div class="color-options izborBojeRucke bojeRucke">
 
                     </div>
                     <hr class="hrBasic"/>
                     <h4 class="ordersSections mt-3"> IZBOR VRSTE ŠTAMPE *</h4>
+                    @error('stampaTip')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                     <select name="stampaTip" id="stampaTip" class="mt-2">
-                        <option value="0">Izaberite vrstu</option>
+                        <option value="">Izaberite vrstu</option>
                         <option value="1+0">1+0</option>
                         <option value="2+0">2+0</option>
                         <option value="3+0">3+0</option>
@@ -264,12 +282,18 @@
                     <p class="bagTypeText"></p>
                     <hr class="hrBasic"/>
                     <h4 class="ordersSections mt-3"> KOLIČINA KESA *</h4>
+                    @error('kolicinaKese')
+                        <div class="text-danger">{{ $message }}</div>
+                    @enderror
                     <input type="text" id="kolicinaKese" name="kolicinaKese" placeholder="Unesite količinu kese" class="mt-3">
                     <p>minimalna količina 500 komada</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-custom-2 orderBlocks mt-2">
                 <input type="file" id="uploadFile" name="image">
+                @error('image')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <hr class="hrBasic"/>
                 <h4 class="ordersSections mt-3"> DODATNE INFORMACIJE </h4>
                 <textarea id="message" name="message" placeholder="Dodatne informacije..." rows="5" cols="40" class="mt-3 w-100 "></textarea>
@@ -278,12 +302,11 @@
             </div>
         </form>
     </div>
-        <div class="wrapper mb-4">
-            <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Linija" />
-            <p class="ordersText2 mt-2">Nudimo Vam, blanko i štampane kese i džakove raznih boja i veličina. I to nije sve, zbog toga što se u našim kesama nose proizvodi različite težine, po Vašem zahtevu, sve kese možemo proizvesti sa ojačanim ili plastičnim ručkama. Naše kese se proizvode od najkvalitetnijih materijala, u raznim bojama a po Vašoj želji, na kesama vršimo štampu u jednoj ili više boja.</p>
-            <hr class="hrBasic">
-            <h5 class="ordersText1">Za sve detalje, uputstva oko pripreme za štampu, cene, tiraža i rokova izrade kesa, molimo Vas da se obratite našoj komercijalnoj službi, koristeći jedan od navedenih telefona, E-mail, ili pošaljite Fax.</h5>
-        </div>
+    <div class="wrapper mb-4">
+        <img src="{{asset('/assets/img/images/bcg-bla-galerija.jpg')}}" class="d-block w-100" alt="Linija" />
+        <p class="ordersText2 mt-2">Nudimo Vam, blanko i štampane kese i džakove raznih boja i veličina. I to nije sve, zbog toga što se u našim kesama nose proizvodi različite težine, po Vašem zahtevu, sve kese možemo proizvesti sa ojačanim ili plastičnim ručkama. Naše kese se proizvode od najkvalitetnijih materijala, u raznim bojama a po Vašoj želji, na kesama vršimo štampu u jednoj ili više boja.</p>
+        <hr class="hrBasic">
+        <h5 class="ordersText1">Za sve detalje, uputstva oko pripreme za štampu, cene, tiraža i rokova izrade kesa, molimo Vas da se obratite našoj komercijalnoj službi, koristeći jedan od navedenih telefona, E-mail, ili pošaljite Fax.</h5>
     </div>
 </main>
 

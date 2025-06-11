@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\OrderRequest;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,13 +15,16 @@ class OrderController extends Controller
         return view('pages.user.order');
     }
 
-    public function store(Request $request)
+    public function store(OrderRequest $request)
     {
         try {
             DB::beginTransaction();
-            $imageName = time() . "." . $request->image->extension();
-            $request->image->move(public_path('assets/img/images/porudzbine'), $imageName);
             $order = new Order();
+            $imageName = '';
+            if ($request->image) {
+                $imageName = time() . "." . $request->image->extension();
+                $request->image->move(public_path('assets/img/images/porudzbine'), $imageName);
+            }
             $order->fajl1 = $imageName;
             $order->vrsta_kese = $request->tipKese;
             $order->materijal = $request->materijal;
@@ -34,21 +38,21 @@ class OrderController extends Controller
             $order->boja_kese = $request->bojaKese;
             $order->vrsta_stampe = $request->stampaTip;
             $order->kolicina = $request->kolicinaKese;
-            $order->informacije = $request->message;
+            $order->informacije = '';
+            if ($request->message) {
+                $order->informacije = $request->message;
+            }
             $order->ime = Auth::user()->ime;
             $order->mail = Auth::user()->mail;
             $order->telefon = Auth::user()->telefon;
             $order->firma = Auth::user()->firma;
-            $order->datum = date('Y-m-d H:i:s');
+            $order->datum = date('Y-m-d');
             $order->broj_porudzbine = time();
-
             $order->save();
-
             DB::commit();
             return back()->with('success', 'Porudžbina uspešna!');
         } catch (\Exception $ex) {
             DB::rollBack();
-            dd($ex);
             return back()->with('error', 'Došlo je do greške! Pokušajte ponovo ili kontaktirajte administratora.');
         }
 
