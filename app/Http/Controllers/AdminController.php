@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ActionRequest;
 use App\Models\Action;
 use App\Models\BananaBezOjacanja;
 use App\Models\BananaBezOjacanjaIFalt;
@@ -279,7 +280,7 @@ class AdminController extends Controller
         return view('pages.admin.add-action');
     }
 
-    public function storeAction(Request $request)
+    public function storeAction(ActionRequest $request)
     {
         try {
             DB::beginTransaction();

@@ -10,23 +10,44 @@
             <label for="naslov" class="labelAdmin">Naslov: </label>
             <input type="text" class="bg-light rounded inputAdmin" name="naslov" id="naslov" placeholder="Dodajte naslov akcije">
         </div>
+        @error('naslov')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <div class="d-flex mt-4">
             <label for="visina_akcije" class="labelAdmin">Visina Akcije: </label>
             <input type="text" class="bg-light rounded inputAdmin" name="visina_akcije" id="visina_akcije" placeholder="Dodajte visinu akcije">
         </div>
+        @error('visina_akcije')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <div class="mt-4">
             <label for="slika" class="mb-3 labelAdmin">Slika:</label>
             <input type="file" name="slika">
         </div>
+        @error('slika')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <div class="mt-4 mb-4">
             <label for="slika2" class="mb-3 labelAdmin">Slika2:</label>
             <input type="file" name="slika2">
         </div>
+        @error('slika2')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <label for="datum_od">Od: </label>
         <input type="date" id="datum_od" name="datum_od">
+        @error('datum_od')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <label for="datum_do">Do: </label>
         <input type="date" id="datum_do" name="datum_do">
+        @error('datum_do')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <textarea class="form-control mt-4 focusAdmin" name="tekst" id="tekst" cols="30" rows="10"></textarea>
+        @error('tekst')
+        <div class="text-danger">{{ $message }}</div>
+        @enderror
         <button type="submit" class="btn btn-dark mt-4">Kreiraj akciju</button>
     </form>
 
