@@ -26,7 +26,5 @@ class ContactController extends Controller
         } catch (\Throwable $th) {
             return back()->with('error', '<div class="alert alert-danger marginBottom marginTop">Došlo je do greške. Molimo pokušajte kasnije ili nas kontaktirajte telefonom.</div>');
         }
-
-
     }
 }
