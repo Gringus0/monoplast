@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\OrderRequest;
+use App\Mail\OrderMail;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -50,6 +52,9 @@ class OrderController extends Controller
             $order->broj_porudzbine = time();
             $order->save();
             DB::commit();
+
+            Mail::to(env('MAIL_TO'))->send(new OrderMail($order));
+
             return back()->with('success', 'Porudžbina uspešna!');
         } catch (\Exception $ex) {
             DB::rollBack();
