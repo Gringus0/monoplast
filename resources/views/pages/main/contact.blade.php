@@ -90,12 +90,12 @@
             <div class="col-12 col-lg-4">
                 <p class="bold">Važna dokumenta:</p>
                 <ul class="productsList">
-                    <a class="aTag" href=""><li class="importantDocumentsContact">Obrazac za Identifikaciju</li></a>
-                    <a class="aTag" href=""><li class="importantDocumentsContact">PDV potvrda</li></a>
-                    <a class="aTag" href=""><li class="importantDocumentsContact">PIB</li></a>
-                    <a class="aTag" href=""><li class="importantDocumentsContact">Obaveštenje o Razvrstavanju</li></a>
-                    <a class="aTag" href=""><li class="importantDocumentsContact">APR - Rešenje agencije za privredne registre</li></a>
-                    <a class="aTag" href=""><li class="importantDocumentsContact">Sertifikat o razgradivosti </li></a>
+                    <a class="aTag" href="{{ asset('assets/files/Obrazac_za_identifikaciju.pdf') }}"><li class="importantDocumentsContact">Obrazac za Identifikaciju</li></a>
+                    <a class="aTag" href="{{ asset('assets/files/PDV_potvrada.pdf') }}"><li class="importantDocumentsContact">PDV potvrda</li></a>
+                    <a class="aTag" href="{{ asset('assets/files/PIB.pdf') }}"><li class="importantDocumentsContact">PIB</li></a>
+                    <a class="aTag" href="{{ asset('assets/files/Obavestenje_o_razvrstavanju.pdf') }}"><li class="importantDocumentsContact">Obaveštenje o Razvrstavanju</li></a>
+                    <a class="aTag" href="{{ asset('assets/files/APR_resenje_2010.pdf') }}"><li class="importantDocumentsContact">APR - Rešenje agencije za privredne registre</li></a>
+                    <a class="aTag" href="{{ asset('assets/files/Certifikat-d2w.pdf') }}"><li class="importantDocumentsContact">Sertifikat o razgradivosti </li></a>
                 </ul>
                 <p class="contactGoogleMapText">na google map je pogrešno obeležena ulica Vlastimira Kneževića umesto Mirka Tatalovića Ćire. Ispravan položaj ulica možete videti na mapi iznad.</p>
                 <div id="map" class="w-100 marginTop">

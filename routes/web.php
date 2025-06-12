@@ -7,6 +7,9 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+
+
+Route::get('/contact/pdf', ContactController::class . '@getPDF')->name('contact.pdf');
 Route::post('/createadmin', AdminController::class . '@createAdmin')->name('admin.createAdmin');
 Route::get('/', HomeController::class . '@home')->name('home');
 Route::get('/about', HomeController::class . '@about')->name('about');

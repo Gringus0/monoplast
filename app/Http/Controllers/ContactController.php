@@ -27,4 +27,9 @@ class ContactController extends Controller
             return back()->with('error', '<div class="alert alert-danger marginBottom marginTop">Došlo je do greške. Molimo pokušajte kasnije ili nas kontaktirajte telefonom.</div>');
         }
     }
+
+    public function getPDF()
+    {
+        return asset('assets/files/Obrazac_za_identifikaciju.pdf');
+    }
 }
