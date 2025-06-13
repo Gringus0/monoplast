@@ -1,7 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body{
     background-image: url("../img/images/bcg2.jpg");
     background-repeat: repeat;
 }
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-wrapper > main {
+    flex: 1;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -1255,14 +1271,14 @@ table tr:last-child td {
     }
 
     .modal-backdrop.show {
-    background-color: rgba(0, 0, 0, 1) !important; 
+    background-color: rgba(0, 0, 0, 1) !important;
     }
 
     .topImageAdmin{
         background-image: url("../img/images/firstHead.jpg");
         background-repeat: repeat;
     }
-    
+
     .daDuck{
         height: 200px;
         padding-top: 60px;
@@ -1328,7 +1344,7 @@ table tr:last-child td {
     .button-row button:hover {
         background: #5ca016;
     }
-        
+
     .admin-menu li {
         border-bottom: 1px solid #ddd;
         background-color: #E66416;
@@ -1363,11 +1379,11 @@ table tr:last-child td {
     .logoutBtn:hover{
         background-color: #5ca016;
     }
-    
+
     .navigationAdmin{
         border-right: 1px solid  #dedede;
     }
-    
+
     #bgAdmin{
         background-image: url("../img/images/secondHead.jpg") !important;
     }
@@ -1384,7 +1400,7 @@ table tr:last-child td {
         color: #333333;
         font-weight: 700;
     }
-    
+
     .inputAdmin{
         width: 250px;
     }
@@ -1401,7 +1417,7 @@ table tr:last-child td {
         text-align: center;
         height: 40px;
     }
-    
+
     .firstRowAdmin{
         width: 40px;
     }
@@ -1459,7 +1475,7 @@ table tr:last-child td {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 0.5rem; 
+        border-radius: 0.5rem;
     }
 
     .colorAction{

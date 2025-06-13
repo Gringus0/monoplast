@@ -283,7 +283,7 @@ class AdminController extends Controller
 
     public function listActions()
     {
-        $actions = Action::paginate(15);
+        $actions = Action::orderBy('id', 'desc')->paginate(15);
         return view('pages.admin.list-actions', ['actions'  => $actions]);
     }
 
@@ -318,9 +318,18 @@ class AdminController extends Controller
         }
     }
 
-    public function destroyAction($id)
+    public function destroyAction(Request $request)
     {
-
+        try {
+            DB::beginTransaction();
+            $action = Action::where('id', $request->delete)->first();
+            $action->delete();
+            DB::commit();
+            return back();
+        } catch (\Exception $ex) {
+            DB::rollBack();
+            return back();
+        }
     }
 
     public function editAction($id)

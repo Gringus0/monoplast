@@ -3,6 +3,10 @@
 
 @endsection
 
+@section('bodyClass')
+    page-wrapper
+@endsection
+
 @section('content')
 
 <main>
@@ -39,14 +43,12 @@
                 </div>
         @endforeach
 
-
-
-{{--
-
-        <div class="d-flex justify-content-center">
-            <h3 class="colorAction p-4">Trenutno ne postoji nijedna akcije</h3>
-        </div>  --}}
-
+{{--            @dd($actions)--}}
+        @if($actions->isEmpty())
+            <div class="d-flex justify-content-center">
+                <h3 class="colorAction p-4">Trenutno ne postoji nijedna akcije</h3>
+            </div>
+        @endif
 
       </div>
     </div>

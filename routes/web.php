@@ -60,7 +60,7 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/actions', AdminController::class . '@listActions')->name('admin.list-actions');
     Route::get('/admin/actions/create', AdminController::class . '@createAction')->name('admin.actions.create');
     Route::post('/admin/actions/store', AdminController::class . '@storeAction')->name('admin.actions.store');
-    Route::delete('/admin/actions/destroy/{id}', AdminController::class . '@destroyAction')->name('admin.actions.destroy');
+    Route::delete('/admin/actions/destroy', AdminController::class . '@destroyAction')->name('admin.actions.destroy');
     Route::get('/admin/actions/edit/{id}', AdminController::class . '@editAction')->name('admin.actions.edit');
     Route::post('/admin/actions/update/{id}', AdminController::class . '@updateAction')->name('admin.actions.update');
 
