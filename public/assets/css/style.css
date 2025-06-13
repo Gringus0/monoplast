@@ -1465,3 +1465,11 @@ table tr:last-child td {
     .colorAction{
         color: #003173;
     }
+
+    .mTop{
+        margin-top: 60px;
+    }
+
+    .hbags{
+        height: 35px;
+    }

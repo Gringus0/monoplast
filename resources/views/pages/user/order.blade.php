@@ -75,14 +75,14 @@
                 </label>
                 <input type="radio" name="tipKese" id="sa_ojacanom_banana_s_faltom" class="hidden-radio" value="sa_ojacanom_banana_s_faltom">
                 <label for="fleksibilna" class="LeftBlockinfo d-flex mt-2" data-id="4">
-                    <div class="malaKesa mt-2" style="height: 35px">
+                    <div class="malaKesa mt-2 hbags">
                         <div class="bag-handleMale"></div>
                     </div>
                     <p>Kesa sa felksibilnom ručkom</p>
                 </label>
                 <input type="radio" name="tipKese" id="fleksibilna" class="hidden-radio" value="fleksibilna">
                 <label for="fleksibilna_s_faltom" class="LeftBlockinfo d-flex mt-2" data-id="5">
-                    <div class="malaKesa mt-2" style="height: 35px">
+                    <div class="malaKesa mt-2 hbags">
                         <div class="bag-handleMale"></div>
                         <div class="koseLinijeMale"></div>
                     </div>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="size-options horizontalRow" style="margin-top: 60px" id="horizontalRow">
+                    <div class="size-options horizontalRow mTop" id="horizontalRow">
                         <input type="radio" id="width20" name="width" value="20" checked>
                         <label for="width20">20</label>
 

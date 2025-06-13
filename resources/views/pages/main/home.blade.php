@@ -85,10 +85,9 @@
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.product_gallery_link') }}</a>
                         </div>
                     </div>
-                @endif
-                <div class="col-12 col-lg-4 mb-4">
+                    <div class="col-12 col-lg-4 mb-4">
                     <div class="p-3 block borderProducts blockPolygon h-100">
-                        <p class="productDivTitle">{{ __('messages.products_title') }}</p>
+                        <p class="productDivTitle">{{__('messages.products_title') }}</p>
                         <hr/>
                         <div class="contextProducts">
                             <ul class="productsList LineHeight">
@@ -101,6 +100,51 @@
                         <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.learn_more_link') }}</a>
                     </div>
                 </div>
+                @endif
+
+                @if(app()->getLocale() == 'en')
+                    <div class="col-12 col-lg-4 mb-4">
+                        <div class="p-3 block borderProducts blockPolygon h-100">
+                            <p class="productDivTitle">About us</p>
+                            <hr/>
+                            <p class="moreGallery mb-2">
+                                "Monoplast" L.t.d founded on February 1st 1994., (originally a trade store later developed into a corporation) and situated in Nova Pazova, 19 Pilota Zorana Latkovica Street, produces and prints advertising polyethylene packaging (P.E. packaging), also called PVC packaging, or more popularly a plastic bag...
+                            </p>
+                            <i class="fa-solid fa-circle circleProducts"></i>
+                            <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.learn_more_link') }}</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-4">
+                        <div class="p-3 block borderProducts blockPolygon h-100">
+                            <p class="productDivTitle">{{ __('messages.products_title') }}</p>
+                            <hr/>
+                            <p class="moreGallery mb-4"> It's hard to imagine a more versatile product than a bag. A bag or a sack, depending on its size, can be found everywhere and anywhere. Whenever something needs to be carried, transferred, packed, repacked, bought, or sold. That is why a bag is the ideal mobile advertisement...
+                            </p>
+                            <i class="fa-solid fa-circle circleProducts"></i>
+                            <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.learn_more_link') }}</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-4">
+                        <div class="p-3 block borderProducts blockPolygon h-100">
+                            <p class="productDivTitle">Gallery</p>
+                            <hr/>
+                            <div class="contextProducts">
+                                <ul class="productsList LineHeight">
+                                    <li>Plastic bags</li>
+                                    <li>Strips for labeling</li>
+                                    <li>Bags</li>
+                                    <li>Stretch film</li>
+                                    <li>ZIP Bags</li>
+                                    <li>T-shirt bags</li>
+                                    <li>OPS Packaging</li>
+                                    <li>Air Bubble Packaging...</li>
+                                </ul>
+                            </div>
+                            <i class="fa-solid fa-circle circleProducts"></i>
+                            <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.learn_more_link') }}</a>
+                        </div>
+                    </div>
+                @endif
                 @if(app()->getLocale() == 'sr')
                     <div class="col-12 col-lg-4 mb-4">
                         <div class="p-3 block borderProducts blockPolygon h-100 d-flex flex-column justify-content-between">
