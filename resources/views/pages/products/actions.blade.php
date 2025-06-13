@@ -2,6 +2,7 @@
 @section('keywords')
 
 @endsection
+
 @section('content')
 
 <main>
@@ -16,7 +17,7 @@
       <div class="row wrapper gx-5">
 
         
-        <div class="col-12 col-lg-4 mb-4 p-3">
+        {{-- <div class="col-12 col-lg-4 mb-4 p-3">
             <div class="p-3 block borderProducts blockPolygon h-100 d-flex flex-column">
                 
                 <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" class="rounded-3 mx-auto d-block mb-3 actionImg" />
@@ -36,22 +37,14 @@
 
                 </div>
             </div>
-        </div>
-
-        
-        <!-- Ako ne postoji nijedna akcija ispisati ovo ispod 
-        
-            SREDI FOOTER PLS 
-
-
-            Skontaces nasta mislim ako uradis ovo
-        
-        -->
-
-
-        {{-- <div class="d-flex justify-content-center">
-            <h3 class="colorAction p-4">Trenutno ne postoji nijedna akcije</h3>
         </div> --}}
+
+        
+{{-- 
+
+        <div class="d-flex justify-content-center">
+            <h3 class="colorAction p-4">Trenutno ne postoji nijedna akcije</h3>
+        </div>  --}}
 
 
       </div>
@@ -62,24 +55,3 @@
 
 
 @endsection
-
-{{-- 
-        <div class="col-12 col-lg-4 mb-4">
-          <div class="p-3 block borderProducts blockPolygon h-100">
-            <p class="productDivTitle">Novo: Zip kese</p>
-            <hr/>
-            <div class="d-flex flex-column">
-              <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="Zip - Kesa" class="productsImages"/>
-              <div class="contextProducts">
-                <p><span class="bold">Kese sa ZIP Zatvaračem:</span></p>
-                <ul class="productsList">
-                  <li>Jedan Zip zatvarač</li>
-                  <li>Dupli Zip zatvarač</li>
-                  <li>Zip zatvarač sa Klizačem...</li>
-                </ul>
-              </div>
-            </div>
-            <i class="fa-solid fa-circle circleProducts"></i>
-            <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Galerija proizvoda...</a>
-          </div>
-        </div> --}}

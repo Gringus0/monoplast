@@ -45,29 +45,41 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center {{ request()->is('/') || request()->routeIs('home') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">Pocetna</a>
+                            <a class="nav-link linkhover text-center {{ request()->is('/') || request()->routeIs('home') ? 'active' : '' }}" aria-current="page" href="{{ route('home') }}">{{ __('messages.pocetna') }}</a>
                         </li>
                         <li class="nav-item marginLeftRight">
-                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">O nama</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">{{ __('messages.o_nama') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('products') ? 'active' : '' }}" href="{{ route('products') }}">Proizvodi</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('products') ? 'active' : '' }}" href="{{ route('products') }}">{{ __('messages.proizvodi') }}</a>
                         </li>
                         <li class="nav-item marginLeftRight">
-                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('productPrices') ? 'active' : '' }}" href="{{ route('productPrices') }}">Cenovnik</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('productPrices') ? 'active' : '' }}" href="{{ route('productPrices') }}">{{ __('messages.cenovnik') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Galerija</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">{{ __('messages.galerija') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('actions') ? 'active' : '' }}" href="{{ route('actions') }}">Akcije</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange {{ request()->routeIs('actions') ? 'active' : '' }}" href="{{ route('actions') }}">{{ __('messages.akcije') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Kontakt</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange  {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">{{ __('messages.kontakt') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">Porucite</a>
+                            <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">{{ __('messages.porucite') }}</a>
                         </li>
+
+                        {{-- <a class="btn btn-outline-primary">
+                            @if(app()->getLocale() === 'sr')
+                                English
+                            @else
+                                Srpski
+                            @endif
+                        </a> --}}
+
+                        <a href="locale/sr">Srb</a>
+                        <a href="locale/en">Eng</a>
+                    
                     </ul>
                 </div>
             </div>
