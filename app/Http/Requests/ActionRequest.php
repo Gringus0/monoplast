@@ -24,8 +24,8 @@ class ActionRequest extends FormRequest
         return [
             'naslov' =>  ['required', 'string'],
             'visina_akcije' =>  ['required', 'string'],
-            'slika' =>  ['required', 'image'],
-            'slika2' =>   ['image'],
+            'slika2' =>  ['required', 'image'],
+            'slika' =>   ['image'],
             'datum_od' => ['required', 'date', 'after_or_equal:today'],
             'datum_do' => ['required', 'date', 'after:datum_od'],
             'tekst' =>  ['required', 'string']
@@ -41,10 +41,10 @@ class ActionRequest extends FormRequest
             'visina_akcije.required' => 'Visina akcije je obavezna.',
             'visina_akcije.string' => 'Visina akcije mora biti tekst.',
 
-            'slika.required' => 'Slika je obavezna.',
-            'slika.image' => 'Slika mora biti validna slika (jpeg, png, itd.).',
+            'slika2.required' => 'Slika je obavezna.',
+            'slika2.image' => 'Slika mora biti validna slika (jpeg, png, itd.).',
 
-            'slika2.image' => 'Druga slika mora biti validna slika (jpeg, png, itd.).',
+            'slika.image' => 'Druga slika mora biti validna slika (jpeg, png, itd.).',
 
             'datum_od.required' => 'Datum početka je obavezan.',
             'datum_od.date' => 'Datum početka mora biti validan datum.',

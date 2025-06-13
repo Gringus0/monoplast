@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Action;
 use App\Models\BananaBezOjacanja;
 use App\Models\BananaBezOjacanjaIFalt;
 use App\Models\BananaOjacanaIliFleksibilna;
@@ -121,6 +122,10 @@ class ProductController extends Controller
 
     public function listActions()
     {
-        return view('pages.products.actions');
+        $actions = Action::where('akcija_do', '>=', date('Y-m-d'))
+            ->where('akcija_od', '>=', date('Y-m-d'))
+            ->get();
+//        dd($actions);
+        return view('pages.products.actions', ['actions' => $actions]);
     }
 }
