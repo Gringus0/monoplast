@@ -10,7 +10,7 @@
         <div class="wrapper">
             <hr/>
                 <h4 id="underNavigation">
-                    Galerija naših proizvoda
+                    {{ __('messages.galerija_naslov') }}
                 </h4>
             <hr/>
         </div>

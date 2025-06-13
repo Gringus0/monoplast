@@ -15,7 +15,7 @@
         <div class="wrapper">
             <hr/>
                 <h4 id="underNavigation">
-                    Više od proizvodnje – gradimo poverenje, iskustvo, kvalitet i održivost
+                    {!! __('messages.about_naslov') !!}
                 </h4>
             <hr/>
         </div>
@@ -38,27 +38,27 @@
         <div class="col-12 col-xl-6" id="middleBlockAbout">
             <div class="blockPolygon" id="aboutText">
                 <p class="marginBottom">
-                    Preduzeće <strong>"Monoplast" d.o.o</strong> je osnovano 01.02.1994. godine, sa sedištem u Novoj Pazovi, ulica Pilota Zorana Latkovića broj 19. Prvobitna zanatska radnja <em>Grafiko</em> prerasta u Monoplast d.o.o., preduzeće specijalizovano za proizvodnju, štampu i prodaju polietilenske (P.E.) ambalaže - najlon kesa i džakova.
+                    {!! __('messages.about_tekst1') !!}
                 </p>
                 <p class="marginBottom">
-                    <strong>Radimo na najsavremenijim mašinama koje obezbeđuju visok kvalitet finalnog proizvoda.</strong> Kapaciteti proizvodnje su relativno veliki, što znači da će Vaša porudžbina biti obrađena brzo i efikasno – finalni proizvod, Vašu kesu, možete dobiti u najkraćem roku.
+                    {!! __('messages.about_tekst2') !!}
                 </p>
                 <p class="marginBottom">
-                    <strong>Proizvodnja kesa se vrši i po narudžbini, gde Vi birate debljinu, veličinu, boju i slično.</strong> Za veće tiraže, u mogućnosti smo da radimo i <strong>flexol štampu</strong> u jednoj ili više boja. U našem proizvodnom programu nalaze se i treger kese sa štampom.
+                    {!! __('messages.about_tekst3') !!}
                 </p>
                 <p class="marginBottom">
-                    Pored same proizvodnje P.E. ambalaže, <strong>"Monoplast" d.o.o</strong> se bavi i proizvodnjom plastike široke potrošnje, kao i trgovinom, uvozom i izvozom.
+                    {!! __('messages.about_tekst4') !!}
                 </p>
                 <a class="btn btn-link p-0" id="showMore" data-bs-toggle="collapse" href="#viseTeksta" role="button" aria-expanded="false" aria-controls="viseTeksta">
-                    Prikaži više...
+                    {!! __('messages.about_prikazi_vise') !!}
                 </a>
                 <div class="collapse" id="viseTeksta">
                     <div>
                         <p class="marginBottom">
-                            Ukoliko želite da na Vašim kesama odštampate zaštitni znak firme, reklamnu poruku ili možda sliku proizvoda - to možete učiniti u jednoj, dve, tri ili više boja. Naši grafičari će, po Vašem zahtevu, uraditi pripremu za štampu koristeći vrhunsku kompjutersku opremu i lasersko štampanje.
+                            {!! __('messages.about_tekst5') !!}
                         </p>
                         <p class="marginBottom">
-                            Nudimo Vam blanko i štampane kese i džakove raznih boja i veličina. I to nije sve! Pošto se u našim kesama nose proizvodi različite težine, po Vašem zahtevu, sve kese možemo proizvesti sa ojačanim ili plastičnim ručkama. Naše kese se proizvode od najkvalitetnijih materijala, u raznim bojama, a po Vašoj želji, na kesama vršimo štampu u jednoj ili više boja.
+                            {!! __('messages.about_tekst6') !!}
                         </p>
                     </div>
                 </div>
@@ -67,8 +67,7 @@
         <div class="col-12 col-xl-4 d-flex flex-column" id="rightBlockAbout">
             <div id="rightBlockText">
                 <p>
-                    Zadovoljna mušterija, i visok kvalitet proizvoda, uz
-                    obavezno poštovanje rokova, naše su trajno opredeljenje. Biće nam drago, ukoliko nas izaberete za svog proizvođača P.E. ambalaže
+                    {!! __('messages.about_sa_strane') !!}
                 </p>
             </div>
             <div id="rightBlockImages" class="d-flex justify-content-around">
@@ -77,7 +76,7 @@
                 <img src="{{asset('/assets/img/images/765835rt-700.jpg')}}" class="d-block aboutImagesRightBlock" alt="Pogled na proizvodni pogon sa industrijskim mašinama"/>
             </div>
             <div class="mt-3 text-center">
-                <i class="fa-solid fa-circle circleProducts"></i> <a class="moreGallery" href="{{route('gallery')}}">pogledaj galeriju iz proizvodnje...</a>
+                <i class="fa-solid fa-circle circleProducts"></i> <a class="moreGallery" href="{{route('gallery')}}">{!! __('messages.about_pogledaj_galeriju_iz_proizvodnje') !!}</a>
             </div>
              <img src="{{asset('/assets/img/images/onama-velika.jpg')}}" id="rightBlockBigImage" class="d-block w-100 mt-3" alt="Mašina za štampu i sečenje plastičnih kesa sa logotipom"/>
         </div>

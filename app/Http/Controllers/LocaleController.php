@@ -12,7 +12,6 @@ class LocaleController extends Controller
         if(in_array($lang,['sr', 'en'])){
             App::setLocale($lang);
             Session(['locale' => $lang]);
-
         }
         return back();
     }

@@ -61,25 +61,27 @@
         <!-- Products -->
         <div id="products" class="container-fluid">
             <div class="row wrapper gx-5">
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="p-3 block borderProducts blockPolygon h-100">
-                        <p class="productDivTitle">{{ __('messages.new_zip_bags') }}</p>
-                        <hr/>
-                        <div class="d-flex flex-column">
-                            <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="Zip - Kesa" class="productsImages"/>
-                            <div class="contextProducts">
-                                <p><span class="bold">{{ __('messages.zip_bags_title') }}</span></p>
-                                <ul class="productsList">
-                                    @foreach(__('messages.zip_bags_items') as $item)
-                                        <li>{{ $item }}</li>
-                                    @endforeach
-                                </ul>
+                @if(app()->getLocale() == 'sr')
+                    <div class="col-12 col-lg-4 mb-4">
+                        <div class="p-3 block borderProducts blockPolygon h-100">
+                            <p class="productDivTitle">{{ __('messages.new_zip_bags') }}</p>
+                            <hr/>
+                            <div class="d-flex flex-column">
+                                <img src="{{asset('/assets/img/images/899276c_g5.jpg')}}" alt="Zip - Kesa" class="productsImages"/>
+                                <div class="contextProducts">
+                                    <p><span class="bold">{{ __('messages.zip_bags_title') }}</span></p>
+                                    <ul class="productsList">
+                                        @foreach(__('messages.zip_bags_items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
                             </div>
+                            <i class="fa-solid fa-circle circleProducts"></i>
+                            <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.product_gallery_link') }}</a>
                         </div>
-                        <i class="fa-solid fa-circle circleProducts"></i>
-                        <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.product_gallery_link') }}</a>
                     </div>
-                </div>
+                @endif
                 <div class="col-12 col-lg-4 mb-4">
                     <div class="p-3 block borderProducts blockPolygon h-100">
                         <p class="productDivTitle">{{ __('messages.products_title') }}</p>
@@ -95,17 +97,19 @@
                         <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.learn_more_link') }}</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-4">
-                    <div class="p-3 block borderProducts blockPolygon h-100 d-flex flex-column justify-content-between">
-                        <a class="{{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">
-                            <img src="{{asset('/assets/img/images/porucite3.png')}}" alt="{{ __('messages.order_image_alt') }}" class="order-image"/>
-                        </a>
-                        <a class="{{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('productPrices') }}">
-                            <img src="{{asset('/assets/img/images/cenovnik3.png')}}" alt="{{ __('messages.prices_image_alt') }}" class="order-image"/>
-                        </a>
-                        <img src="{{asset('/assets/img/images/reciklabilni.png')}}" alt="{{ __('messages.recyclable_image_alt') }}" class="order-image"/>
+                @if(app()->getLocale() == 'sr')
+                    <div class="col-12 col-lg-4 mb-4">
+                        <div class="p-3 block borderProducts blockPolygon h-100 d-flex flex-column justify-content-between">
+                            <a class="{{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">
+                                <img src="{{asset('/assets/img/images/porucite3.png')}}" alt="{{ __('messages.order_image_alt') }}" class="order-image"/>
+                            </a>
+                            <a class="{{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('productPrices') }}">
+                                <img src="{{asset('/assets/img/images/cenovnik3.png')}}" alt="{{ __('messages.prices_image_alt') }}" class="order-image"/>
+                            </a>
+                            <img src="{{asset('/assets/img/images/reciklabilni.png')}}" alt="{{ __('messages.recyclable_image_alt') }}" class="order-image"/>
+                        </div>
                     </div>
-                </div>
+                @endif
             </div>
         </div>
 
