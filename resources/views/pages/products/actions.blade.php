@@ -23,7 +23,7 @@
                         <div class="d-flex flex-column justify-content-between flex-grow-1">
                             <div>
                                 <p class="mb-1 text-center actionTitle"><span class="bold">{{ $action->naslov }}</span></p>
-                                <p class="actionAct"><span class="bold">Visina akcije: <span class="iconFooterContact"> {{ $action->visina_akcije }}  </p>
+                                <p class="actionAct"><span class="bold">Visina akcije: <span class="iconFooterContact">{{ $action->visina_akcije }}</span></span></p>
                                 <p class="actionText" class="mt-1">
                                     {{ $action->tekst }}
                                 </p>
