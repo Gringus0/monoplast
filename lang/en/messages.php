@@ -22,6 +22,12 @@ return [
     'footer_gallery_title' => 'GALLERY',
     'footer_copyright' => 'Copyright © 2025. All rights reserved.',
 
+    // home sliders
+
+    'slider1' => 'slider1-EN.jpg',
+    'slider2' => 'slide2-EN.jpg',
+    'slider3' => 'slide3-EN.jpg',
+
     // home
 
     'homepage_title' => 'Production and printing of promotional degradable polyethylene bags and sacks',
@@ -55,17 +61,18 @@ return [
 
     'pogledaj_galeriju' => 'View Gallery',
 
-    'reklamne_kese' => 'Promotional Bags',
+    'reklamne_kese' => 'Promotional <br/> Bags',
     'reklamne_kese_tekst' => 'It\'s hard to imagine a more versatile product than a bag. A bag or a sack, depending on its size, can be found everywhere and anywhere. Whenever something needs to be carried, transferred, packed, repacked, bought, or sold. That is why a bag is the ideal mobile advertisement — in the hands of a satisfied customer, it will travel through the city, sometimes even several times, promoting your company or product in the process.',
 
-    'trake_za_oznacavanje' => 'Marking Tapes',
+    'trake_za_oznacavanje' => 'Marking <br/> Tapes',
     'trake_za_oznacavanje_tekst' => 'We produce multipurpose marking tapes that are used for marking paths during sports events, when laying electrical or telephone cables, and similar applications... The tapes can be printed or unprinted.',
 
     'dzakovi' => 'Sacks',
     'dzakovi_tekst' => 'Sacks in various sizes, thicknesses, and dimensions for packaging different products. Garbage sacks. Sacks for special-purpose packaging. We are capable of producing sacks based on your specifications (dimension, thickness, and color).',
 
     'strec_folija' => 'Stretch Film',
-    'strec_folija_tekst' => 'Stretch film is made to meet a wide variety of needs, whether it\'s strength, protection, reliability, or cost-efficiency. Today, it is the most commonly used film for packaging products during transport. Key features of our stretch film include high stretchability, excellent transparency, resistance to damage, and economic viability. Stretch film is primarily used for wrapping pallets to prevent items from falling, as well as a final layer of protection around delicate objects to compact previous protective layers like bubble wrap or styrofoam, also protecting them from moisture and dirt. Roll width: 50 cm. Length: minimum 300 m. Thickness: 25 microns. Weight: 5 kg.',
+    'strec_folija_tekst' => 'Stretch film is made to meet a wide variety of needs, whether it\'s strength, protection, reliability, or cost-efficiency. Today, it is the most commonly used film for packaging products during transport. Key features of our stretch film include high stretchability, excellent transparency, resistance to damage, and economic viability. Stretch film is primarily used for wrapping pallets to prevent items from falling, as well as a final layer of protection around delicate objects to compact previous protective layers like bubble wrap or styrofoam, also protecting them from moisture and dirt.',
+    'strec_folija_tekst_li' => 'Roll width: 50 cm.<br/> Length: minimum 300 m.<br/> Thickness: 25 microns.<br/> Weight: 5 kg.',
 
     'zip_kese' => 'Zip Bags',
     'zip_kese_tekst' => 'Various sizes of zip bags suitable for quick packaging where the same bag needs to be opened and closed multiple times. In addition to standard ZIP bags with a single zip lock (mono zip lock), we have also started producing ZIP bags with a double zip lock and ZIP bags with a patent zip lock (zip bags with slider), which are also waterproof. We have adopted new technology allowing us to produce printed zip bags and zip bags with standard holes, euro holes, and banana handles, as shown in the image gallery of zip bags.',
@@ -76,16 +83,16 @@ return [
     'opis_ambalaza' => 'OPS Packaging',
     'opis_ambalaza_tekst' => 'OPS packaging is made from polyester films which take their final form during thermal processing. Crystal clarity, toughness, strength, glossy surface, and transparency characterize the OPS product line. Most commonly used for cakes and pastries, it features high gloss, rigidity, and a temperature usage range from -40°C to +80°C. It is suitable for use in freezers as well as for packaging hot foods. A wide selection of models in the OPS product line allows for diverse applications — in confectionery, bakeries, meat and dairy industries, for packaging fruits and vegetables, catering, packing regular and quail eggs, and for household use, including storage of all types of food in fridges and freezers. It is also used for packaging certain industrial products. Our offer includes a wide range of containers made from OPS.',
 
-    'vazdusna_air_bubble_folija' => 'Air Bubble Wrap',
+    'vazdusna_air_bubble_folija' => 'Air Bubble <br/>Wrap',
     'vazdusna_air_bubble_folija_tekst' => 'Air Bubble Wrap – Also known as: Bubble wrap, Air-cushion film, Pop wrap. This type of film remains unsurpassed when it comes to packaging fragile and impact-sensitive items. Features: Lightweight, Waterproof, Easily molds around products, High toughness and tear resistance, Good thermal stability, Can be laminated with other materials (usually paper), Environmentally friendly. Used in: Wood and glass industries, transportation, and other sectors for protecting sensitive items from mechanical damage (e.g., furniture, glass, ceramics, appliances...).',
 
     'pet_ambalaza' => 'PET Packaging',
     'pet_ambalaza_tekst' => 'PET packaging, or packaging made from polyethylene terephthalate, is made from thermoplastic polymer granules from the polyester family. Initially used in the production of synthetic fibers, it has become widely used in the food and beverage packaging industry, with a temperature usage range up to 60°C. Today, PET packaging is everywhere, and in our offer, you will find a wide variety of food containers with lids made from PET. Durable, compact, lightweight, and simple in design. Made from PET material, it withstands various transport and temperature conditions and, most importantly, is approved by global health authorities as "safe packaging." It is mainly used for storing and preserving honey, creams, chocolate products, dried spices, sweets, and food additives. Unlike glass, it is lightweight and safe for food transport.',
 
-    'poli_etilenske_folije_creva_polucreva' => 'Polyethylene Films, Tubes, and Half-Tubes',
+    'poli_etilenske_folije_creva_polucreva' => 'Polyethylene <br/> Films, Tubes,<br/> and Half-Tubes',
     'poli_etilenske_folije_creva_polucreva_tekst' => 'We produce polyethylene films, tubes, and half-tubes for various uses: in construction, industry, household needs, packaging, lining, and more. The film is made from polyethylene, which can be transparent or colored upon your request. New materials and production technology ensure high product quality. The films can be made from low-density polyethylene (LDPE), which is smooth and glossy, and high-density polyethylene (HDPE), which is crinkly and matte.',
 
-    'plastika_siroke_potrosnje' => 'Mass-Consumption Plastic Products',
+    'plastika_siroke_potrosnje' => 'Mass-<br/>Consumption <br/>Plastic Products',
     'plastika_siroke_potrosnje_tekst' => 'High product quality and a rich selection make us recognizable in the mass-consumption plastic products market.',
 
     'kese_za_zamrzivac' => 'Freezer Bags',
@@ -94,6 +101,8 @@ return [
     // galerija
 
     'galerija_naslov' => 'Product Gallery',
+    'slike_iz_proizvodnje_monoplast' => 'Images from <br/>production <br/>monoplast',
+    'slike_sa_sajmova' => 'Images from<br/> fairs',
 
     // about
 
@@ -111,5 +120,37 @@ return [
     'about_sa_strane' => 'A satisfied customer and high product quality, along with strict adherence to deadlines, are our lasting commitments. We will be glad if you choose us as your P.E. packaging manufacturer.',
 
     'about_pogledaj_galeriju_iz_proizvodnje' => 'view the production gallery...',
+
+    // contact
+
+    'dugme_email' => 'Click here to send an <span class="bold">e-mail</span>',
+    'preduzece_za_proizvodnju' => 'Company for manufacturing,<br/> wholesale and retail,<br/>import, export, and services',
+    'adresa' => 'Address:',
+    'adresa_ulica_mesto' => 'Pilota Zorana Latkovića 19, Nova Pazova, 22330',
+    'telefon' => 'Phone number for production and sales:',
+    'telefon_u_proizvodnji1' => '+381 (22) 239 518',
+    'telefon_u_proizvodnji2' => '+381 (65) 336 11 11',
+    'adresa2' => 'Sales of consumer plastics <br/>and plastic bags for Republika Srpska',
+    'adresa2_firma' => 'Derventa "RS"',
+    'adresa2_ime' => 'Tešandić Slobodan',
+    'adresa2_telefon' => '+387 (65) 333-473',
+    'vazna_dokumenta' => 'Important documents:',
+    'obrazac_za_indetifikaciju' => 'Identification Form',
+    'pdv_potvrda' => 'VAT Certificate',
+    'pib' => 'Tax ID (PIB)',
+    'obavestenje_o_razvrstavanju' => 'Classification Notice',
+    'apr' => 'APR - Decision of the Serbian Business Registers Agency',
+    'sertifikat_o_razgradivosti' => 'Biodegradability Certificate',
+    'google_tekst' => 'On Google Maps, the street is incorrectly marked as Vlastimira Kneževića instead of Mirko Tatalović Ćira. You can see the correct location on the map above.',
+    'detalji_tekst' => 'For all details, print preparation instructions, prices, quantities, and production deadlines, please contact our sales department using one of the listed phone numbers, email, or send a fax.',
+
+    // contact form
+
+    'vase_ime' => 'YOUR NAME:',
+    'kontakt_telefon' => 'CONTACT PHONE:',
+    'vas_email' => 'YOUR E-MAIL:',
+    'tekst_poruke' => 'MESSAGE TEXT:',
+    'polja_su_obavezna' => 'Fields marked with <span class="important">*</span> are required in order to successfully send the message',
+    'posalji_poruku' => 'SEND MESSAGE',
 
 ];

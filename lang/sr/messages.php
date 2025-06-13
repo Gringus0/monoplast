@@ -22,6 +22,13 @@ return [
     'footer_gallery_title' => 'GALERIJA',
     'footer_copyright' => 'Copyright © 2025. Sva prava zadržana.',
 
+    // home sliders
+
+    'slider1' => 'slide-1NEW.jpg',
+    'slider2' => 'monoplast-slide2.jpg',
+    'slider3' => 'slide-3NEW.jpg',
+    'slider4' => 'slide-4NEW.jpg',
+
     // home
 
     'homepage_title' => 'Proizvodnja i štampa reklamnih razgradivih polietilenskih kesa i džakova',
@@ -55,10 +62,10 @@ return [
 
     'pogledaj_galeriju' => 'Pogledaj galeriju',
 
-    'reklamne_kese' => 'Reklamne kese',
+    'reklamne_kese' => 'Reklamne<br/> kese',
     'reklamne_kese_tekst' => 'Teško je zamisliti univerzalniji proizvod od kese. Kesa ili džak, u zavisnosti od dimenzija, sreće se svuda i na svakom mestu. Uvek kada je potrebno nešto poneti, preneti, zapakovati, prepakovati, kupiti, prodati. Zbog toga je kesa idealna pokretna reklama, koja će u rukama zadovoljnog kupca, proći kroz grad, ponekad i više puta i na taj način reklamirati vašu firmu ili proizvod.',
 
-    'trake_za_oznacavanje' => 'Trake za označavanje',
+    'trake_za_oznacavanje' => 'Trake za <br/>označavanje',
     'trake_za_oznacavanje_tekst' => 'Proizvodimo višenamenske trake za označavanje koje se koriste za označavanje staza kod sportskih manifestacija, kod postavljanja strujnih ili telefonskih kablova i slično... Trake mogu da budu sa štampom ili bez štampe.',
 
     'dzakovi' => 'Džakovi',
@@ -76,24 +83,26 @@ return [
     'opis_ambalaza' => 'OPS ambalaža',
     'opis_ambalaza_tekst' => 'OPS ambalaža izrađuje se od poliesternih folija gde prilikom postupka termičke obrade dobija svoj krajnji oblik. Kristalna čistoća, žilavost, čvrstoća, sjajna površina i transparentnost je ono što karakteriše OPS program. Najčešće se koristi za kolače i torte, a odlikuje se visokim sjajem, tvrdoćom i temperaturnim područjem primene od -40°C do +80°C. Pogodna je za korišćenje u hladnjačama, kao i za pakovanje vrele/vruće hrane. Veliki izbor modela koji se nalazi u ponudi OPS programa nudi široko polje primene (poslastičarstvo, pekarstvo, mesna industrija, mlečni proizvodi, pakovanje voća i povrća, catering, pakovanje konzumnih i prepeličjih jaja, kao i u kućnoj primeni — za odlaganje svih vrsta namirnica u frižidere i zamrzivače). Koristi se i za pakovanje određenih industrijskih proizvoda. U našoj ponudi možete pronaći širok izbor posuda izrađenih od OPS-a.',
 
-    'vazdusna_air_bubble_folija' => 'Vazdušasta - Air Bubble folija',
+    'vazdusna_air_bubble_folija' => 'Vazdušasta - Air<br/> Bubble folija',
     'vazdusna_air_bubble_folija_tekst' => 'Air Bubble folija — Alternativni nazivi su: folija sa vazdušnim mehurićima, vazdušna folija, pucketava folija, kao i puc puc folija. Ova folija je do sada neprevaziđena što se tiče pakovanja lomljivih i stvari osetljivih na udarce, ispadanje i slično. Karakteristike: mala težina, vodonepropustljivost, lako oblikovanje oko proizvoda, velika žilavost i otpornost na kidanje, dobra toplotna postojanost, mogućnost laminacije s drugim materijalima (najčešće s papirom), ekološka prihvatljivost. Namenjena je u drvnoj i staklarskoj industriji, transportu, te u ostalim delatnostima: zaštita osetljivih proizvoda od mehaničkih oštećenja (npr. nameštaja, stakla, keramike, aparata...).',
 
     'pet_ambalaza' => 'Pet ambalaža',
     'pet_ambalaza_tekst' => 'PET ambalaža, ili ambalaža od polietilen teraftalata, zapravo je ambalaža od termoplastičnog polimer granulata koji pripada porodici poliestera. Ovaj materijal je primenu našao u proizvodnji veštačkih vlakana. Naročito se počeo koristiti u industriji pakovanja hrane i pića, a ima temperaturno područje primene do 60°C. Danas PET ambalažu možemo videti na svakom koraku, a u našoj ponudi ambalaže od PET-a možete pronaći širok izbor posuda za pakovanje hrane sa poklopcem. Izdržljive, kompaktne, lagane i jednostavnog dizajna. Pravljena od PET materijala koji je izuzetno izdržljiv na razne transportne i temperaturne uslove i najvažnije — odobren od svetskih zdravstvenih ustanova kao "sigurna ambalaža". Svoju upotrebu najviše pronalazi u skladištenju i čuvanju meda, kremova, čokoladnih proizvoda, sušenih začina, poslastica i dodataka jelima. Za razliku od staklenog proizvoda, laka je za transport i sigurna za hranu.',
 
-    'poli_etilenske_folije_creva_polucreva' => 'Poli-etilenske Folije, Creva i Polu-Creva',
+    'poli_etilenske_folije_creva_polucreva' => 'Poli-etilenske<br/> Folije, Creva i <br/>Polu-Creva',
     'poli_etilenske_folije_creva_polucreva_tekst' => 'Proizvodimo polietilenske folije, creva i polu-creva za razne namene: za građevinarstvo, u industriji, za kućne potrebe, folije za pakovanje, oblaganje i slično. Folija se proizvodi od polietilena koja može biti providna ili po vašoj želji obojena u neku boju. Novi materijali i tehnologija izrade garantuju visok kvalitet proizvoda. Folije mogu da budu proizvedene od glatkog i sjajnog polietilena niske gustine (LDPE) i šuškavog i mat polietilena visoke gustine (HDPE).',
 
-    'plastika_siroke_potrosnje' => 'Plastika široke potrošnje',
+    'plastika_siroke_potrosnje' => 'Plastika široke <br/>potrošnje',
     'plastika_siroke_potrosnje_tekst' => 'Visok kvalitet proizvoda i bogata ponuda čine nas prepoznatljivim na tržištu plastike široke potrošnje.',
 
-    'kese_za_zamrzivac' => 'Kese za zamrzivač',
+    'kese_za_zamrzivac' => 'Kese za <br/>zamrzivač',
     'kese_za_zamrzivac_tekst' => 'Najčešće se koriste za pakovanje prehrambenih proizvoda u frižidere i zamrzivače, ali i za industrijske potrebe — šrafovske i druge proizvode koji zahtevaju jeftinu, izdržljivu i providnu ambalažu, kao i za pakovanje robe široke potrošnje manjih dimenzija. Proizvodimo ih od polietilenskog granulata i mogu biti HDPE-a (šuškave) i LDPE-a (glatke).',
 
     // galerija
 
     'galerija_naslov' => 'Galerija naših proizvoda',
+    'slike_iz_proizvodnje_monoplast' => 'Slike iz <br/>proizvodnje <br/>monoplast',
+    'slike_sa_sajmova' => 'Slike sa <br/>sajmova',
 
     // about
 
@@ -112,8 +121,35 @@ return [
 
     'about_pogledaj_galeriju_iz_proizvodnje' => 'pogledaj galeriju iz proizvodnje...',
 
+    // contact
 
+    'dugme_email' => 'Klikni ovde da bi poslao <span class="bold">e-mail</span>',
+    'preduzece_za_proizvodnju' => 'Preduzeće za proizvodnju,<br/> trgovinu na veliko i malo,<br/>uvoz, izvoz i usluge',
+    'adresa' => 'Adresa:',
+    'adresa_ulica_mesto' => 'Pilota Zorana Latkovića 19, Nova pazova, 22330',
+    'telefon' => 'telefon u prodizvodnji i prodaji je',
+    'telefon_u_proizvodnji1' => '+381 (22) 239 518',
+    'telefon_u_proizvodnji2' => '+381 (65) 336 11 11',
+    'adresa2' => 'Prodaja plastike široke potrošnje <br/>i najlonskih vrećica za Republiku Srpsku',
+    'adresa2_firma' => 'Derventa "RS"',
+    'adresa2_ime' => 'Tešandić Slobodan',
+    'adresa2_telefon' => '+387 (65) 333-473',
+    'vazna_dokumenta' => 'Važna dokumenta:',
+    'obrazac_za_indetifikaciju' => 'Obrazac za Identifikaciju',
+    'pdv_potvrda' => 'PDV potvrda',
+    'pib' => 'PIB',
+    'obavestenje_o_razvrstavanju' => 'Obaveštenje o Razvrstavanju',
+    'apr' => 'APR - Rešenje agencije za privredne registre',
+    'sertifikat_o_razgradivosti' => 'Sertifikat o razgradivosti',
+    'google_tekst' => 'na google map je pogrešno obeležena ulica Vlastimira Kneževića umesto Mirka Tatalovića Ćire. Ispravan položaj ulica možete videti na mapi iznad.',
+    'detalji_tekst' => 'Za sve detalje, uputstva oko pripreme za štampu, cene, tiraža i rokova izrade kesa, molimo Vas da se obratite našoj komercijalnoj službi, koristeći jedan od navedenih telefona, E-mail, ili pošaljite Fax.',
 
+    //contact form
 
-
+    'vase_ime' => 'VAŠE IME:',
+    'kontakt_telefon' => 'KONTAKT TELEFON:',
+    'vas_email' => 'VAŠ E-MAIL:',
+    'tekst_poruke' => 'TEKST PORUKE:',
+    'polja_su_obavezna' => 'Polja sa <span class="important">*</span> su obavezna da bi ste uspešno poslali poruku',
+    'posalji_poruku' => 'POŠALJI PORUKU',
 ];

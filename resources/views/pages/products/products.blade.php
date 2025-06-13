@@ -7,7 +7,7 @@
     <main>
         <div class="row flex-column d-flex d-md-block marginZero">
         <div class="col-12 d-md-none order-1 paddingZero" id="imagesPhone">
-            <img src="{{asset('/assets/img/images/flash/02_Homepage-mob_V1.jpg')}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu" />
+            <img src="{{asset('/assets/img/images/flash/'. __('messages.slider3'))}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu" />
         </div>
 
     <div class="col-12 order-2" id="textUnderNav">
@@ -22,7 +22,7 @@
 
         <div class="col-12 d-none d-md-block order-3 underImageBackGround">
             <div class="wrapper" id="aboutMainImage">
-                <img src="{{asset('/assets/img/images/flash/monoplast-slide2.jpg')}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu" />
+                <img src="{{asset('/assets/img/images/flash/'. __('messages.slider2'))}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu" />
 
             </div>
         </div>
@@ -38,7 +38,7 @@
                         <img src="{{asset('/assets/img/images/prozvodSlika1.jpg')}}" alt="Reklamne kese sa štampom logotipa" class="productsImages mx-auto d-block w-100 aboutImages"/>
                     </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
-                            <h5>{{ __('messages.reklamne_kese') }}</h5>
+                            <h5>{!! __('messages.reklamne_kese') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.reklamne_kese_tekst') }}
@@ -57,7 +57,7 @@
                         <img src="{{asset('/assets/img/images/trake-za-kros.jpg')}}" alt="Trake za obeležavanje prostora ili paketa" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
-                            <h5>{{ __('messages.trake_za_oznacavanje') }}</h5>
+                            <h5>{!! __('messages.trake_za_oznacavanje') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.trake_za_oznacavanje_tekst') }}
@@ -76,7 +76,7 @@
                         <img src="{{asset('/assets/img/images/dzakovi.jpg')}}" alt="Industrijski džakovi za pakovanje i skladištenje" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
-                            <h5>{{ __('messages.dzakovi') }}</h5>
+                            <h5>{!! __('messages.dzakovi') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.dzakovi_tekst') }}
@@ -95,16 +95,13 @@
                         <img src="{{asset('/assets/img/images/strec-folija.jpg')}}" alt="Stretch folija za obmotavanje paleta" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
-                            <h5> {{ __('messages.strec_folija') }}</h5>
+                            <h5> {!! __('messages.strec_folija') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.strec_folija_tekst') }}
                                 </p>
                                 <ul class="productsLi">
-                                    <li>Širina rolne: 50 cm.</li>
-                                    <li>Dužina: min 300 m.</li>
-                                    <li>Debljina: 25my.</li>
-                                    <li>Težina: 5 kg.</li>
+                                    <li>{!!__('messages.strec_folija_tekst_li')!!}</li>
                                 </ul>
                             </div>
                             <i class="marginTop fa-solid fa-circle circleProducts"></i>
@@ -120,7 +117,7 @@
                         <img src="{{asset('/assets/img/images/zip-kese.jpg')}}" alt="ZIP kese sa zatvaračem" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
-                            <h5>{{ __('messages.zip_kese') }}</h5>
+                            <h5>{!! __('messages.zip_kese') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.zip_kese_tekst') }}
@@ -139,7 +136,7 @@
                         <img src="{{asset('/assets/img/images/tregerice.jpg')}}" alt="Tregerice – kese sa ručkama za nošenje" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
-                            <h5>{{ __('messages.treger_kese') }}</h5>
+                            <h5>{!! __('messages.treger_kese') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.treger_kese_tekst') }}
@@ -158,7 +155,7 @@
                         <img src="{{asset('/assets/img/images/ops-ambalaza.jpg')}}" alt="OPS ambalaža za prehrambene proizvode" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts">
-                            <h5>{{ __('messages.opis_ambalaza') }}</h5>
+                            <h5>{!! __('messages.opis_ambalaza') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.opis_ambalaza_tekst') }}
@@ -177,23 +174,11 @@
                         <img src="{{asset('/assets/img/images/air-bubble.jpg')}}" alt="Air bubble folija za zaštitu u transportu" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
-                            <h5>{{ __('messages.vazdusna_air_bubble_folija') }}</h5>
+                            <h5>{!! __('messages.vazdusna_air_bubble_folija') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.vazdusna_air_bubble_folija_tekst') }}
                                 </p>
-{{--                                <ul class="productsLi">--}}
-{{--                                    <li >Karakteristike: </li>--}}
-{{--                                    <li>Mala težina: </li>--}}
-{{--                                    <li>Vodonepropustljivost: </li>--}}
-{{--                                    <li>Lako oblikovanje oko proizvoda: </li>--}}
-{{--                                    <li>Velika žilavost i otpornost na kidanje: </li>--}}
-{{--                                    <li>Dobra toplotna postojanost: </li>--}}
-{{--                                    <li>Mogućnost laminacije s drugim materijalima (najčešće s papirom) </li>--}}
-{{--                                    <li>Ekološka prihvatljivost</li>--}}
-{{--                                    <li>Namena u drvnoj i staklarskoj industriji, transportu, te u ostalim delatnostima:</li>--}}
-{{--                                    <li>Zaštita osetljivih proizvoda od mehaničkih oštećenja (npr. nameštaja, stakla, keramike, aparata...)</li>--}}
-{{--                                </ul>--}}
                             </div>
                             <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.pogledaj_galeriju') }}</a>
@@ -208,14 +193,11 @@
                         <img src="{{asset('/assets/img/images/pp-ambalaza.jpg')}}" alt="PET ambalaža za piće i prehranu" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
-                            <h5>{{ __('messages.pet_ambalaza') }}</h5>
+                            <h5>{!! __('messages.pet_ambalaza') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.pet_ambalaza_tekst') }}
                                 </p>
-{{--                                <p>PET ambalaža, ili ambalaža od polietilen teraftalata, zapravo je ambalaža od termoplastičnog polimer granulata koji pripada porodici poliestera. Ovaj materijal je primenu našao u proizvodnji veštačkih vlakana. Naročito se počeo koristiti u industriji pakovanja hrane i pića, a ima temperaturno područje primene do 60°C. </p>--}}
-{{--                                <p>Danas PET ambalažu možemo videti na svakom koraku, a u našoj ponudi ambalaže od PET-a možete pronaći širok izbor posuda za pakovanje hrane sa poklopcem.</p>--}}
-{{--                                <p>Izdržljive, kompaktne, lagane i jednostavnog dizajna. Pravljena od PET materijala koji je izuzetno izdržljiv na razne transportne i temperaturne uslove i najvaznije odobren od svetskih zdravstvenih ustanova kao "sigurna ambalaža". Svoju upotrebu najvise pronalazi u skladištenju i čuvanju meda, kremova, čokolanih proizvoda, sušenih začina, poslastica i dodataka jelima. Za razliku od staklenog proizvoda, laka je za transport i sigurna za hranu. </p>--}}
                             </div>
                             <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">{{ __('messages.pogledaj_galeriju') }}</a>
@@ -230,7 +212,7 @@
                         <img src="{{asset('/assets/img/images/stiropor-ambalaza.jpg')}}" alt="PE folije – polietilenske folije za pakovanje" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
-                            <h5>{{ __('messages.poli_etilenske_folije_creva_polucreva') }}</h5>
+                            <h5>{!! __('messages.poli_etilenske_folije_creva_polucreva') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.poli_etilenske_folije_creva_polucreva_tekst') }}
@@ -249,7 +231,7 @@
                         <img src="{{asset('/assets/img/images/plastika-siroke-potrosnje.jpg')}}" alt="Plastični proizvodi za široku potrošnju" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
-                            <h5>{{ __('messages.plastika_siroke_potrosnje') }}</h5>
+                            <h5>{!! __('messages.plastika_siroke_potrosnje') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.plastika_siroke_potrosnje_tekst') }}
@@ -268,7 +250,7 @@
                         <img src="{{asset('/assets/img/images/kese-za-zamrzivac.jpg')}}" alt="Kese za zamrzivač sa mogućnošću štampe" class="productsImages mx-auto d-block w-100 aboutImages"/>
                         </div>
                         <div class="col-12 col-lg-8 products-product textColorProducts textColorProducts">
-                            <h5>{{ __('messages.kese_za_zamrzivac') }}</h5>
+                            <h5>{!! __('messages.kese_za_zamrzivac') !!}</h5>
                             <div>
                                 <p>
                                     {{ __('messages.kese_za_zamrzivac_tekst') }}

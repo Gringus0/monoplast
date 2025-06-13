@@ -26,21 +26,25 @@
                         <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        @if(app()->getLocale()=="sr")
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        @endif
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="{{ __('messages.recyclable_image_alt') }}"/>
+                            <img src="{{asset('/assets/img/images/flash/'. __('messages.slider1'))}}" class="d-block w-100" alt="{{ __('messages.recyclable_image_alt') }}"/>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('/assets/img/images/flash/monoplast-slide2.jpg')}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu"/>
+                            <img src="{{asset('/assets/img/images/flash/'. __('messages.slider2'))}}" class="d-block w-100" alt="Industrijska mašina za proizvodnju kesa visokog kvaliteta u savremenom pogonu"/>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('/assets/img/images/flash/slide-3NEW.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - Galerija i slike"/>
+                            <img src="{{asset('/assets/img/images/flash/'. __('messages.slider3'))}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - Galerija i slike"/>
                         </div>
+                        @if(app()->getLocale()=="sr")
                         <div class="carousel-item">
-                            <img src="{{asset('/assets/img/images/flash/slide-4NEW.jpg')}}" class="d-block w-100" alt="Poručivanje reklamnih kesa sa štampom brendova - izbor dimenzije, boje i tipa"/>
+                            <img src="{{asset('/assets/img/images/flash/'. __('messages.slider4'))}}" class="d-block w-100" alt="Poručivanje reklamnih kesa sa štampom brendova - izbor dimenzije, boje i tipa"/>
                         </div>
+                        @endif
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

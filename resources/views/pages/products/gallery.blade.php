@@ -27,59 +27,59 @@
                 <div class="gallery-filters d-flex flex-wrap justify-content-center gap-2 marginTop marginBottom">
                     <a href="{{ route('gallery', ['category' => 'reklamneKese']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija1.jpg')}}" alt="Reklamne kese" class="gallery"/>
-                        <div class="overlay-text">Reklamne kese</div>
+                        <div class="overlay-text">{!!__("messages.reklamne_kese")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'trakeZaOznacavanje']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija2.jpg')}}" alt="Trake za označavanje" class="gallery"/>
-                        <div class="overlay-text">Trake za <br/>označavanje</div>
+                        <div class="overlay-text">{!!__("messages.trake_za_oznacavanje")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'dzakovi']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija3.jpg')}}" alt="Džakovi" class="gallery"/>
-                        <div class="overlay-text">Džakovi</div>
+                        <div class="overlay-text">{!!__("messages.dzakovi")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'strecFolija']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija4.jpg')}}" alt="Streč folija" class="gallery"/>
-                        <div class="overlay-text">Streč folija</div>
+                        <div class="overlay-text">{!!__("messages.strec_folija")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'zipKese']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija5.jpg')}}" alt="ZIP kese" class="gallery"/>
-                        <div class="overlay-text">ZIP kese</div>
+                        <div class="overlay-text">{!!__("messages.zip_kese")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'tregerice']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="Tregerice" class="gallery"/>
-                        <div class="overlay-text">Tregerice</div>
+                        <div class="overlay-text">{!!__("messages.treger_kese")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'opsAmbalaza']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="OPS ambalaža" class="gallery"/>
-                        <div class="overlay-text">OPS ambalaža</div>
+                        <div class="overlay-text">{!!__("messages.opis_ambalaza")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'airBubbleFolija']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija8.jpg')}}" alt="Air Bubble folija" class="gallery"/>
-                        <div class="overlay-text">Air Bubble<br/> folija</div>
+                        <div class="overlay-text">{!!__("messages.vazdusna_air_bubble_folija")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'petAmbalaza']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija9.jpg')}}" alt="PET ambalaža" class="gallery"/>
-                        <div class="overlay-text">PET ambalaža</div>
+                        <div class="overlay-text">{!!__("messages.pet_ambalaza")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'peFolija']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija10.jpg')}}" alt="P.E. Folije" class="gallery"/>
-                        <div class="overlay-text">P.E. Folije</div>
+                        <div class="overlay-text">{!!__("messages.poli_etilenske_folije_creva_polucreva")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'plastSirokePotrosnje']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija11.jpg')}}" alt="Plast. široke potrošnje" class="gallery"/>
-                        <div class="overlay-text">Plast. široke <br/>potrošnje</div>
+                        <div class="overlay-text">{!!__("messages.plastika_siroke_potrosnje")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'keseZaZamrzivac']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija12.jpg')}}" alt="Kese za zamrzivač" class="gallery"/>
-                        <div class="overlay-text">Kese za <br/>zamrzivač</div>
+                        <div class="overlay-text">{!!__("messages.kese_za_zamrzivac")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'slikeIzProizvodnje']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija13.jpg')}}" alt="Slike iz proizvodnje monoplast" class="gallery"/>
-                        <div class="overlay-text">Slike iz <br/>proizvodnje</div>
+                        <div class="overlay-text">{!!__("messages.slike_iz_proizvodnje_monoplast")!!}</div>
                     </a>
                     <a href="{{ route('gallery', ['category' => 'sajmovi']) }}" class="gallery-item">
                         <img src="{{asset('/assets/img/images/galerija14.jpg')}}" alt="Slike sa sajmova" class="gallery"/>
-                        <div class="overlay-text">Sajmovi</div>
+                        <div class="overlay-text">{!!__("messages.slike_sa_sajmova")!!}</div>
                     </a>
                 </div>
             </div>

@@ -23,7 +23,7 @@
 
         <div class="col-12 d-none d-md-block order-3 underImageBackGround">
             <div class="wrapper" id="aboutMainImage">
-                <img src="{{asset('/assets/img/images/flash/slide-1NEW.jpg')}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - ekološka ambalaža" />
+                <img src="{{asset('/assets/img/images/flash/'. __('messages.slider1'))}}" class="d-block w-100" alt="Biorazgradive i razgradive kese koje se mogu reciklirati - ekološka ambalaža" />
             </div>
         </div>
     </div>
