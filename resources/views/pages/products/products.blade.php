@@ -46,7 +46,7 @@
                                     koja će u rukama zadovoljnog kupca, proći kroz grad, ponekad i više puta i na taj način reklamirati vašu firmu ili proizvod.
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                     Trake mogu da budu sa stampom ili bez stampe.
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                                     U mogućnosti smo da proizvedemo džakove prema vašim specifikacijama (dimenziji debljini i boji).
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                                     <li>Težina: 5 kg.</li>
                                 </ul>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                                     Pored običnih ZIP kesa sa jednim Zip zatvaračem (mono zipp lock) poceli smo da proizvodimo i ZIP kese sa duplim Zip Zatvaračem (double Zipp lock) i zip kese sa patent Zip zatvaračem (zipp bags with Slider) te kese su i vodo ne propusne. Usvojili smo novu tehnologiju pa moze da radimo i štampane zip kese i zip kese sa običnom rupom, euro rupom i bana ručkom kao sto mozete da vidite u galeriji slika zipp kesa.
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -150,10 +150,10 @@
                             <h5>Treger kese</h5>
                             <div>
                                 <p>
-                                    Treger kese koje proizvodimo su razgradive , a imaju širu primenu za jeftinije pakovanje i transport raznih artikala. 
+                                    Treger kese koje proizvodimo su razgradive , a imaju širu primenu za jeftinije pakovanje i transport raznih artikala.
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                                     OPS ambalaža izrađuje se od poliesternih folija gde prilikom postupka termičke obrade dobija svoj krajnji oblik. Kristalna čistoća, žilavost, čvrstoća, sjajna površina i transparentnost je ono što karakteriše OPS program.Najčešće se koristi za kolače i torte, a odlikuje se viskim sjajem, tvrdoćom i temperaturnim područjem primene od -40°C do +80°C.Pogodna je za korištenje u hladnjačama, kao i za pakovanje vrele/vruće hrane.Veliki izbor modela koji se nalazi u ponudi OPS programa nudi široko polje primene.(poslastičarstvo, pekarstvo, mesna industrija, mlečni proizvodi,pakovanje voća i povrća, catering, pakovanje konzumnih i prepeličjih jaja kao i u kućnoj primeni, za odlaganje svih vrsta namirnica u frižidere i zamrzivače. Koristi se i za pakovanje određenih industrijskih proizvoda. U našoj ponudi možete pronaći širok izbor posuda izrađenih od OPS-a.
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                                     <li>Zaštita osetljivih proizvoda od mehaničkih oštećenja (npr. nameštaja, stakla, keramike, aparata...)</li>
                                 </ul>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -222,7 +222,7 @@
                                 <p>Danas PET ambalažu možemo videti na svakom koraku, a u našoj ponudi ambalaže od PET-a možete pronaći širok izbor posuda za pakovanje hrane sa poklopcem.</p>
                                 <p>Izdržljive, kompaktne, lagane i jednostavnog dizajna. Pravljena od PET materijala koji je izuzetno izdržljiv na razne transportne i temperaturne uslove i najvaznije odobren od svetskih zdravstvenih ustanova kao "sigurna ambalaža". Svoju upotrebu najvise pronalazi u skladištenju i čuvanju meda, kremova, čokolanih proizvoda, sušenih začina, poslastica i dodataka jelima. Za razliku od staklenog proizvoda, laka je za transport i sigurna za hranu. </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -239,7 +239,7 @@
                             <div>
                                 <p>Proizvodimo polietilenske folije, Creva i Polu-Creva za razne namene: za građevinarstvo, u industriji, za kućne potreba, folije za pakovanje, oblaganje i slično. Folija se proizvodi od Polietilena koja moze biti providna ili po vasoj želji obojena u neku boju. Novi materijali i tehnologija izrade garantuju visok kvalitet proizvoda.Folije mogu da budu proizvedene od Glatkog i sjajnog polietilena niske gustine LDPE i šuškavog i mat polietilena visoke gustine HDPE.</p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                                     Visok kvalitet proizvoda i bogata ponuda čine nas prepoznatljivim na tržištu plastike široke potrošnje.
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                                     Najčešće se koriste za pakovanje prehrambenih proizvoda u frižidere i zamrzivače, ali i za industrijske potrebe , šrafovske i druge proizvode koji zahtevaju jeftinu izdržljivu i providnu ambalažu kao i za pakovanje robe siroke potrosnje manjih dimenzija. Proizvodimo ih od Polietilenskog granulata i mogu biti HDPE-a ( šuškave ) i LDP-a ( glatke ) .
                                 </p>
                             </div>
-                            <i class="marginTop fa-solid fa-circle circleProducts"></i> 
+                            <i class="marginTop fa-solid fa-circle circleProducts"></i>
                             <a class="moreGallery colorGalleryMoreProducts" href="{{route('gallery')}}">Pogledaj galeriju</a>
                         </div>
                     </div>

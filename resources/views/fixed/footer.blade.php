@@ -2,73 +2,89 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-12 col-xl-4 col-md-6" id="footerLogo">
-                <img src="{{asset('/assets/img/monoplast-logo.png')}}" alt="Logo - Monoplast" class="logo logotfooter"/>
-                <p class="mb-4">Radimo na najsavremenijim mašnama, koje obezbedjuju visok kvalitet finalnog priozvoda.</p>
+                <img src="{{ asset('/assets/img/monoplast-logo.png') }}" alt="Logo - Monoplast" class="logo logotfooter" />
+                <p class="mb-4">{{ __('messages.footer_about_text') }}</p>
                 <a href="https://www.facebook.com/www.monoplast.rs/" target="_blank"><i class="fa-brands fa-facebook iconFooter"></i></a>
                 <a href="https://www.instagram.com/monoplast.rs/" target="_blank"><i class="fa-brands fa-instagram iconFooter"></i></a>
                 <a href="mailto:monoplast.rs@gmail.com?" target="_blank"><i class="fa-regular fa-envelope iconFooter"></i></a>
             </div>
+
             <div class="col-12 col-xl-3 col-md-6" id="footerContact">
-                <h4 class="footerSubjects">KONTAKT</h4>
+                <h4 class="footerSubjects">{{ __('messages.footer_contact_title') }}</h4>
                 <ul>
-                    <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-house-chimney marginRight icon"></i></span>Pilota Zorana Latkovica 19, Nova Pazova, 22330</p></li>
-                    <li><p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-envelope marginRight icon"></i></span> monoplast.rs@gmail.com</p></li>
+                    <li>
+                        <p class="colorText">
+                            <span class="iconFooterContact">
+                                <i class="fa-solid fa-house-chimney marginRight icon"></i>
+                            </span>
+                            {{ __('messages.footer_address') }}
+                        </p>
+                    </li>
+                    <li>
+                        <p class="colorText">
+                            <span class="iconFooterContact">
+                                <i class="fa-solid fa-envelope marginRight icon"></i>
+                            </span>
+                            {{ __('messages.footer_email') }}
+                        </p>
+                    </li>
                     <li class="d-flex justify-content-start phoneIcon">
-                        <p class="colorText"><span class="iconFooterContact"><i class="fa-solid fa-phone marginRight icon"></i></span>
-                            <ul class="ulNone">
-                                <li>+381 (22) 329 518</li>
-                                <li>+381 (22) 329 523</li>
-                                <li>+381 (65) 336 11 11</li>
-                            </ul>
+                        <p class="colorText">
+                            <span class="iconFooterContact">
+                                <i class="fa-solid fa-phone marginRight icon"></i>
+                            </span>
+                        <ul class="ulNone">
+                            <li>{{ __('messages.footer_phone_1') }}</li>
+                            <li>{{ __('messages.footer_phone_2') }}</li>
+                            <li>{{ __('messages.footer_phone_3') }}</li>
+                        </ul>
                         </p>
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-xl-2 col-md-6" id="footerNav">
-                <h4 class="footerSubjects">MONOPLAST</h4>
-                <ul id="navFooterList">
-                    <a href="{{route('home')}}" class="hoverTextOrange"><li class="mb-1">Home</li></a>
-                    <a href="{{route('about')}}" class="hoverTextOrange"><li>O nama</li></a>
-                    <a href="{{route('gallery')}}" class="hoverTextOrange"><li class="mb-1 mt-1">Proizvodi</li></a>
-                    <a href="{{route('productPrices')}}" class="hoverTextOrange"><li>Cenovnik</li></a>
-                    <a href="{{route('actions')}}" class="hoverTextOrange"><li class="mb-1 mt-1">Akcije</li></a>
-                    <a href="{{route('contact')}}" class="hoverTextOrange"><li>Kontakt</li></a>
-                    <a href="{{route('registerAndLoginForm')}}" class="hoverTextOrange"><li class="mb-1 mt-1">Porucite</li></a>
 
+            <div class="col-12 col-xl-2 col-md-6" id="footerNav">
+                <h4 class="footerSubjects">{{ __('messages.footer_monoplast_title') }}</h4>
+                <ul id="navFooterList">
+                    <a href="{{ route('home') }}" class="hoverTextOrange"><li class="mb-1">{{ __('messages.pocetna') }}</li></a>
+                    <a href="{{ route('about') }}" class="hoverTextOrange"><li>{{ __('messages.o_nama') }}</li></a>
+                    <a href="{{ route('gallery') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.proizvodi') }}</li></a>
+                    <a href="{{ route('productPrices') }}" class="hoverTextOrange"><li>{{ __('messages.cenovnik') }}</li></a>
+                    <a href="{{ route('actions') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.akcije') }}</li></a>
+                    <a href="{{ route('contact') }}" class="hoverTextOrange"><li>{{ __('messages.kontakt') }}</li></a>
+                    <a href="{{ route('registerAndLoginForm') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.porucite') }}</li></a>
                 </ul>
             </div>
+
             <div class="col-12 col-xl-3 col-md-6" id="footerGallery">
-                <h4 class="footerSubjects text-center">GALERIJA</h4>
+                <h4 class="footerSubjects text-center">{{ __('messages.footer_gallery_title') }}</h4>
                 <div>
                     <div class="row p-2">
-                        <div class="col-4 p-0 text-center">
-                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija10.jpg')}}" alt="P.E. folija - zaštitna folija za pakovanje i transport"/></a>
-                        </div>
-                        <div class="col-4 p-0 text-center">
-                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija2.jpg')}}" alt="Trake za označavanje - trake za identifikaciju i označavanje pakovanja"/></a>
-                        </div>
-                        <div class="col-4 p-0 text-center">
-                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija8.jpg')}}" alt="Air bubble folija - zaštitna folija sa vazdušnim mehurićima za pakovanje"/></a>
-                        </div>
+                        @foreach (['galerija10.jpg', 'galerija2.jpg', 'galerija8.jpg'] as $img)
+                            <div class="col-4 p-0 text-center">
+                                <a href="{{ route('gallery') }}">
+                                    <img class="border imgFooter" src="{{ asset('/assets/img/images/' . $img) }}" alt="" />
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                     <div class="row p-2">
-                        <div class="col-4 p-0 text-center">
-                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija7.jpg')}}" alt="OPS ambalaža - plastika za pakovanje sa visokom transparentnošću"/></a>
-                        </div>
-                        <div class="col-4 p-0 text-center">
-                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija1.jpg')}}" alt="Reklamne kese - kese za promociju brenda i proizvoda"/></a>
-                        </div>
-                        <div class="col-4 p-0 text-center">
-                            <a href="{{route('gallery')}}"><img class="border imgFooter" src="{{asset('/assets/img/images/galerija6.jpg')}}" alt="Tregerice - zaštitne trake za pakovanje i fiksiranje proizvoda"/></a>
-                        </div>
+                        @foreach (['galerija7.jpg', 'galerija1.jpg', 'galerija6.jpg'] as $img)
+                            <div class="col-4 p-0 text-center">
+                                <a href="{{ route('gallery') }}">
+                                    <img class="border imgFooter" src="{{ asset('/assets/img/images/' . $img) }}" alt="" />
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  </footer>
+</footer>
+
 <div id="underfooter" class="container-fluid">
     <div class="wrapper text-center">
-        <p>Copyright <span class="textOrange">&copy; </span>2025. All rights reserved.</p>
+        <p>{{ __('messages.footer_copyright') }}</p>
     </div>
 </div>

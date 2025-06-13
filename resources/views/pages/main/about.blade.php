@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="aboutContentWrapper" class="wrapper row">
         <div class="col-12 col-xl-2 d-flex flex-column d-none d-xxl-block" id="leftBlockAbout">
             <img src="{{asset('/assets/img/images/onama-malaslika1.jpg')}}" class="d-block aboutImages w-100" alt="Industrijska termopresa za štampu sa kontrolnim panelom"/>
@@ -57,7 +57,7 @@
                         <p class="marginBottom">
                             Ukoliko želite da na Vašim kesama odštampate zaštitni znak firme, reklamnu poruku ili možda sliku proizvoda - to možete učiniti u jednoj, dve, tri ili više boja. Naši grafičari će, po Vašem zahtevu, uraditi pripremu za štampu koristeći vrhunsku kompjutersku opremu i lasersko štampanje.
                         </p>
-                        <p class="marginBottom"> 
+                        <p class="marginBottom">
                             Nudimo Vam blanko i štampane kese i džakove raznih boja i veličina. I to nije sve! Pošto se u našim kesama nose proizvodi različite težine, po Vašem zahtevu, sve kese možemo proizvesti sa ojačanim ili plastičnim ručkama. Naše kese se proizvode od najkvalitetnijih materijala, u raznim bojama, a po Vašoj želji, na kesama vršimo štampu u jednoj ili više boja.
                         </p>
                     </div>
