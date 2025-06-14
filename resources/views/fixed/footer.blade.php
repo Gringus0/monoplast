@@ -48,11 +48,17 @@
                 <ul id="navFooterList">
                     <a href="{{ route('home') }}" class="hoverTextOrange"><li class="mb-1">{{ __('messages.pocetna') }}</li></a>
                     <a href="{{ route('about') }}" class="hoverTextOrange"><li>{{ __('messages.o_nama') }}</li></a>
-                    <a href="{{ route('gallery') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.proizvodi') }}</li></a>
-                    <a href="{{ route('productPrices') }}" class="hoverTextOrange"><li>{{ __('messages.cenovnik') }}</li></a>
-                    <a href="{{ route('actions') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.akcije') }}</li></a>
+                    <a href="{{ route('products') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.proizvodi') }}</li></a>
+                    @if(app()->getLocale() == 'sr')
+                        <a href="{{ route('productPrices') }}" class="hoverTextOrange"><li>{{ __('messages.cenovnik') }}</li></a>
+                    @endif
+                    @if(app()->getLocale() == 'sr')
+                        <a href="{{ route('actions') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.akcije') }}</li></a>
+                    @endif
                     <a href="{{ route('contact') }}" class="hoverTextOrange"><li>{{ __('messages.kontakt') }}</li></a>
-                    <a href="{{ route('registerAndLoginForm') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.porucite') }}</li></a>
+                    @if(app()->getLocale() == 'sr')
+                        <a href="{{ route('registerAndLoginForm') }}" class="hoverTextOrange"><li class="mb-1 mt-1">{{ __('messages.porucite') }}</li></a>
+                    @endif
                 </ul>
             </div>
 
