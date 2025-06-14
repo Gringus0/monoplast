@@ -17,20 +17,6 @@ use Illuminate\Support\Facades\DB;
 class ProductController extends Controller
 {
     public function listProductsWithGallery(Request $request) {
-        // reklamne kese -> 1
-        // trake za oznacavanje -> 2
-        // dzakovi -> 3
-        // strec folija -> 4
-        // zip kese -> 5
-        // tregerice -> 6
-        // OPS ambalaza -> 7
-        // air bubble folija -> 8
-        // PET ambalaza -> 9??? NEMA NISTA U BAZI NI NA SAJTU
-        // P.E. folije -> 10
-        // Plast. siroke potrosnje -> 11
-        // kese za zamrzivac -> 12
-        // slike iz proizvodnje -> 13
-        // sajmovi -> 14
 
         $category = $request->query('category');
 

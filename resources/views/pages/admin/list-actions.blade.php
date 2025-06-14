@@ -15,7 +15,6 @@
             <th class="colorAdmin">NASLOV</th>
             <th class="colorAdmin">VISINA AKCIJE</th>
             <th class="colorAdmin">TEKST</th>
-{{--            <th class="colorAdmin">SLIKA</th>--}}
             <th class="colorAdmin">SLIKA</th>
             <th class="colorAdmin">OD</th>
             <th class="colorAdmin">DO</th>
@@ -29,7 +28,6 @@
                 <td>{{ $action->naslov }}</td>
                 <td>{{ $action->visina_akcije }}</td>
                 <td>{{ $action->tekst }}</td>
-{{--                <td>@if($action->slika)<img src="{{ asset('/assets/img/images/akcije/' . $action->slika) }}" class="w-50"> @endif</td>--}}
                 <td>@if($action->slika2)<img src="{{ asset('/assets/img/images/akcije/' . $action->slika2) }}" class="w-50"> @endif</td>
                 <td>{{ $action->akcija_od }}</td>
                 <td>{{ $action->akcija_do }}</td>

@@ -5,14 +5,11 @@
 
     <title>Reklamne kese | Štampane kese | Zip kese | Proizvodnja i štampa PVC reklamnih kesa</title>
     <meta name="description" content="Reklamne kese, štampane kese, zip kese, razgradive polietilenske kese i džakovi. Proizvodnja i štampa PVC reklamnih kesa - Monoplast doo."/>
-   
+
     <meta name="keywords" content="@yield('keywords')" />
     <meta name="robots" content="index, follow" />
 
-    
-    {{-- <link rel="canonical" href="https://www.example.com/" /> --}}
 
-    {{-- Dodati pravi domen kada se bude hostovao --}}
 
 
     <meta property="og:type" content="website" />

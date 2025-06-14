@@ -16,14 +16,14 @@
             <hr/>
         </div>
     </div>
-    
+
     <div class="container-fluid">
         <div class="row wrapper">
             <div class="col-12 col-lg-8" id="tabeleCene">
                 <div class="pdf-page-break">
                     <div class="d-flex justify-content-between">
                         <h5 class="pricesTopImgText">
-                            Butik kese sa banana ručkom 
+                            Butik kese sa banana ručkom
                             <span class="textOrange">bez ojačanja</span><br/>
                             na ručki:
                         </h5>
@@ -57,13 +57,13 @@
                                         }
 
                                         if ($index === 0) {
-                                            $borderClass = 'border-group-1'; 
+                                            $borderClass = 'border-group-1';
                                         } elseif ($index >= 1 && $index <= 3) {
-                                            $borderClass = 'border-group-2'; 
+                                            $borderClass = 'border-group-2';
                                         } elseif ($index >= 4 && $index <= 9) {
-                                            $borderClass = 'border-group-3'; 
+                                            $borderClass = 'border-group-3';
                                         } else {
-                                            $borderClass = 'border-group-4'; 
+                                            $borderClass = 'border-group-4';
                                         }
                                     @endphp
 
@@ -105,7 +105,7 @@
                     <tbody>
                         @foreach($bananaOjacanaIliFleksibilna as $index => $kesa)
                             @php
-                        
+
                                 if ($index < 2) {
                                     $rowClass = 'bg1';
                                 } elseif ($index < 5) {
@@ -117,13 +117,13 @@
                                 }
 
                                 if ($index === 0) {
-                                    $borderClass = 'border-group-1'; 
+                                    $borderClass = 'border-group-1';
                                 } elseif ($index >= 1 && $index <= 3) {
-                                    $borderClass = 'border-group-2'; 
+                                    $borderClass = 'border-group-2';
                                 } elseif ($index >= 4 && $index <= 9) {
-                                    $borderClass = 'border-group-3'; 
+                                    $borderClass = 'border-group-3';
                                 } else {
-                                    $borderClass = 'border-group-4'; 
+                                    $borderClass = 'border-group-4';
                                 }
                             @endphp
 
@@ -140,7 +140,7 @@
                     </tbody>
                     </table>
                     </div>
-                    
+
                 </div>
                 <div class="pdf-page-break">
                     <div class="d-flex justify-content-between marginTop">
@@ -165,7 +165,7 @@
                     <tbody>
                         @foreach($bananaOjacanaIliFleksibilnaIFalt as $index => $kesa)
                             @php
-                        
+
                                 if ($index < 2) {
                                     $rowClass = 'bg1';
                                 } elseif ($index < 5) {
@@ -177,13 +177,13 @@
                                 }
 
                                 if ($index === 0) {
-                                    $borderClass = 'border-group-1'; 
+                                    $borderClass = 'border-group-1';
                                 } elseif ($index >= 1 && $index <= 3) {
-                                    $borderClass = 'border-group-2'; 
+                                    $borderClass = 'border-group-2';
                                 } elseif ($index >= 4 && $index <= 9) {
-                                    $borderClass = 'border-group-3'; 
+                                    $borderClass = 'border-group-3';
                                 } else {
-                                    $borderClass = 'border-group-4'; 
+                                    $borderClass = 'border-group-4';
                                 }
                             @endphp
 
@@ -224,7 +224,7 @@
                     <tbody>
                         @foreach($bananaBezOjacanjaIFalt as $index => $kesa)
                             @php
-                        
+
                                 if ($index < 2) {
                                     $rowClass = 'bg1';
                                 } elseif ($index < 5) {
@@ -236,13 +236,13 @@
                                 }
 
                                 if ($index === 0) {
-                                    $borderClass = 'border-group-1'; 
+                                    $borderClass = 'border-group-1';
                                 } elseif ($index >= 1 && $index <= 3) {
-                                    $borderClass = 'border-group-2'; 
+                                    $borderClass = 'border-group-2';
                                 } elseif ($index >= 4 && $index <= 9) {
-                                    $borderClass = 'border-group-3'; 
+                                    $borderClass = 'border-group-3';
                                 } else {
-                                    $borderClass = 'border-group-4'; 
+                                    $borderClass = 'border-group-4';
                                 }
                             @endphp
 
@@ -279,7 +279,7 @@
                     <tbody>
                         @foreach($blankoBezOjacanja as $index => $kesa)
                             @php
-                        
+
                                 if ($index < 2) {
                                     $rowClass = 'bg1';
                                 } elseif ($index < 5) {
@@ -291,13 +291,13 @@
                                 }
 
                                 if ($index === 0) {
-                                    $borderClass = 'border-group-1'; 
+                                    $borderClass = 'border-group-1';
                                 } elseif ($index >= 1 && $index <= 3) {
-                                    $borderClass = 'border-group-2'; 
+                                    $borderClass = 'border-group-2';
                                 } elseif ($index >= 4 && $index <= 9) {
-                                    $borderClass = 'border-group-3'; 
+                                    $borderClass = 'border-group-3';
                                 } else {
-                                    $borderClass = 'border-group-4'; 
+                                    $borderClass = 'border-group-4';
                                 }
                             @endphp
 
@@ -330,7 +330,7 @@
                     <tbody>
                         @foreach($blankoOjacanaIFalt as $index => $kesa)
                             @php
-                        
+
                                 if ($index < 2) {
                                     $rowClass = 'bg1';
                                 } elseif ($index < 5) {
@@ -342,13 +342,13 @@
                                 }
 
                                 if ($index === 0) {
-                                    $borderClass = 'border-group-1'; 
+                                    $borderClass = 'border-group-1';
                                 } elseif ($index >= 1 && $index <= 3) {
-                                    $borderClass = 'border-group-2'; 
+                                    $borderClass = 'border-group-2';
                                 } elseif ($index >= 4 && $index <= 9) {
-                                    $borderClass = 'border-group-3'; 
+                                    $borderClass = 'border-group-3';
                                 } else {
-                                    $borderClass = 'border-group-4'; 
+                                    $borderClass = 'border-group-4';
                                 }
                             @endphp
 
@@ -415,7 +415,6 @@
         </div>
 
     </div>
-    
 
 </main>
 @endsection

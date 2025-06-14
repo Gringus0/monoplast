@@ -13,7 +13,6 @@ class HomeController extends Controller
      */
     public function home()
     {
-//         return Redirect::to('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
         return view('pages.main.home');
     }
 

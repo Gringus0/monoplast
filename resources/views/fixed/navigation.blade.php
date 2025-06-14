@@ -92,13 +92,7 @@
                                 <a class="nav-link linkhover text-center hoverTextOrange pr0 {{ request()->routeIs('order.index') ? 'active' : '' }}" href="{{ route('registerAndLoginForm') }}">{{ __('messages.porucite') }}</a>
                             </li>
                         @endif
-                        {{-- <a class="btn btn-outline-primary">
-                            @if(app()->getLocale() === 'sr')
-                                English
-                            @else
-                                Srpski
-                            @endif
-                        </a> --}}
+
 
 
 

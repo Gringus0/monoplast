@@ -20,13 +20,7 @@
         @error('visina_akcije')
         <div class="text-danger mt-2 mb-2">{{ $message }}</div>
         @enderror
-{{--        <div class="mt-4">--}}
-{{--            <label for="slika" class="mb-3 labelAdmin">Slika:</label>--}}
-{{--            <input type="file" name="slika">--}}
-{{--        </div>--}}
-{{--        @error('slika')--}}
-{{--        <div class="text-danger mt-2 mb-2">{{ $message }}</div>--}}
-{{--        @enderror--}}
+
         <div class="mt-4 mb-4">
             <label for="slika2" class="mb-3 labelAdmin">Slika:</label>
             <input type="file" name="slika2">

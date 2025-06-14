@@ -53,21 +53,6 @@ class AdminController extends Controller
 
     public function gallery(Request $request)
     {
-        // reklamne kese -> 1
-        // trake za oznacavanje -> 2
-        // dzakovi -> 3
-        // strec folija -> 4
-        // zip kese -> 5
-        // tregerice -> 6
-        // OPS ambalaza -> 7
-        // air bubble folija -> 8
-        // PET ambalaza -> 9??? NEMA NISTA U BAZI NI NA SAJTU
-        // P.E. folije -> 10
-        // Plast. siroke potrosnje -> 11
-        // kese za zamrzivac -> 12
-        // slike iz proizvodnje -> 13
-        // sajmovi -> 14
-
         $category = $request->query('category');
 
         $data = [];
@@ -110,11 +95,6 @@ class AdminController extends Controller
         }
 
         return redirect('/admin/gallery?category=reklamneKese');
-    }
-
-    public function createImage()
-    {
-
     }
 
     public function storeImage(AdminGalleryRequest $request)
@@ -183,7 +163,7 @@ class AdminController extends Controller
                 $data = BlankoOjacanaIFalt::where('velicina', $velicinaKese)->get();
                 break;
             default:
-                $data = collect(); // return empty collection
+                $data = collect();
                 break;
         }
 
@@ -215,7 +195,7 @@ class AdminController extends Controller
                 $velicine = BlankoOjacanaIFalt::all();
                 break;
             default:
-                $velicine = collect(); // return empty collection
+                $velicine = collect();
                 break;
         }
 
@@ -274,7 +254,7 @@ class AdminController extends Controller
                     ->first();
                 break;
             default:
-                $prices = collect(); // return empty collection
+                $prices = collect();
                 break;
         }
 
@@ -297,8 +277,6 @@ class AdminController extends Controller
         try {
             DB::beginTransaction();
             $action = new Action();
-//            $imageName = time() . "." . $request->slika->extension();
-//            $request->slika->move(public_path('assets/img/images/akcije'), $imageName);
             $imageName2 = time() . "." . $request->slika2->extension();
             $request->slika2->move(public_path('assets/img/images/akcije'), $imageName2);
             $imageName = '';
@@ -330,16 +308,6 @@ class AdminController extends Controller
             DB::rollBack();
             return back();
         }
-    }
-
-    public function editAction($id)
-    {
-
-    }
-
-    public function updateAction(Request $request, $id)
-    {
-
     }
 
     public function listBuyers()

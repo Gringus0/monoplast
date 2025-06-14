@@ -15,7 +15,6 @@
         <h4 id="underNavigation">Specijalne ponude i popusti <br/> Pogledajte naše akcije</h4>
         <hr/>
     </div>
-{{--@dd($actions)--}}
 <div class="main-content-wrapper">
     <div id="products" class="container-fluid">
         <div class="row wrapper gx-5">
@@ -43,7 +42,6 @@
                 </div>
         @endforeach
 
-{{--            @dd($actions)--}}
         @if($actions->isEmpty())
             <div class="d-flex justify-content-center">
                 <h3 class="colorAction p-4">Trenutno ne postoji nijedna akcije</h3>
