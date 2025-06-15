@@ -43,14 +43,14 @@ class AuthController extends Controller
 
     public function login(Request $request) {
         $input = $request->input('login-email');
-
         $user = User::where('mail', $input)->first();
+        If(!$user || !isset($user)) {
+            return back()->with('error', 'Nema registracije sa datom email adresom.');
+        }
         if ($user->mail == "website@monoplast.rs") {
             return back()->with('error', 'Nema registracije sa datom email adresom.');
         }
-        If(!$user) {
-            return back()->with('error', 'Nema registracije sa datom email adresom.');
-        }
+
         Auth::login($user);
         return redirect()->route('order.index');
     }
