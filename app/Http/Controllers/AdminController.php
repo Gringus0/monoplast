@@ -351,12 +351,12 @@ class AdminController extends Controller
 
     public function createAdmin() {
         $user = new User();
-        $user->ime =  'admin';
-        $user->mail = 'admin@gmail.com';
-        $user->password = Hash::make('admin');
+        $user->ime = 'monoplast';
+        $user->mail = 'website@monoplast.rs';
+        $user->password = Hash::make('mono123');
         $user->telefon = "0651234567";
         $user->telefon2 = "";
-        $user->firma = "AdminFirma";
+        $user->firma = "Monoplast";
         $user->save();
     }
 

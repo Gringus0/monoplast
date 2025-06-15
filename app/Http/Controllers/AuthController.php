@@ -45,6 +45,9 @@ class AuthController extends Controller
         $input = $request->input('login-email');
 
         $user = User::where('mail', $input)->first();
+        if ($user->mail == "website@monoplast.rs") {
+            return back()->with('error', 'Nema registracije sa datom email adresom.');
+        }
         If(!$user) {
             return back()->with('error', 'Nema registracije sa datom email adresom.');
         }

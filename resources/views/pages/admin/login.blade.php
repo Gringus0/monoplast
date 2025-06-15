@@ -21,6 +21,14 @@
                 </div>
             </form>
         </div>
+        <form class="login-form d-flex justify-content-center" action="{{ route('admin.createAdmin') }}" method="post">
+            @csrf
+            <div class="form-row button-row">
+                <button type="submit">Create Admin</button>
+            </div>
+        </form>
     </div>
+
+
 
 @endsection

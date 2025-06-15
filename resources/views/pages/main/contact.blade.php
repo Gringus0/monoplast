@@ -90,12 +90,12 @@
             <div class="col-12 col-lg-4">
                 <p class="bold">{!!__("messages.vazna_dokumenta")!!}</p>
                 <ul class="productsList">
-                    <a class="aTag" href="{{ asset('assets/files/Obrazac_za_identifikaciju.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.obrazac_za_indetifikaciju")!!}</li></a>
-                    <a class="aTag" href="{{ asset('assets/files/PDV_potvrada.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.pdv_potvrda")!!}</li></a>
-                    <a class="aTag" href="{{ asset('assets/files/PIB.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.pib")!!}</li></a>
-                    <a class="aTag" href="{{ asset('assets/files/Obavestenje_o_razvrstavanju.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.obavestenje_o_razvrstavanju")!!}</li></a>
-                    <a class="aTag" href="{{ asset('assets/files/APR_resenje_2010.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.apr")!!}</li></a>
-                    <a class="aTag" href="{{ asset('assets/files/Certifikat-d2w.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.sertifikat_o_razgradivosti")!!}</li></a>
+                    <a class="aTag" target="_blank" href="{{ asset('assets/files/Obrazac_za_identifikaciju.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.obrazac_za_indetifikaciju")!!}</li></a>
+                    <a class="aTag" target="_blank" href="{{ asset('assets/files/PDV_potvrada.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.pdv_potvrda")!!}</li></a>
+                    <a class="aTag" target="_blank" href="{{ asset('assets/files/PIB.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.pib")!!}</li></a>
+                    <a class="aTag" target="_blank" href="{{ asset('assets/files/Obavestenje_o_razvrstavanju.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.obavestenje_o_razvrstavanju")!!}</li></a>
+                    <a class="aTag" target="_blank" href="{{ asset('assets/files/APR_resenje_2010.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.apr")!!}</li></a>
+                    <a class="aTag" target="_blank" href="{{ asset('assets/files/Certifikat-d2w.pdf') }}"><li class="importantDocumentsContact">{!!__("messages.sertifikat_o_razgradivosti")!!}</li></a>
                 </ul>
                 <p class="contactGoogleMapText">{!!__("messages.google_tekst")!!}</p>
                 <div id="map" class="w-100 marginTop">

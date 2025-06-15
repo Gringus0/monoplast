@@ -89,7 +89,8 @@
                 <p><strong>Boja Ručke:</strong> <span id="modal-order-bojaRucke"></span></p>
                 <p><strong>Vrsta Štampe:</strong> <span id="modal-order-stampa"></span></p>
                 <p><strong>Količina:</strong> <span id="modal-order-kolicina"></span></p>
-                <p><strong>Fajl za Pripremu:</strong> <span id="modal-order-priprema"></span></p>
+                <p><strong>Fajl za Pripremu:</strong> <a id="modal-order-priprema-link" href="#" target="_blank"><span id="modal-order-priprema"></span></a></p>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
@@ -101,4 +102,5 @@
 <script>
 
 </script>
+
 @endsection

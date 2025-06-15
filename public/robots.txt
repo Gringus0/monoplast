@@ -1,2 +1,26 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /email/
+Disallow: /api/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /storage/
+Disallow: /resources/
+Disallow: /bootstrap/
+Disallow: /config/
+Disallow: /database/
+Disallow: /routes/
+Disallow: /tests/
+Disallow: /artisan
+Disallow: /.env
+Disallow: /.git/
+Disallow: /README.md
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+
+Sitemap: https://monoplast.rs/sitemap.xml

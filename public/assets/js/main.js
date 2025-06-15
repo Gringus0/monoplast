@@ -11,37 +11,31 @@ window.onload = function(){
         orderModal.addEventListener('show.bs.modal', function (event) {
             const button = event.relatedTarget;
 
-            const id = button.getAttribute('data-id');
-            const ime = button.getAttribute('data-ime');
-            const firma = button.getAttribute('data-firma');
-            const telefon = button.getAttribute('data-telefon');
-            const mail = button.getAttribute('data-mail');
-            const datum = button.getAttribute('data-datum');
-            const tipKese= button.getAttribute('data-tipKese');
-            const materijal = button.getAttribute('data-materijal');
-            const sirina = button.getAttribute('data-sirina');
-            const visina = button.getAttribute('data-visina');
-            const bojaRucke = button.getAttribute('data-bojaRucke');
-            const bojaKese = button.getAttribute('data-bojaKese');
-            const priprema = button.getAttribute('data-priprema');
-            const stampa = button.getAttribute('data-stampa');
-            const kolicina = button.getAttribute('data-kolicina');
+            document.getElementById('modal-order-id').textContent = button.getAttribute('data-id');
+            document.getElementById('modal-order-ime').textContent = button.getAttribute('data-ime');
+            document.getElementById('modal-order-firma').textContent = button.getAttribute('data-firma');
+            document.getElementById('modal-order-telefon').textContent = button.getAttribute('data-telefon');
+            document.getElementById('modal-order-mail').textContent = button.getAttribute('data-mail');
+            document.getElementById('modal-order-datum').textContent = button.getAttribute('data-datum');
 
-            document.getElementById('modal-order-id').textContent = id;
-            document.getElementById('modal-order-ime').textContent = ime;
-            document.getElementById('modal-order-firma').textContent = firma;
-            document.getElementById('modal-order-telefon').textContent = telefon;
-            document.getElementById('modal-order-mail').textContent = mail;
-            document.getElementById('modal-order-datum').textContent = datum;
-            document.getElementById('modal-order-tipKese').textContent = tipKese;
-            document.getElementById('modal-order-materijal').textContent = materijal;
-            document.getElementById('modal-order-sirina').textContent = sirina;
-            document.getElementById('modal-order-visina').textContent = visina;
-            document.getElementById('modal-order-bojaRucke').textContent = bojaRucke;
-            document.getElementById('modal-order-bojaKese').textContent = bojaKese;
-            document.getElementById('modal-order-priprema').textContent = priprema;
-            document.getElementById('modal-order-stampa').textContent = stampa;
-            document.getElementById('modal-order-kolicina').textContent = kolicina;
+            document.getElementById('modal-order-tipKese').textContent = button.getAttribute('data-tipKese');
+            document.getElementById('modal-order-materijal').textContent = button.getAttribute('data-materijal');
+            document.getElementById('modal-order-sirina').textContent = button.getAttribute('data-sirina');
+            document.getElementById('modal-order-visina').textContent = button.getAttribute('data-visina');
+            document.getElementById('modal-order-bojaKese').textContent = button.getAttribute('data-bojaKese');
+            document.getElementById('modal-order-bojaRucke').textContent = button.getAttribute('data-bojaRucke') || '-';
+            document.getElementById('modal-order-stampa').textContent = button.getAttribute('data-stampa');
+            document.getElementById('modal-order-kolicina').textContent = button.getAttribute('data-kolicina');
+
+            const fileName = button.getAttribute('data-priprema');
+            const fileLink = document.getElementById('modal-order-priprema-link');
+            document.getElementById('modal-order-priprema').textContent = fileName;
+
+            if (fileName) {
+                fileLink.href = `/assets/img/images/porudzbine/${fileName}`;
+            } else {
+                fileLink.href = '#';
+            }
         });
 
         $('#vrsta').on('change', function () {
